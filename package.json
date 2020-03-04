@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "rm -rf _site",
+    "start": "npx @11ty/eleventy --serve --input=src/",
+    "build": "npx @11ty/eleventy --input=src/"
   },
   "keywords": [],
   "author": "",

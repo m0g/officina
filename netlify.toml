@@ -58,13 +58,14 @@
 
 [[redirects]]
   from = "/"
-  to = "/en"
-  conditions = {Language = ["en"], Country = ["US", "UK"]}
+  to = "/de"
+  conditions = {Language = ["de"]}
 
 [[redirects]]
   from = "/"
-  to = "/de"
-  conditions = {Language = ["de"], Country = ["DE", "AT"]}
+  to = "/en"
+  # conditions = {Language = ["en"]}
+
 
 # A redirect rule with all the supported properties
 # [[redirects]]

@@ -3,3 +3,10 @@ backend:
   branch: master
 
 media_folder: "_assets/images/uploads"
+
+collections:
+  - name: "pages-en"
+    label: "Page in English"
+    folder: "en/pages"
+    create: true
+    slug: "{{slug}}"

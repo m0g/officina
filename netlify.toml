@@ -56,10 +56,15 @@
 # For context-specific rules, use _headers or _redirects files, which are
 # PER-DEPLOY.
 
-# A basic redirect rule
 [[redirects]]
   from = "/"
   to = "/en"
+  conditions = {Language = ["en"], Country = ["US", "UK"]}
+
+[[redirects]]
+  from = "/"
+  to = "/de"
+  conditions = {Language = ["de"], Country = ["DE", "AT"]}
 
 # A redirect rule with all the supported properties
 # [[redirects]]

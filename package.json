@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "rm -rf _site",
+    "prestart": "rm -rf _site && npm run tailwind",
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "postbuild": "npm run tailwind",
+    "build": "npx @11ty/eleventy",
+    "tailwind": "postcss src/_assets/css/style.css -o _site/_assets/css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
   }
 }

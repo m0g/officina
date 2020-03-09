@@ -2,10 +2,14 @@
   publish = "_site/"
   command = "npm run build"
 
+# [[redirects]]
+#   from = "/"
+#   to = "/de"
+#   conditions = {Language = ["de"]}
+
 [[redirects]]
-  from = "/"
-  to = "/de"
-  conditions = {Language = ["de"]}
+  from = "/de"
+  to = "/en"
 
 [[redirects]]
   from = "/"

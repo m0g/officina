@@ -1,6 +1,8 @@
 const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
   mode: 'development',
@@ -14,6 +16,11 @@ module.exports = merge(common, {
       watch: true,
       open: false, // won't automatically launch in default browser when started
     }),
+    new BundleAnalyzerPlugin({
+      analyzerHost: "0.0.0.0",
+      openAnalyzer: false
+    })
+
   ],
   watch: true,
   devtool: 'inline-source-map'

@@ -1,5 +1,5 @@
 const path = require('path')
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // const Dotenv = require('dotenv-webpack')
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 
@@ -16,10 +16,10 @@ module.exports = {
     //   path: path.resolve(__dirname, './.env'),
     //   systemvars: true,
     // }),
-    // new MiniCssExtractPlugin({
-    //   filename: '/css/[name].css',
-    //   chunkFilename: '[id].css',
-    // }),
+    new MiniCssExtractPlugin({
+      filename: '/css/[name].css',
+      chunkFilename: '[id].css',
+    }),
     new ImageminWebpWebpackPlugin({
       config: [{
         test: /\.(jpe?g|png)/,
@@ -43,7 +43,13 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            },
+          },
+          // 'style-loader',
           'css-loader',
           'postcss-loader'
         ],

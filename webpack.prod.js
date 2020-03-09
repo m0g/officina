@@ -3,10 +3,12 @@ const common = require("./webpack.common.js")
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg')
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
   plugins: [
+    new MinifyPlugin(),
     new OptimizeCssAssetsPlugin({
       cssProcessorPluginOptions: {
         preset: [

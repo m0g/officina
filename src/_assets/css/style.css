@@ -8,6 +8,6 @@
 
 @import "tailwindcss/utilities";
 
-h1 {
-  color: pink;
+.z-900 {
+  z-index: 900;
 }

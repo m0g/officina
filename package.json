@@ -43,6 +43,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "leaflet": "^1.6.0",
     "tailwindcss": "^1.2.0"
   }
 }

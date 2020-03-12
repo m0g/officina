@@ -1,46 +1,31 @@
 import '../css/style.css'
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
-// import 'lazysizes'
-// import 'lazysizes/plugins/blur-up/ls.blur-up'
-// import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
-// lazysizes.cfg.blurupMode = 'auto'
-// ----- uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
+// stupid hack so that leaflet's images work after going through webpack
+import marker from 'leaflet/dist/images/marker-icon.png';
+import marker2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-// import 'prismjs'
+delete L.Icon.Default.prototype._getIconUrl;
 
-// import 'instant.page' // until there's a webpack-friendly version of flying-pages
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: marker2x,
+  iconUrl: marker,
+  shadowUrl: markerShadow
+});
 
-// var req = require.context("../../images", true, /\.(jpe?g|png|gif)$/)
-// req.keys().forEach(function(key){
-//   req(key)
-// })
+const position = [52.4643115,13.4443876];
 
-// // --- start, twitterMeta ---
+const map = L.map('map', { scrollWheelZoom: false })
+  .setView(position, 17);
 
-// /* detect dark or light mode and handle Twitter embeds accordingly */
-// var metaTwitterTheme = document.createElement('meta');
-// var metaTwitterLink = document.createElement('meta');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
-// function catchDark(e) {
-//   if (e.matches) {
-//   // dark mode
-//     metaTwitterTheme.setAttribute('name', 'twitter:widgets:theme');
-//     metaTwitterTheme.setAttribute('content', 'dark');
-//     metaTwitterLink.setAttribute('name', 'twitter:widgets:link-color');
-//     metaTwitterLink.setAttribute('content', '#00bbff');
-//   } else {
-//     // light mode
-//     metaTwitterTheme.setAttribute('name', 'twitter:widgets:theme');
-//     metaTwitterTheme.setAttribute('content', 'light');
-//     metaTwitterLink.setAttribute('name', 'twitter:widgets:link-color');
-//     metaTwitterLink.setAttribute('content', '#0033ff');
-//   }
-// }
+console.log('hola')
 
-// document.getElementsByTagName('head')[0].appendChild(metaTwitterTheme);
-// document.getElementsByTagName('head')[0].appendChild(metaTwitterLink);
-
-// var e = window.matchMedia('(prefers-color-scheme: dark)');
-// catchDark(e);
-// e.addListener(catchDark);
-// // --- end, twitterMeta ---
+L.marker(position).addTo(map)
+  .bindPopup('Officina Neukölln')
+  .openPopup();

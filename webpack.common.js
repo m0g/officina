@@ -81,7 +81,7 @@ module.exports = {
                 4000, // using a ridiculous width so it will process the original (won't make a bigger version)
               ],
               placeholder: false, // otherwise, bundle is too big
-              name: 'images/[name]-[width].[ext]',
+              name: '/_assets/img/[name]-[width].[ext]',
             },
           },
         ],

@@ -9,6 +9,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 delete L.Icon.Default.prototype._getIconUrl;
 
+console.log(marker)
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: marker2x,
   iconUrl: marker,

@@ -10,6 +10,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 .z-900 {
@@ -26,4 +27,17 @@ html {
 
 .bg-blue-custom {
   background-color: #4D4DC3;
+}
+
+.bg-yellow-circle::after {
+  content: "";
+  border-radius: 50%;
+  background-color: #FDFF00;
+  width: 1em;
+  position: absolute;
+  bottom: -30em;
+  left: -11em;
+  height: 60rem;
+  width: 60rem;
+  z-index: 1;
 }

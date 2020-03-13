@@ -29,6 +29,10 @@ html {
   background-color: #4D4DC3;
 }
 
+.text-blue-custom {
+  color: #4D4DC3;
+}
+
 .bg-yellow-circle::after {
   content: "";
   border-radius: 50%;

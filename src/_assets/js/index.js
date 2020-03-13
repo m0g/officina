@@ -1,3 +1,4 @@
+import '@ibm/plex/css/ibm-plex.css';
 import '../css/style.css'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';

@@ -8,6 +8,14 @@
 
 @import "tailwindcss/utilities";
 
+html {
+  font-size: 20px;
+}
+
 .z-900 {
   z-index: 900;
+}
+
+.font-plex {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }

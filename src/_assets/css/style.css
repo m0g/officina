@@ -19,3 +19,11 @@ html {
 .font-plex {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
+.text-salmon {
+  color: #F7C2AA;
+}
+
+.bg-blue-custom {
+  background-color: #4D4DC3;
+}

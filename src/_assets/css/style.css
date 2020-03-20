@@ -45,15 +45,3 @@ html {
   width: 60rem;
   z-index: 1;
 }
-
-.bg-blue-triangle::after {
-  content: "";
-  background-color: #4D4DC3;
-  width: 190%;
-  height: 30em;
-  position: absolute;
-  left: -4em;
-  bottom: 14em;
-  z-index: 2;
-  transform: rotate(-9deg) scaleX(-1);
-}

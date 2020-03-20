@@ -29,6 +29,10 @@ html {
   background-color: #4D4DC3;
 }
 
+.bg-yellow-custom {
+  background-color: #FDFF00;
+}
+
 .text-blue-custom {
   color: #4D4DC3;
 }
@@ -44,4 +48,12 @@ html {
   height: 60rem;
   width: 60rem;
   z-index: 1;
+}
+
+.-bottom-4 {
+  bottom: -4em;
+}
+
+.-right-4 {
+  right: -4em;
 }

@@ -1,7 +1,8 @@
 ---
 tags: artist
 name: Julia Castel
-background: bg-blue-custom
+period: Oct & Nov 2019
+website: https://juliaze.com
 ---
 
 Perspiciatis qui pariatur error atque. Et iste sit exercitationem placeat. Dignissimos ut ullam enim id quos et. Similique earum sint similique quia sit sed. Itaque labore vel soluta neque aspernatur veniam. Quos aut quia earum.

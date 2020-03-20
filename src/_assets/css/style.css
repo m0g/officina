@@ -43,11 +43,11 @@ html {
   background-color: #FDFF00;
   width: 1em;
   position: absolute;
-  bottom: -30em;
-  left: -11em;
-  height: 60rem;
-  width: 60rem;
-  z-index: 1;
+  bottom: -70em;
+  left: -35em;
+  height: 110rem;
+  width: 110rem;
+  -webkit-user-selectz-index: 1;
 }
 
 .-bottom-4 {

@@ -1,7 +1,8 @@
 ---
 tags: artist
 name: Alia Zapparova
-background: bg-blue-custom
+period: Dec 2019 & Jan 2020
+website: aliazapparova.com
 ---
 
 Perspiciatis qui pariatur error atque. Et iste sit exercitationem placeat. Dignissimos ut ullam enim id quos et. Similique earum sint similique quia sit sed. Itaque labore vel soluta neque aspernatur veniam. Quos aut quia earum.

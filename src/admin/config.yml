@@ -20,6 +20,7 @@ collections:
           - { label: 'Exhibitions', name: 'exhibitions', widget: 'string' }
           - { label: 'Working together', name: 'working_together', widget: 'string' }
           - { label: 'Concerts & events', name: 'concerts_events', widget: 'string' }
+          - { label: 'Artist residency', name: 'artist_residency', widget: 'string' }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI

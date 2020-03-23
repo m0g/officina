@@ -5,8 +5,19 @@ backend:
 media_folder: "_assets/images/uploads"
 
 collections:
+  - name: 'site'
+    label: 'Site'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file:  'src/en/index.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden' }
+          - { label: 'Description', name: 'description', widget: 'hidden' }
+
+
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
-    label: 'Artists EN' # Used in the UI
+    label: 'Artists' # Used in the UI
     folder: 'src/en/artists' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md

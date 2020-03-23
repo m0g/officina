@@ -14,7 +14,11 @@ permalink: /en/gallery/index.html
   </div>
   {%- for photo in collections.photos -%}
     <figure>
-      <img src="{{ photo.data.image }}" class="object-contain" />
+      <img 
+        src="{{ photo.data.image }}" 
+        class="object-contain lightbox cursor-pointer" 
+        title="{{ photo.data.title }}"
+      />
     </figure>
   {%- endfor -%}
 </div>

@@ -50,6 +50,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "glightbox": "^2.0.5",
     "npm-check-updates": "^4.0.4"
   }
 }

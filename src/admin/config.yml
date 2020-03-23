@@ -7,14 +7,19 @@ media_folder: "_assets/images/uploads"
 collections:
   - name: 'site'
     label: 'Site'
+    extension: md
     files:
       - label: 'Home Page'
         name: 'home'
         file:  'src/en/index.md'
+        extension: md
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden' }
-          - { label: 'Description', name: 'description', widget: 'hidden' }
-
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'What we do description', name: 'what_we_do_description', widget: 'string' }
+          - { label: 'Exhibitions', name: 'exhibitions', widget: 'string' }
+          - { label: 'Working together', name: 'working_together', widget: 'string' }
+          - { label: 'Concerts & events', name: 'concerts_events', widget: 'string' }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI

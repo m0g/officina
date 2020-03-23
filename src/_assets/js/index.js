@@ -12,28 +12,29 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 delete L.Icon.Default.prototype._getIconUrl;
 
-console.log(marker)
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: marker2x,
   iconUrl: marker,
   shadowUrl: markerShadow
 });
 
-const position = [52.4643115,13.4443876];
+// MAP
+if (document.getElementById('map')) {
+  const position = [52.4643115,13.4443876];
 
-const map = L.map('map', { scrollWheelZoom: false })
-  .setView(position, 17);
+  const map = L.map('map', { scrollWheelZoom: false })
+    .setView(position, 17);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
-console.log('hola')
+  L.marker(position).addTo(map)
+    .bindPopup('Officina Neukölln')
+    .openPopup();
+}
 
-L.marker(position).addTo(map)
-  .bindPopup('Officina Neukölln')
-  .openPopup();
-
+// Gallery
 GLightbox({
   selector: 'lightbox',
   touchNavigation: true,

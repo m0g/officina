@@ -9,6 +9,12 @@ module.exports = {
       '45': '45deg',
       '90': '90deg',
       '180': '180deg',
+    },
+    extend: {
+      inset: {
+        '-2': '-2em',
+        '-4': '-4em',
+      }
     }
   },
 }

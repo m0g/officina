@@ -21,8 +21,14 @@ L.Icon.Default.mergeOptions({
 // MAP
 if (document.getElementById('map')) {
   const position = [52.4643115,13.4443876];
+  
+  const options = {
+    scrollWheelZoom: false,
+    dragging: !L.Browser.mobile,
+    tap: !L.Browser.mobile
+  };
 
-  const map = L.map('map', { scrollWheelZoom: false })
+  const map = L.map('map', options)
     .setView(position, 17);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

@@ -40,3 +40,18 @@ GLightbox({
   touchNavigation: true,
   loop: true,
 });
+
+function toggleSidebar(e) {
+  const sidebar = document.getElementById('sidebar');
+
+  console.log('uuo')
+  sidebar.classList.toggle('hidden');
+}
+
+document.addEventListener("DOMContentLoaded", event => { 
+  const burgerBtn = document.getElementById('sidebar-open');
+  console.log(burgerBtn);
+
+  burgerBtn.addEventListener('touchend', toggleSidebar);
+  // burgerBtn.addEventListener('click', toggleSidebar);
+});

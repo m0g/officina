@@ -5,13 +5,6 @@ period: Dec 2019 & Jan 2020
 website: 'http://aliazapparova.com'
 image: /_assets/images/uploads/bitmap-2.png
 ---
-
-Perspiciatis qui pariatur error atque. Et iste sit exercitationem placeat. Dignissimos ut ullam enim id quos et. Similique earum sint similique quia sit sed. Itaque labore vel soluta neque aspernatur veniam. Quos aut quia earum.
-
-Minima ut eveniet quidem temporibus vero laborum. Totam tempore ut aut voluptas fuga. Perspiciatis et sit veritatis.
-
-Placeat non earum enim velit iusto a. Deserunt qui voluptatibus eligendi tempore illo quo in ut. Facilis et corrupti pariatur delectus aut quis. Voluptatum ea enim et.
-
-Nisi corporis adipisci omnis officia. Earum harum excepturi et voluptas. Similique dolorum et nostrum sit suscipit.
-
-Laboriosam odit suscipit saepe debitis saepe ut velit voluptatem. Ipsum saepe quae et aliquam vitae maiores rerum. Sit et repellendus est sunt est quidem.
+“How Not To” - This project misuses photographic paper and processes to explore some senses of a “not”:not doing, not printing, not making, and end up with a collection of traces that speak of failures and absences. It is a way to approach not only of the literal but also the metaphorical and poetic sensitivity of the photographic paper, its openness to light, its response to exposure as darkness, the play of transparency and opaqueness on its surface, and the ambiguous, unreadable images that result. For traditional photographic purposes, the paper is rendered unusable, and yet something emerges that would be inaccessible when it is used correctly.\
+Alia Zapparova is an artist and writer. She makes books, installations and occasional performative workshops from images, text, paper and thread in various configurations. Her work is a search for strategies and poetics of transformation through the everyday.\
+During her residency at Officina she used the chemigram process, where images are formed as result of a reaction between photographic paper, chemicals and light.

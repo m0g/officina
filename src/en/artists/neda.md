@@ -2,15 +2,11 @@
 tags: artist
 name: Neda Ahmadi
 period: Feb & Mar 2020
-website: https://nedaahmadi.com
+website: 'https://nedaahmadi.com'
+image: /src/_assets/images/uploads/artist-residency.png
 ---
+Amygdala is a hand-made short animation, based on personal and true events. The quest is to narrate a story of fear and attachment, loss and identity through the physical act of painting and drawing many frames. It has been awarded the grant for women artist in film/video from by the Senate Department for Culture and Europe\
+Berlin in 2020.\
+Neda Ahmadi is an animation maker and visual artist from Tehran. She experiments with different material under the camera since she started her artistic practice and an animator and had a passion for mythology, humane psychology and music as subject matters.
 
-Perspiciatis qui pariatur error atque. Et iste sit exercitationem placeat. Dignissimos ut ullam enim id quos et. Similique earum sint similique quia sit sed. Itaque labore vel soluta neque aspernatur veniam. Quos aut quia earum.
-
-Minima ut eveniet quidem temporibus vero laborum. Totam tempore ut aut voluptas fuga. Perspiciatis et sit veritatis.
-
-Placeat non earum enim velit iusto a. Deserunt qui voluptatibus eligendi tempore illo quo in ut. Facilis et corrupti pariatur delectus aut quis. Voluptatum ea enim et.
-
-Nisi corporis adipisci omnis officia. Earum harum excepturi et voluptas. Similique dolorum et nostrum sit suscipit.
-
-Laboriosam odit suscipit saepe debitis saepe ut velit voluptatem. Ipsum saepe quae et aliquam vitae maiores rerum. Sit et repellendus est sunt est quidem.
+During her residency in Officina she started working on her short animation, using the dark room to start bringing the Neda Ahmadi Amygdala backgrounds of her film to life.

@@ -2,15 +2,9 @@
 tags: artist
 name: Julia Castel
 period: Oct & Nov 2019
-website: https://juliaze.com
+website: 'https://juliaze.com'
+image: /src/_assets/images/uploads/artist-residency.png
 ---
-
-Perspiciatis qui pariatur error atque. Et iste sit exercitationem placeat. Dignissimos ut ullam enim id quos et. Similique earum sint similique quia sit sed. Itaque labore vel soluta neque aspernatur veniam. Quos aut quia earum.
-
-Minima ut eveniet quidem temporibus vero laborum. Totam tempore ut aut voluptas fuga. Perspiciatis et sit veritatis.
-
-Placeat non earum enim velit iusto a. Deserunt qui voluptatibus eligendi tempore illo quo in ut. Facilis et corrupti pariatur delectus aut quis. Voluptatum ea enim et.
-
-Nisi corporis adipisci omnis officia. Earum harum excepturi et voluptas. Similique dolorum et nostrum sit suscipit.
-
-Laboriosam odit suscipit saepe debitis saepe ut velit voluptatem. Ipsum saepe quae et aliquam vitae maiores rerum. Sit et repellendus est sunt est quidem.
+La Grande Motte is a French city in front of the Mediterranean Sea characterized by a unique architectural context. Many of the prominent buildings are built in narrow contact with the sea coast and are designed in pyramidal forms - a failed architectural dream of modernist times.\
+With 2 million tourists per year it is one of the favorite resorts in France. The buildings are not visible in the pictures, but their presence can be easily detected. This series is about unsucess, a city dream that 30 years has been futuristic, which now seems to be frozen in the past.\
+During the residency at Officina Neukölln, Julia Castel used the cyanotype process to develop her pictures of the everyday routine in La Grande Motte. This technique allows the experimentation of mixing analog & digital development and offer a strong visual support to the ‘blue’ atmosphere of La Grande Motte.

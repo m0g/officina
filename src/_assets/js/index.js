@@ -56,8 +56,6 @@ function toggleSidebar(e) {
 
 document.addEventListener("DOMContentLoaded", event => { 
   const burgerBtn = document.getElementById('sidebar-open');
-  console.log(burgerBtn);
 
   burgerBtn.addEventListener('touchend', toggleSidebar);
-  // burgerBtn.addEventListener('click', toggleSidebar);
 });

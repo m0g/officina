@@ -14,6 +14,9 @@ module.exports = {
       inset: {
         '-2': '-2em',
         '-4': '-4em',
+      },
+      fontSize: {
+        'smc': '0.8rem'
       }
     }
   },

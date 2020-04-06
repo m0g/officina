@@ -59,10 +59,8 @@ html {
   }
 }
 
-/* .-bottom-4 {
-  bottom: -4em;
-} */
-
-/* .-right-4 {
-  right: -4em;
-} */
+@media (min-width: 768px) {
+  .md\:overflow-unset {
+    overflow: unset;
+  }
+}

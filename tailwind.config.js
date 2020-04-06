@@ -16,8 +16,12 @@ module.exports = {
         '-4': '-4em',
       },
       fontSize: {
-        'smc': '0.8rem'
-      }
+        'smc': '0.8rem',
+        '7xl': '5rem',
+      },
+      lineHeight: {
+        '65': '1.7rem',
+      },
     }
   },
 }

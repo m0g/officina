@@ -17,6 +17,7 @@ module.exports = {
       },
       fontSize: {
         'smc': '0.8rem',
+        'lgc': '1.2rem',
         '7xl': '5rem',
       },
       lineHeight: {

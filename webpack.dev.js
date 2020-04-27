@@ -23,5 +23,12 @@ module.exports = merge(common, {
 
   ],
   watch: true,
+  watchOptions: {
+    ignored: [
+      '_site/**/*.js', 
+      'node_modules/**',
+      '**/.(png|jpg|jpeg|svg)'
+    ]
+  },
   devtool: 'inline-source-map'
 })

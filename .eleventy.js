@@ -5,13 +5,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/_assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
-  // if (process.env.ELEVENTY_ENV === 'production') {
-    eleventyConfig.addPlugin(lazyImagesPlugin, {
-      transformImgPath: src => {
-        return `./src${src}`;
-      }
-    });
-  // }
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    imgSelector: 'img.lazy',
+    transformImgPath: src => {
+      return `./src${src}`;
+    }
+  });
 
   return {
     dir: {

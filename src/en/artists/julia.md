@@ -2,6 +2,7 @@
 tags: artist
 name: Julia Castel
 period: Oct & Nov 2019
+date: 2019-11-01
 website: 'https://juliaze.com'
 image: /_assets/images/uploads/julia.png
 ---

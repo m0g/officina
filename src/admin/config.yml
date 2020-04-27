@@ -27,7 +27,15 @@ collections:
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'body', widget: 'markdown' }
+          - { label: 'Description', name: 'content', widget: 'markdown' }
+      - label: 'Artists'
+        name: 'Artists'
+        file:  'src/en/artists.md'
+        extension: md
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'content', widget: 'markdown' }
+
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI

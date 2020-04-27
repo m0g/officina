@@ -1,15 +1,13 @@
 ---
 layout: layout.njk
-permalink: /en/gallery/index.html
 ---
-
 <div class="max-w-screen-xl mx-4 md:mx-auto grid gap-4 md:grid-cols-4 pt-12 pb-24 md:pt-24 md:pb-24">
   <div class="md:col-span-2">
     <h1 class="font-bold italic text-5xl text-black leading-tight">
-      Some photos of our space
+      {{ title }}
     </h1>
     <div class="text-sm">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      {{ content | safe }}
     </div>
   </div>
   {%- for photo in collections.photos -%}

@@ -21,6 +21,13 @@ collections:
           - { label: 'Working together', name: 'working_together', widget: 'string' }
           - { label: 'Concerts & events', name: 'concerts_events', widget: 'string' }
           - { label: 'Artist residency', name: 'artist_residency', widget: 'string' }
+      - label: 'Gallery'
+        name: 'gallery'
+        file:  'src/en/gallery.md'
+        extension: md
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI

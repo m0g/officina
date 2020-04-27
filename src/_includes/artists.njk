@@ -48,7 +48,12 @@ layout: layout.njk
               {{ artist.templateContent | safe }}
             </div>
             <div>
-              <a target="blank" href="{{ artist.data.website }}" class="text-salmon">
+              <a
+                target="blank"
+                rel="noopener"
+                href="{{ artist.data.website }}"
+                class="text-salmon"
+              >
                 {{ artist.data.website}}
               </a>
             </div>

@@ -3,7 +3,7 @@ tags: artist
 name: Julia Castel
 period: Oct & Nov 2019
 website: 'https://juliaze.com'
-image: /src/_assets/images/uploads/artist-residency.png
+image: /_assets/images/uploads/julia.png
 ---
 La Grande Motte is a French city in front of the Mediterranean Sea characterized by a unique architectural context. Many of the prominent buildings are built in narrow contact with the sea coast and are designed in pyramidal forms - a failed architectural dream of modernist times.\
 With 2 million tourists per year it is one of the favorite resorts in France. The buildings are not visible in the pictures, but their presence can be easily detected. This series is about unsucess, a city dream that 30 years has been futuristic, which now seems to be frozen in the past.\

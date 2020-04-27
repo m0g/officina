@@ -7,8 +7,20 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     imgSelector: 'img.lazy',
-    transformImgPath: src => {
-      return `./src${src}`;
+    transformImgPath: imagePath => {
+      // if (imagePath.match(/src/)) {
+      //   return '.' + imagePath
+      // }
+
+      // return `./src${imagePath}`;
+
+      const match = imagePath.match(/(_assets.+)/);
+
+      if (!match) {
+        return imagePath;
+      }
+
+      return `./src/${match[0]}`;
     }
   });
 

@@ -1,4 +1,5 @@
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
@@ -8,12 +9,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     imgSelector: 'img.lazy',
     transformImgPath: imagePath => {
-      // if (imagePath.match(/src/)) {
-      //   return '.' + imagePath
-      // }
-
-      // return `./src${imagePath}`;
-
       const match = imagePath.match(/(_assets.+)/);
 
       if (!match) {
@@ -23,6 +18,17 @@ module.exports = function(eleventyConfig) {
       return `./src/${match[0]}`;
     }
   });
+
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
+  eleventyConfig.addNunjucksFilter("absoluteUrl", href => {
+    const base = 'https://officina.berlin';
+    let { URL } = require("url");
+
+    return (new URL(href, base)).toString()
+  })
 
   return {
     dir: {

@@ -1,7 +1,12 @@
 module.exports = {
-  purge: [
-    './src/**/*.njk',
-  ],
+  purge: {
+    mode: 'all',
+    content: [
+      './src/**/*.njk',
+      './node_modules/leaflet/dist/*.js',
+      './node_modules/glightbox/dist/*.js',
+    ],
+  },
   theme: {
     rotate: {
       '-180': '-180deg',

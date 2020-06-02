@@ -2,7 +2,7 @@ import '@ibm/plex/css/ibm-plex.css';
 import '../css/style.css'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import 'glightbox/dist/css/glightbox.min.css';
+import 'glightbox/dist/css/glightbox.css';
 import GLightbox from 'glightbox'
 
 // stupid hack so that leaflet's images work after going through webpack

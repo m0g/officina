@@ -1,4 +1,7 @@
 module.exports = {
+  purge: [
+    './src/**/*.njk',
+  ],
   theme: {
     rotate: {
       '-180': '-180deg',

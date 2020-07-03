@@ -42,7 +42,7 @@ if (document.getElementById('map')) {
 
 // Gallery
 GLightbox({
-  selector: 'lightbox',
+  selector: '.lightbox',
   touchNavigation: true,
   loop: true,
 });

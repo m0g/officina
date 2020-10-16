@@ -2,7 +2,9 @@
 layout: artists.njk
 permalink: /en/artists/index.html
 title: Artist residency
-pdflink: /_assets/img/officina-residency-4.jpg
+pdflink: /_assets/img/Open-Call_Nov-2020.jpg
 ---
 
-Through the residency program we offer the selected artists the possibility to be with us on a daily basis for two months and to be an active part of our projects as individuals or as a community. The Officina residency is a space for creativity, experimentation and analogue production. Our darkroom has been the catalyst of the programme and enabled another form of exchange to take place at Officina: between analogue and digital production, between traditional craft and contemporary practice. All the artists involved have used the space for experimental work, using the space in unexpected ways.
+We are inviting artists to join our officina community for 2 months starting in mid June! You will receive free use of our workspace and creative support from our members. All types of artists are welcome to apply, although we are particularly interested in artists working with analogue printing techniques who wish to aid us in developing our small print studio.
+
+Please send an email residency.officina@gmail.com with a description of the project you would like to develop during the residency and a mini portfolio or link to your website with previous work.

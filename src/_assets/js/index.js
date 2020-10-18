@@ -41,16 +41,17 @@ if (document.getElementById('map')) {
 }
 
 // Gallery
-GLightbox({
-  selector: '.lightbox',
-  touchNavigation: true,
-  loop: true,
-});
+if (document.querySelector('.lightbox')) {
+  GLightbox({
+    selector: '.lightbox',
+    touchNavigation: true,
+    loop: true,
+  });
+}
 
 function toggleSidebar(e) {
   const sidebar = document.getElementById('sidebar');
 
-  console.log('uuo')
   sidebar.classList.toggle('hidden');
 }
 

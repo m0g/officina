@@ -1,4 +1,4 @@
-const merge = require("webpack-merge")
+const { merge } = require("webpack-merge")
 const common = require("./webpack.common.js")
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")

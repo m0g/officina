@@ -11,11 +11,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '_site'),
   },
+  resolve: {
+    fallback: {
+      fs: 'empty',
+    }
+  },
   plugins: [
-    // new Dotenv({
-    //   path: path.resolve(__dirname, './.env'),
-    //   systemvars: true,
-    // }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
@@ -31,7 +32,6 @@ module.exports = {
   ],
   node: {
     global: true,
-    fs: 'empty',
   },
   module: {
     rules: [

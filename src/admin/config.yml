@@ -36,7 +36,6 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'content', widget: 'markdown' }
 
-
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI
     folder: 'src/en/artists' # The path to the folder where the documents are stored
@@ -48,14 +47,3 @@ collections:
       - { label: 'Website', name: 'website', widget: 'string' }
       - { label: "Featured image", name: "image", widget: "image" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'photos' # Used in routes, e.g., /admin/collections/blog
-    label: 'Photos' # Used in the UI
-    folder: 'src/en/photos' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: 'Categories', name: 'categories', widget: 'list' }
-      - { label: 'Description', name: 'body', widget: 'markdown' }

@@ -1,14 +1,14 @@
 module.exports = {
   buildTime: new Date(),
-  baseUrl: "https://officina.berlin",
-  name: "Officina",
-  twitter: "@handle",
+  baseUrl: 'https://officina.berlin',
+  name: 'Officina',
+  twitter: '@handle',
   en: {
-    metaTitle: "Title in english",
-    metaDescription: "Description in english"
+    metaTitle: 'Title in english',
+    metaDescription: 'Description in english',
   },
   fr: {
-    metaTitle: "Titre en français",
-    metaDescription: "Description en français"
-  }
+    metaTitle: 'Titre en français',
+    metaDescription: 'Description en français',
+  },
 };

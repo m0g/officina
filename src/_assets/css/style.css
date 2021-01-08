@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html {
   font-size: 20px;
@@ -17,25 +17,25 @@ html {
 }
 
 .text-salmon {
-  color: #F7C2AA;
+  color: #f7c2aa;
 }
 
 .bg-blue-custom {
-  background-color: #4D4DC3;
+  background-color: #4d4dc3;
 }
 
 .bg-yellow-custom {
-  background-color: #FDFF00;
+  background-color: #fdff00;
 }
 
 .text-blue-custom {
-  color: #4D4DC3;
+  color: #4d4dc3;
 }
 
 .bg-yellow-circle::after {
-  content: "";
+  content: '';
   border-radius: 50%;
-  background-color: #FDFF00;
+  background-color: #fdff00;
   width: 1em;
   position: absolute;
   bottom: -80em;
@@ -47,9 +47,9 @@ html {
 
 @media (max-width: 639px) {
   .bg-yellow-circle::after {
-    content: "";
+    content: '';
     border-radius: 50%;
-    background-color: #FDFF00;
+    background-color: #fdff00;
     width: 1em;
     position: absolute;
     bottom: -41em;

@@ -1,10 +1,9 @@
 ---
 layout: collective.njk
 permalink: /en/collective/index.html
-title: Our collective
+title: Our skills
 pdflink: /_assets/img/Open-Call_Nov-2020.jpg
+shop: Buffalo spare ribs pancetta, turducken tail landjaeger pork hamburger sausage cupim. Andouille flank biltong ground round burgdoggen brisket.
 ---
 
-We are inviting artists to join our Officina community for 2 months starting in November/December! You will receive free use of our workspace and creative support from our members. All types of artists are welcome to apply. You will be invited to give us a workshop and we will organize an event to exhibit the final results of your residency (respecting COVID regulations).
-
-Please send an email to residency.officina@gmail.com before November 1 with a description of the project you would like to develop during the residency and a mini portfolio or link to your website with previous work.
+Bacon ipsum dolor amet shankle filet mignon t-bone kielbasa pig meatloaf drumstick swine tri-tip pancetta leberkas. Turkey prosciutto meatball, sirloin kevin ham landjaeger. Alcatra pancetta bresaola tail. Pancetta flank shankle pork chop, cupim landjaeger pig fatback prosciutto ribeye capicola biltong salami.

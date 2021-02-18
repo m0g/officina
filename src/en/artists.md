@@ -2,7 +2,7 @@
 layout: artists.njk
 permalink: /en/artists/index.html
 title: Artist residency
-pdflink: /_assets/img/Open-Call_Nov-2020.jpg
+pdflink: /src/_assets/img/Open-Call_Nov-2020.jpg
 ---
 
 We are inviting artists to join our Officina community for 2 months starting in November/December! You will receive free use of our workspace and creative support from our members. All types of artists are welcome to apply. You will be invited to give us a workshop and we will organize an event to exhibit the final results of your residency (respecting COVID regulations).

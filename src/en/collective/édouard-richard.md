@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Édouard Richard
 job: web application engineer
 website: https://vied12.github.io

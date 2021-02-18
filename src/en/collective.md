@@ -2,7 +2,7 @@
 layout: collective.njk
 permalink: /en/collective/index.html
 title: Our skills
-pdflink: /_assets/img/Open-Call_Nov-2020.jpg
+pdflink: /src/_assets/img/Open-Call_Nov-2020.jpg
 shop: Buffalo spare ribs pancetta, turducken tail landjaeger pork hamburger sausage cupim. Andouille flank biltong ground round burgdoggen brisket.
 ---
 

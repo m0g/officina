@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginLocalRespimg, {
     folders: {
-      source: 'src', // Folder images are stored in
+      source: '.', // Folder images are stored in
       output: '_site', // Folder images should be output to
     },
     images: {
@@ -71,6 +71,12 @@ module.exports = function(eleventyConfig) {
 
     return (new URL(href, base)).toString()
   })
+
+  // eleventyConfig.addFilter('stripSrc', path => {
+  //   const match = path.match(/\/src(.+)/);
+
+  //   return match ? match[1] : path;
+  // });
 
   return {
     dir: {

@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Julia Castel
 job: Designer
 website: https://www.juliaze.com/

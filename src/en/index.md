@@ -10,10 +10,10 @@ working_together: Through our residency program, we offer the selected artists
   and put all our heart and guts into showcasing their work.
 layout: landing.njk
 permalink: /en/index.html
-concerts_events: Our public events are an opportunity to cultivate community and
-  create a network. Through exhibitions, screenings, performances, concerts or
-  workshops, we explore various artistic expressions and give a stage to those
-  we want to support.
+concerts_events: Our public events are an opportunity to nurture the local
+  community and create a network. Through exhibitions, screenings, performances,
+  concerts or workshops, we explore various artistic expressions and give a
+  stage to those we want to support.
 we_share_skills_description: Since its inception, Officina Neukölln stands for shared influences.
 title: A cross-disciplinary project space.
 events: public events are mainly an occasion for offering a stage to other

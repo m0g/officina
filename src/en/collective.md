@@ -2,7 +2,6 @@
 layout: collective.njk
 permalink: /en/collective/index.html
 title: Our skills
-pdflink: /src/_assets/img/Open-Call_Nov-2020.jpg
 shop: Through our collective shop, we aim to promote and support the work of our community.
 ---
 

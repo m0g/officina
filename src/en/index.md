@@ -36,5 +36,6 @@ art_residency: We don’t just work in the same room; we exchange. Eating togeth
   in the same space as we work has become an important practice for this. The
   community we form in this way is the same that activates to organize all the
   public program of Officina.
-what_we_do_description: Since its inception, Officina Neukölln stands for shared influences and skills.
+what_we_do_description: Since its inception, Officina Neukölln stands for shared
+  influences and artistic solidarity.
 ---

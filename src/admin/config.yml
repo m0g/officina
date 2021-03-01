@@ -27,6 +27,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
+          - { label: 'Deadline', name: 'deadline', widget: 'string' }
       - label: 'The Collective'
         name: 'Collective'
         file:  'src/en/collective.md'

@@ -1,7 +1,7 @@
 ---
 layout: collective.njk
 permalink: /en/collective/index.html
-title: Our skills
+title: A create community
 content: >-
   Officina Neukölln is run as a collective by a group of people working mainly
   in the visual arts with a focus on photography and filmmaking, as well as

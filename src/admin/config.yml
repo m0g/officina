@@ -26,14 +26,14 @@ collections:
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'content', widget: 'markdown' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
       - label: 'The Collective'
         name: 'Collective'
         file:  'src/en/collective.md'
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'content', widget: 'markdown' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Our Shop', name: 'shop', widget: 'string' }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog

@@ -15,11 +15,11 @@ collections:
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'string' }
-          - { label: 'What we do description', name: 'what_we_do_description', widget: 'string' }
-          - { label: 'The Collective', name: 'the_collective', widget: 'string' }
-          - { label: 'Art Residency', name: 'art_residency', widget: 'string' }
-          - { label: 'Events', name: 'events', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: 'What we do description', name: 'what_we_do_description', widget: 'text' }
+          - { label: 'The Collective', name: 'the_collective', widget: 'text' }
+          - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
+          - { label: 'Events', name: 'events', widget: 'text' }
       - label: 'Gallery'
         name: 'gallery'
         file:  'src/en/gallery.md'

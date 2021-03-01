@@ -17,9 +17,9 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'What we do description', name: 'what_we_do_description', widget: 'string' }
-          - { label: 'Exhibitions', name: 'exhibitions', widget: 'string' }
-          - { label: 'Working together', name: 'working_together', widget: 'string' }
-          - { label: 'Concerts & events', name: 'concerts_events', widget: 'string' }
+          - { label: 'The Collective', name: 'the_collective', widget: 'string' }
+          - { label: 'Art Residency', name: 'art_residency', widget: 'string' }
+          - { label: 'Events', name: 'events', widget: 'string' }
       - label: 'Gallery'
         name: 'gallery'
         file:  'src/en/gallery.md'

@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Loïc Nogues
 job: Developer
 website: https://loicnogu.es

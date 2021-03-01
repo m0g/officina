@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Simon Ball
 job: Animator and film maker
 website: www.simon-ball.com

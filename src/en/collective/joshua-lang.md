@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Joshua Lang
 job: Translator
 website: https://officina.berlin

@@ -60,3 +60,4 @@ collections:
       - { label: 'Website', name: 'website', widget: 'string' }
       - { label: "Featured image", name: "image", widget: "image" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "collective"}

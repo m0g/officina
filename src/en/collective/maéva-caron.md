@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Maéva Caron
 job: Writer
 website: http://maevacaron.com/

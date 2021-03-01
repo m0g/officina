@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Nadja
 job: Graphic designer
 website: https:// www.place2be.berlin

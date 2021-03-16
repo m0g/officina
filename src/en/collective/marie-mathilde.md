@@ -1,4 +1,5 @@
 ---
+tags: collective
 name: Marie Mathilde
 job: Writer
 website: https://officina.berlin

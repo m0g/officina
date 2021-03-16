@@ -1,5 +1,6 @@
 ---
 name: Camila Amaya
+tags: artist
 period: june - august 2020
 website: https://www.camilaamayac.com/
 image: /src/_assets/images/uploads/residency-camila.jpg

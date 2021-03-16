@@ -3,7 +3,7 @@ tags: collective
 name: Julia Castel
 job: Designer
 website: https://www.juliaze.com/
-image: /src/_assets/images/uploads/julia.jpg
+image: ./src/_assets/images/uploads/julia.jpg
 ---
 Hi ! I’m Julia, a multidisciplinary designer based in Berlin. I design visual identities, spaces, websites
 

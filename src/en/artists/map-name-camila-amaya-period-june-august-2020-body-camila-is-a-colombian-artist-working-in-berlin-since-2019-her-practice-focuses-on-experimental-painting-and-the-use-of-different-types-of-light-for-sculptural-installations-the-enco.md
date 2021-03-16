@@ -3,7 +3,7 @@ name: Camila Amaya
 tags: artist
 period: june - august 2020
 website: https://www.camilaamayac.com/
-image: /src/_assets/images/uploads/residency-camila.jpg
+image: ./src/_assets/images/uploads/residency-camila.jpg
 ---
 Camila is a Colombian artist working in Berlin since 2019. Her practice focuses on experimental painting, and the use of different types of light for sculptural installations. The encounter of materials in her work reflect upon the multiple realities of modern digital society.
 

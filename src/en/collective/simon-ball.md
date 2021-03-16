@@ -3,7 +3,7 @@ tags: collective
 name: Simon Ball
 job: Animator and film maker
 website: www.simon-ball.com
-image: /src/_assets/images/uploads/simon.jpg
+image: ./src/_assets/images/uploads/simon.jpg
 ---
 Simon Ball is an award winning film-maker and animator based in London and Berlin. He has a BA in
 

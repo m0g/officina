@@ -4,7 +4,7 @@ name: Alia Zapparova
 period: Dec 2019 & Jan 2020
 date: 2020-01-01
 website: http://aliazapparova.com
-image: /src/_assets/images/uploads/alia.png
+image: ./src/_assets/images/uploads/alia.png
 sitemapIgnore: true
 ---
 

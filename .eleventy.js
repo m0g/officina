@@ -1,5 +1,3 @@
-const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const { DateTime } = require('luxon');
 const Image = require("@11ty/eleventy-img");
 
@@ -11,12 +9,12 @@ async function imageShortcode(src, alt, size = 600) {
 
   let metadata = await Image(src.match(/^\.\//) ? src : `.${src}`, {
     widths: [size],
-    formats: ["jpeg"],
+    formats: ["webp"],
     urlPath: "/img/",
     outputDir: "_site/img",
   });
 
-  let data = metadata.jpeg[metadata.jpeg.length - 1];
+  let data = metadata.webp[metadata.webp.length - 1];
   
   return `<img 
     src="${data.url}" 

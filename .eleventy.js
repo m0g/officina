@@ -1,7 +1,7 @@
 const { DateTime } = require('luxon');
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, size = 600) {
+async function imageShortcode(src, alt, size = 600, classes = "") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
@@ -21,6 +21,7 @@ async function imageShortcode(src, alt, size = 600) {
     width="${data.width}" 
     height="${data.height}" 
     alt="${alt}" 
+    class="${classes}"
     loading="lazy" 
     decoding="async"
   >`;

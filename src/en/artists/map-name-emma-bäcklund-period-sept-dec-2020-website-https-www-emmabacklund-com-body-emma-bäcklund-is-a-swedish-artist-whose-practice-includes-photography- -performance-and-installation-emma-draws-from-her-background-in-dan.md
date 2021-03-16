@@ -3,7 +3,7 @@ name: Emma Bäcklund
 tags: artist
 period: sept - dec 2020
 website: https://www.emmabacklund.com/
-image: ./src/_assets/images/uploads/residency-emma.jpg
+image: /src/_assets/images/uploads/residency-emma.jpg
 ---
 Emma Bäcklund is a Swedish artist whose practice includes photography,  performance and installation. Emma draws from her background in dance and interest in neuroscience to make work that is deeply influenced by both cognitive and physical experiences. habitual and gestural relations.
 

@@ -3,20 +3,21 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const { DateTime } = require('luxon');
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt) {
+async function imageShortcode(src, alt, size = 600) {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
   }
 
-  let metadata = await Image(src, {
-    widths: [600],
-    formats: ["jpeg", "gif"],
+  let metadata = await Image(src.match(/^\.\//) ? src : `.${src}`, {
+    widths: [size],
+    formats: ["jpeg"],
     urlPath: "/img/",
     outputDir: "_site/img",
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
+  
   return `<img 
     src="${data.url}" 
     width="${data.width}" 

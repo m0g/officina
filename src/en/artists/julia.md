@@ -4,7 +4,7 @@ name: Julia Castel
 period: Oct & Nov 2019
 date: 2019-11-01
 website: 'http://juliaze.com'
-image: ./src/_assets/images/uploads/julia.png
+image: /src/_assets/images/uploads/julia.png
 sitemapIgnore: true
 ---
 

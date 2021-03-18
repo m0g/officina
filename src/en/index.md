@@ -39,4 +39,5 @@ events: Our public events are an opportunity to nurture the local community and
   create a network. Through exhibitions, screenings, performances, concerts or
   workshops, we explore various artistic expressions and give a stage to those
   we want to support.
+image: /src/_assets/images/uploads/home.png
 ---

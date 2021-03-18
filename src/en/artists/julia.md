@@ -1,6 +1,6 @@
 ---
 name: "#1 Julia Castel"
-period: Oct & Nov 2019
+period: october - november 2019
 website: http://juliaze.com
 tags: artist
 date: 2019-11-01

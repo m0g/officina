@@ -1,7 +1,7 @@
 ---
 layout: artists.njk
 permalink: /en/artists/index.html
-title: Artist residency
+title: Art Residencies
 pdflink: /src/_assets/img/Open-Call_Nov-2020.jpg
 deadline: "deadline open call: 15 May 2021"
 ---

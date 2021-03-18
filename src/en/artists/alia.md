@@ -1,6 +1,6 @@
 ---
 name: "#2 Alia Zapparova"
-period: Dec 2019 & Jan 2020
+period: december 2019 - january 2020
 website: http://aliazapparova.com
 tags: artist
 date: 2020-01-01

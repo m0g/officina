@@ -20,6 +20,7 @@ collections:
           - { label: 'The Collective', name: 'the_collective', widget: 'text' }
           - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
           - { label: 'Events', name: 'events', widget: 'text' }
+          - { label: "Featured image", name: "image", widget: "image" }
       - label: 'Artists'
         name: 'Artists'
         file:  'src/en/artists.md'
@@ -28,6 +29,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Deadline', name: 'deadline', widget: 'string' }
+          - { label: "Featured image", name: "image", widget: "image" }
       - label: 'The Collective'
         name: 'Collective'
         file:  'src/en/collective.md'
@@ -36,6 +38,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Our Shop', name: 'shop', widget: 'string' }
+          - { label: "Featured image", name: "image", widget: "image" }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI

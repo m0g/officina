@@ -1,9 +1,9 @@
 ---
-tags: artist
-name: Neda Ahmadi
+name: "#3 Neda Ahmadi"
 period: Feb & Mar 2020
+website: https://nedaahmadi.com
+tags: artist
 date: 2020-03-01
-website: 'https://nedaahmadi.com'
 image: /src/_assets/images/uploads/neda.png
 sitemapIgnore: true
 ---

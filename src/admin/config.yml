@@ -39,7 +39,15 @@ collections:
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Our Shop', name: 'shop', widget: 'string' }
           - { label: "Featured image", name: "image", widget: "image" }
-
+      - label: 'Events'
+        name: 'Events'
+        file:  'src/en/events.md'
+        extension: md
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
+          - { label: "Featured image", name: "image", widget: "image" }
+ 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI
     folder: 'src/en/artists' # The path to the folder where the documents are stored

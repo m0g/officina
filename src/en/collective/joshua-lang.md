@@ -1,9 +1,9 @@
 ---
-tags: collective
 name: Joshua Lang
 job: Translator
-website: https://officina.berlin
+website: https://www.langsolutions.eu/
 image: ./src/_assets/images/uploads/josh.jpg
+tags: collective
 ---
 Joshua Lang is a freelance translator from the US. A graduate of the translation and interpreting school
 

@@ -23,8 +23,9 @@ description: "Officina Neukölln is a contemporary workspace run as a collective
   space for experimentation, production, exchange, performance and exhibition
   that fosters multiple forms of creative practices and long-term artistic
   collaborations. "
-what_we_do_description: Since its inception, Officina Neukölln stands for shared
-  influences and artistic solidarity.
+what_we_do_description: >
+  Since its inception, Officina Neukölln stands for shared influences and
+  artistic solidarity.
 the_collective: Our collective is composed of diverse creative personalities
   ranging from visual arts to various forms of research or production. More than
   just sharing a workspace, we “live” together. Through encounters and

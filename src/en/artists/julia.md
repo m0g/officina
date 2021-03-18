@@ -1,9 +1,9 @@
 ---
-tags: artist
-name: Julia Castel
+name: "#1 Julia Castel"
 period: Oct & Nov 2019
+website: http://juliaze.com
+tags: artist
 date: 2019-11-01
-website: 'http://juliaze.com'
 image: /src/_assets/images/uploads/julia.png
 sitemapIgnore: true
 ---

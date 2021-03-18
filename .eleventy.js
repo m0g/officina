@@ -32,9 +32,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/_assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
+  eleventyConfig.addFilter(
+    'htmlDateString', 
+    (dateObj) => DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd/LL/yyyy')
+  );
 
   eleventyConfig.addNunjucksFilter("absoluteUrl", href => {
     const base = 'https://officina.berlin';

@@ -33,7 +33,7 @@ layout: layout.njk
 <div class="bg-blue-custom py-24">
   <div class="h-full max-w-screen-xl mx-4 md:mx-auto">
     <div class="md:grid md:grid-cols-3 md:gap-10">
-      {%- for collective in collections.collective | reverse -%}
+      {%- for collective in collections.collective | sortByPosition -%}
         <div class="">
           <div class="w-full">
             {% image collective.data.image, collective.data.name, 394 %}

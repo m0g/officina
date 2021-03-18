@@ -4,5 +4,6 @@ job: graphic designer
 website: www.christian-stoss.com
 image: /src/_assets/images/uploads/christian.jpg
 tags: collective
+position: 2
 ---
 Graphic designer and web designer

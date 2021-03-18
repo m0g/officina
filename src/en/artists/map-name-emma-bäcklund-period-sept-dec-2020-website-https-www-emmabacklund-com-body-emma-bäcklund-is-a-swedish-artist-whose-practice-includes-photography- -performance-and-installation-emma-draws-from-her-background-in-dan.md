@@ -1,5 +1,5 @@
 ---
-name: Emma Bäcklund
+name: "#5 Emma Bäcklund"
 period: sept - dec 2020
 website: https://www.emmabacklund.com/
 image: /src/_assets/images/uploads/residency-emma.jpg

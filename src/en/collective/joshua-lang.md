@@ -1,6 +1,6 @@
 ---
 name: Joshua Lang
-position: 7
+position: 9
 job: Translator
 website: https://www.langsolutions.eu/
 image: ./src/_assets/images/uploads/josh.jpg

@@ -1,9 +1,9 @@
 ---
 name: Marie Mathilde
+position: 1
 job: Writer
 website: x
 image: ./src/_assets/images/uploads/marie.jpg
 tags: collective
-position: 1
 ---
-My name is Marie, I’m 26 year old and from Denmark. Currently, I have been living in Berlin since October. I write stories and draw with ink and crayon on paper. I also do sculptures from salted dough and white clay, at the moment inspired by fairytales and mythologies.
+Marie is a young artist from Denmark, living in Berlin since 2020 and studying Comparative Literature. She writes short stories, makes drawings, video performances and does sculptures from salted dough, candy, chains and white clay. She draws her inspiration from fairytales, mythologies, cuteness and horror.

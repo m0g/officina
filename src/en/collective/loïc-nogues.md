@@ -1,6 +1,6 @@
 ---
 name: Loïc Nogues
-position: 78
+position: 8
 job: Developer
 website: https://loicnogu.es
 image: ./src/_assets/images/uploads/loic.jpg

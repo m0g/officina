@@ -3,6 +3,7 @@ name: "#1 Julia Castel"
 period: october - november 2019
 website: http://juliaze.com
 tags: artist
+position: 1
 date: 2019-11-01
 image: /src/_assets/images/uploads/julia.png
 sitemapIgnore: true

@@ -1,5 +1,6 @@
 ---
 name: "#6 Coline Gaulot"
+position: 6
 period: "dec 2020 - mar 2021 : exhib may 2021"
 website: https://www.colinegaulot.com/
 image: /src/_assets/images/uploads/residency-coline.jpg

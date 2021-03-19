@@ -1,5 +1,6 @@
 ---
 name: "#3 Neda Ahmadi"
+position: 3
 period: february - march 2020
 website: https://nedaahmadi.com
 tags: artist

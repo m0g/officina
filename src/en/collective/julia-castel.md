@@ -1,15 +1,9 @@
 ---
-tags: collective
 name: Julia Castel
+position: 10
 job: Designer
 website: https://www.juliaze.com/
 image: ./src/_assets/images/uploads/julia.jpg
-position: 10
+tags: collective
 ---
-Hi ! I’m Julia, a multidisciplinary designer based in Berlin. I design visual identities, spaces, websites
-
-and all kinds of printed matter. Today, I work on a freelance basis with advertising agencies, private
-
-individuals as well as with institutions.
-
-I also love to experiment with photography and illustration.
+Julia was Officina’s first resident artist and is still part of the team. Although she is initially a multi-disciplinary designer (visual identities, spaces, websites and all kinds of printed matter), she loves to explore photography & illustration. She moved to Berlin in 2019 and joined our artist-in-residence program to develop her skills in fine art photography and cyanotype. She regularly conducts workshops in our space.

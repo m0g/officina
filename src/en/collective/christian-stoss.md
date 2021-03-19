@@ -1,6 +1,6 @@
 ---
 name: Christian Stoss
-position: 2
+position: 7
 job: graphic designer
 website: www.christian-stoss.com
 image: /src/_assets/images/uploads/christian.jpg

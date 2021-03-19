@@ -1,6 +1,6 @@
 ---
 name: Neda Ahmadi
-position: 1
+position: 2
 job: Animation Maker
 website: https://nedaahmadi.com
 image: ./src/_assets/images/uploads/neda.jpg

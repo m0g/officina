@@ -1,9 +1,9 @@
 ---
-tags: collective
 name: Loïc Nogues
+position: 78
 job: Developer
 website: https://loicnogu.es
 image: ./src/_assets/images/uploads/loic.jpg
-position: 78
+tags: collective
 ---
-Freelance web developer
+Loïc is a freelance web developer from France. He is the guy behind our website!

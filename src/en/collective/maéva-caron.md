@@ -1,6 +1,6 @@
 ---
 name: Maéva Caron
-position: 1
+position: 10
 job: Writer
 website: http://maevacaron.com/
 image: ./src/_assets/images/uploads/maeva.jpg

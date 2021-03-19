@@ -1,6 +1,6 @@
 ---
 name: Melanie Mussegg
-position: 1
+position: 4
 job: artist
 website: http://www.memu.at
 image: /src/_assets/images/uploads/melanie.jpg

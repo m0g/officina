@@ -1,6 +1,6 @@
 ---
 name: Alina Frey
-position: 1
+position: 13
 job: x
 website: x
 image: /src/_assets/images/uploads/alina.jpg

@@ -16,7 +16,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'What we do description', name: 'what_we_do_description', widget: 'text' }
+          - { label: 'What share skills', name: 'we_share_skills_description', widget: 'text' }
           - { label: 'The Collective', name: 'the_collective', widget: 'text' }
           - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
           - { label: 'Events', name: 'events', widget: 'text' }

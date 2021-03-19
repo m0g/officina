@@ -1,6 +1,6 @@
 ---
 name: Lily Cummings
-position: 4
+position: 15
 job: Photographer
 website: www.lilycummings.com
 image: /src/_assets/images/uploads/lilly.jpg

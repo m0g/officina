@@ -1,6 +1,6 @@
 ---
 name: Joe London
-position: 1
+position: 11
 job: music producer
 website: https://joe.london/about
 image: /src/_assets/images/uploads/joe.jpg

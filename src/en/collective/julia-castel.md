@@ -1,6 +1,6 @@
 ---
 name: Julia Castel
-position: 10
+position: 5
 job: Designer
 website: https://www.juliaze.com/
 image: ./src/_assets/images/uploads/julia.jpg

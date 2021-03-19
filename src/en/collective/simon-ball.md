@@ -1,6 +1,6 @@
 ---
 name: Simon Ball
-position: 1
+position: 3
 job: Animator and film maker
 website: www.simon-ball.com
 image: ./src/_assets/images/uploads/simon.jpg

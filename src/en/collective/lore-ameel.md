@@ -1,6 +1,6 @@
 ---
 name: Lore Ameel
-position: 1
+position: 12
 job: Architect and illustrator
 website: www.lama-more.com
 image: /src/_assets/images/uploads/lore.jpg

@@ -1,6 +1,6 @@
 ---
 name: Marie Mathilde
-position: 1
+position: 14
 job: Writer
 website: x
 image: ./src/_assets/images/uploads/marie.jpg

@@ -1,6 +1,6 @@
 ---
 name: Édouard Richard
-position: 9
+position: 6
 job: web application engineer
 website: https://vied12.github.io
 image: ./src/_assets/images/uploads/edouard.jpg

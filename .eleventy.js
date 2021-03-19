@@ -47,6 +47,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   eleventyConfig.addFilter(
+    'sortByName', 
+    items => items.sort((a, b) => a.data.name - b.data.name)
+  );
+
+  eleventyConfig.addFilter(
     'sortByPosition', 
     items => items.sort((a, b) => a.data.position - b.data.position)
   );

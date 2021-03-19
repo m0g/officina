@@ -1,6 +1,6 @@
 ---
 name: Nadja Brendel
-position: 1
+position: 6
 job: Graphic designer
 website: https:// www.place2be.berlin
 image: ./src/_assets/images/uploads/nadja.jpg

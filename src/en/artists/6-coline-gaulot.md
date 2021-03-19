@@ -1,0 +1,9 @@
+---
+name: "#6 Coline Gaulot"
+period: "dec 2021 - mar 2021 : exhib may 2021"
+website: https://www.colinegaulot.com/
+image: /src/_assets/images/uploads/residency-coline.jpg
+tags: artist
+---
+Coline Gaulot is a French artist whose cross-disciplinary practice mixes painting, writing and installation. She creates colorful and narrative series around common themes and patterns such as the bouquet, the fireworks, the swimming pool, the birthday. Her work is based on the notion of KAIROS, a notion according to which time is marked not chronologically but thanks to decisive moments that create a sea change. Events that happen in life, intimate or not, visual impressions, key moments. She brings us into her universe which is both personal and universal.
+***Residency project:*** Pati-o-Shimasu - During her residency, Coline explored the theme of “partying”, and in particular the absence of partying, in Berlin. Focusing on the feeling of lack of contact and interactions, and on empty spaces, she recounts sensory reminiscences of “party without people”. She imagined lights that keep dancing without us. Walking through the streets of Kreuzberg-Neukölln during the winter lockdown, you could then find the party lights coming from apartment windows, accompanied by a poem on the walls of the buildings – and remember times when we could be together. She recounted those same colorful party lights in vibrant paintings, and captured through a video the sensation of emptiness inside the deserted club Salon Zur Wilde Renate. She also recreated a porcelain feast, like a field of fragile objects spread out on the ground that one can observe like an archaeologist. These contemporary celebrations will be exhibited at Officina Neukölln at the end of May 2021.

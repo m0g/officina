@@ -3,7 +3,7 @@ name: "#6 Coline Gaulot"
 position: 6
 period: "dec 2020 - mar 2021 : exhib may 2021"
 website: https://www.colinegaulot.com/
-image: /src/_assets/images/uploads/residency-coline.jpg
+image: /src/_assets/images/uploads/coline.jpg
 tags: artist
 ---
 Coline Gaulot is a French artist whose cross-disciplinary practice mixes painting, writing and installation. She creates colorful and narrative series around common themes and patterns such as the bouquet, the fireworks, the swimming pool, the birthday. Her work is based on the notion of KAIROS, according to which time is marked not chronologically but thanks to decisive moments that create a sea change. Events that happen in life, intimate or not, visual impressions, key moments. She brings us into her universe which is both personal and universal. 

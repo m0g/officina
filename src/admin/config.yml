@@ -30,6 +30,7 @@ collections:
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Deadline', name: 'deadline', widget: 'string' }
           - { label: "Featured image", name: "image", widget: "image" }
+          - { label: "PDF link", name: "pdflink", widget: "file" }
       - label: 'The Collective'
         name: 'Collective'
         file:  'src/en/collective.md'

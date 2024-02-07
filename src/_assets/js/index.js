@@ -8,8 +8,6 @@ import {
   marker,
   Browser,
 } from './../../js/leaflet.js';
-// import 'glightbox/dist/css/glightbox.css';
-// import GLightbox from 'glightbox';
 
 // stupid hack so that leaflet's images work after going through webpack
 // import marker from 'leaflet/dist/images/marker-icon.png';
@@ -42,15 +40,6 @@ if (document.getElementById('map')) {
   }).addTo(map);
 
   marker(position).addTo(map).bindPopup('Officina Neukölln').openPopup();
-}
-
-// Gallery
-if (document.querySelector('.lightbox')) {
-  GLightbox({
-    selector: '.lightbox',
-    touchNavigation: true,
-    loop: true,
-  });
 }
 
 function toggleSidebar(e) {

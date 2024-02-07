@@ -59,7 +59,6 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "glightbox": "3.0.7",
     "npm-check-updates": "^11.3.0"
   },
   "husky": {

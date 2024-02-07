@@ -34,7 +34,6 @@ module.exports = function (eleventyConfig) {
 
   // Node modules
   eleventyConfig.addPassthroughCopy({
-    'node_modules/glightbox/dist/css/glightbox.css': 'css/glightbox.css',
     'node_modules/@ibm/plex/css/ibm-plex.css': 'css/ibm-plex.css',
     'node_modules/@ibm/plex/IBM-Plex-Mono': 'IBM-Plex-Mono',
     'node_modules/@ibm/plex/IBM-Plex-Sans': 'IBM-Plex-Sans',

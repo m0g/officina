@@ -32,6 +32,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/_assets');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
 
+  eleventyConfig.addPassthroughCopy({
+    'src/_assets/js/index.js': 'js/index.js',
+  });
+
   // Node modules
   eleventyConfig.addPassthroughCopy({
     'node_modules/@ibm/plex/css/ibm-plex.css': 'css/ibm-plex.css',
@@ -39,6 +43,7 @@ module.exports = function (eleventyConfig) {
     'node_modules/@ibm/plex/IBM-Plex-Sans': 'IBM-Plex-Sans',
     'node_modules/leaflet/dist/leaflet.css': 'css/leaflet.css',
     'node_modules/leaflet/dist/leaflet-src.esm.js': 'js/leaflet.js',
+    'node_modules/htmx.org/dist/htmx.js': 'js/htmx.js',
   });
   eleventyConfig.addFilter('htmlDateString', (dateObj) =>
     DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd/LL/yyyy')

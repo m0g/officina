@@ -62,10 +62,13 @@
     <link rel="stylesheet" href="/css/styles.css" type="text/css" />
     <title>Officina Neukölln</title>
   </head>
-  <body class="text-gray-900 leading-normal font-plex overflow-x-hidden">
+  <body
+    class="text-gray-900 leading-normal font-plex overflow-x-hidden"
+    hx-boost="true"
+  >
     {% include 'header.njk' %}
     <div class="w-full mt-16 overflow-x-hidden">{{ content | safe }}</div>
     {% include 'footer.njk' %}
-    <script type="module" src="/_assets/js/index.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>

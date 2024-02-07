@@ -1,13 +1,8 @@
 // import '@ibm/plex/css/ibm-plex.css';
 // import '../css/style.css';
 // import 'leaflet/dist/leaflet.css';
-import {
-  Icon,
-  map as lMap,
-  tileLayer,
-  marker,
-  Browser,
-} from './../../js/leaflet.js';
+import './htmx.js';
+import { Icon, map as lMap, tileLayer, marker, Browser } from './leaflet.js';
 
 // stupid hack so that leaflet's images work after going through webpack
 // import marker from 'leaflet/dist/images/marker-icon.png';

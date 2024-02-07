@@ -1,22 +1,28 @@
-import '@ibm/plex/css/ibm-plex.css';
-import '../css/style.css';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
-import 'glightbox/dist/css/glightbox.css';
-import GLightbox from 'glightbox';
+// import '@ibm/plex/css/ibm-plex.css';
+// import '../css/style.css';
+// import 'leaflet/dist/leaflet.css';
+import {
+  Icon,
+  map as lMap,
+  tileLayer,
+  marker,
+  Browser,
+} from './../../js/leaflet.js';
+// import 'glightbox/dist/css/glightbox.css';
+// import GLightbox from 'glightbox';
 
 // stupid hack so that leaflet's images work after going through webpack
-import marker from 'leaflet/dist/images/marker-icon.png';
-import marker2x from 'leaflet/dist/images/marker-icon-2x.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+// import marker from 'leaflet/dist/images/marker-icon.png';
+// import marker2x from 'leaflet/dist/images/marker-icon-2x.png';
+// import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-delete L.Icon.Default.prototype._getIconUrl;
+// delete Icon.Default.prototype._getIconUrl;
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: marker2x,
-  iconUrl: marker,
-  shadowUrl: markerShadow,
-});
+// Icon.Default.mergeOptions({
+//   iconRetinaUrl: marker2x,
+//   iconUrl: marker,
+//   shadowUrl: markerShadow,
+// });
 
 // MAP
 if (document.getElementById('map')) {
@@ -24,18 +30,18 @@ if (document.getElementById('map')) {
 
   const options = {
     scrollWheelZoom: false,
-    dragging: !L.Browser.mobile,
-    tap: !L.Browser.mobile,
+    dragging: Browser.mobile,
+    tap: Browser.mobile,
   };
 
-  const map = L.map('map', options).setView(position, 17);
+  const map = lMap('map', options).setView(position, 17);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  L.marker(position).addTo(map).bindPopup('Officina Neukölln').openPopup();
+  marker(position).addTo(map).bindPopup('Officina Neukölln').openPopup();
 }
 
 // Gallery

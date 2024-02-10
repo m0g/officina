@@ -88,7 +88,7 @@ sl-button.pink::part(base) {
   border-bottom-color: #ad005c;
   border-right-color: #ad005c;
   color: white;
-  font-size: 1.125rem;
+  font-size: 1rem;
   box-shadow: 0 2px 10px #0002;
   transition: var(--sl-transition-medium) transform ease,
     var(--sl-transition-medium) border ease;
@@ -113,4 +113,11 @@ sl-button.pink::part(base):focus-visible {
 
 :root {
   --sl-z-index-dialog: 901;
+}
+
+@media screen and (max-width: 420px) {
+  sl-dialog::part(panel) {
+    max-height: 90vh;
+    max-width: 100%;
+  }
 }

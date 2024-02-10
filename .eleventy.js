@@ -22,7 +22,6 @@ async function imageShortcode(src, alt, size = 600, classes = '') {
     height="${data.height}"
     alt="${alt}"
     class="${classes}"
-    loading="lazy"
     decoding="async"
   >`;
 }
@@ -43,6 +42,7 @@ module.exports = function (eleventyConfig) {
     'node_modules/@ibm/plex/IBM-Plex-Sans': 'IBM-Plex-Sans',
     'node_modules/leaflet/dist/leaflet.css': 'css/leaflet.css',
     'node_modules/leaflet/dist/leaflet-src.esm.js': 'js/leaflet.js',
+    'node_modules/leaflet/dist/images': 'css/images',
     'node_modules/htmx.org/dist/htmx.min.js': 'js/htmx.js',
   });
   eleventyConfig.addFilter('htmlDateString', (dateObj) =>

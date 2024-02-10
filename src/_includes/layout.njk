@@ -1,33 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Officina Neukölln is a contemporary workspace run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach."/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Officina is a contemporary workspace run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach."
+    />
     <meta name="keywords" content="officina, berlin, Neukölln, neukoelln" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Officina Neukölln" />
-    <meta property="og:description" content="Officina Neukölln is a contemporary workspace run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach." />
+    <meta
+      property="og:description"
+      content="Officina is a contemporary workspace run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach."
+    />
     <meta property="og:url" content="https://officina.berlin" />
     <meta property="og:site_name" content="Officina Neukölln" />
-    <link rel="icon" type="image/png" href="/_assets/img/favicon/16px.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/_assets/img/favicon/32px.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/_assets/img/favicon/256px.png" sizes="256x256">
-    <link rel="icon" type="image/png" href="/_assets/img/favicon/480px.png" sizes="480x480">
-    <link rel="icon" type="image/png" href="/_assets/img/favicon/1024px.png" sizes="1024x1024">
-    <link rel="apple-touch-icon" sizes="180x180" href="/_assets/img/favicon/apple-touch-icon.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="/_assets/img/favicon/16px.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/_assets/img/favicon/32px.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/_assets/img/favicon/256px.png"
+      sizes="256x256"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/_assets/img/favicon/480px.png"
+      sizes="480x480"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/_assets/img/favicon/1024px.png"
+      sizes="1024x1024"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/_assets/img/favicon/apple-touch-icon.png"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/css/leaflet.css" type="text/css" />
+    <link rel="stylesheet" href="/css/ibm-plex.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/themes/light.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
     <title>Officina Neukölln</title>
   </head>
-  <body class="text-gray-900 leading-normal font-plex overflow-x-hidden">
+  <body
+    class="text-gray-900 leading-normal font-plex overflow-x-hidden"
+    hx-boost="true"
+  >
     {% include 'header.njk' %}
-    <div class="w-full mt-16 overflow-x-hidden">
-      {{ content | safe }}
-    </div>
+    <div class="w-full mt-16 overflow-x-hidden">{{ content | safe }}</div>
     {% include 'footer.njk' %}
-    <script src="/bundle.js"></script>
+    <sl-dialog label="🎉 Officina has moved to a new location 🎉" id="popup">
+      <p>
+        It took us a while to find out a new space but Officina lives on and has
+        moved to a new location.
+      </p>
+      <p>If you are interested in renting a desk, please fill out this form</p>
+      <div class="mt-6 text-center">
+        <sl-button
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
+          target="_blank"
+          class="pink"
+          size="large"
+          >CLICK HERE FOR THE FORM</sl-button
+        >
+      </div>
+      <sl-button slot="footer">Close</sl-button>
+    </sl-dialog>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>

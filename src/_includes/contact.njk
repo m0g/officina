@@ -1,46 +1,88 @@
 <div class="w-full md:mx-auto flex flex-col md:flex-row" id="contact">
   <div id="map" class="h-auto md:w-1/2"></div>
-  <div class="md:w-1/2 bg-white z-10">
-    <h2 class="font-plex font-semibold text-xl text-center mt-12">Get in touch</h2>
-    <form name="contact" netlify class="px-4 md:px-8 pt-6 pb-8">
-      <div class="md:px-3">
-        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-        <input
-          id="name" 
-          type="text" 
-          name="name" 
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        />
+  <div class="md:w-1/2 bg-white z-10 relative">
+    <div
+      class="absolute top-0 bottom-0 left-0 right-0 blur-none z-10 grid place-items-center"
+    >
+      <div class="bg-white md:mx-24 h-2/3 shadow-xl px-6 py-2">
+        <h2 class="font-plex font-semibold text-xl text-center mt-12">
+          🎉 Officina has moved to a new location 🎉
+        </h2>
+        <p>
+          It took us a while to find out a new space but Officina lives on and
+          has moved to a new location.
+        </p>
+        <p>
+          If you are interested in renting a desk, please fill out this form
+        </p>
+        <div class="mt-6 text-center">
+          <sl-button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
+            target="_blank"
+            class="pink"
+            size="large"
+            >CLICK HERE FOR THE FORM</sl-button
+          >
+        </div>
       </div>
-      <div class="md:px-3">
-        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-        <input
-          id="email" 
-          type="email" 
-          name="email" 
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        />
-      </div>
-      <div class="md:px-3">
-        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Telephone</label>
-        <input 
-          type="text" 
-          name="phone" 
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        />
-      </div>
-      <div class="md:px-3">
-        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-        <textarea 
-          id="message" 
-          name="message" 
-          class="h-40 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        ></textarea>
-      </div>
-      <div class="md:px-3">
-        <button class="text-white bg-black rounded-full px-8 py-2 mt-4 w-full">Send</button>
-      </div>
-    </form>
+    </div>
+    <div class="blur-sm">
+      <h2 class="font-plex font-semibold text-xl text-center mt-12">
+        Get in touch
+      </h2>
+      <form name="contact" netlify class="px-4 md:px-8 pt-6 pb-8">
+        <div class="md:px-3">
+          <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+            >Name</label
+          >
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="md:px-3">
+          <label for="email" class="block text-gray-700 text-sm font-bold mb-2"
+            >Email</label
+          >
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="md:px-3">
+          <label for="phone" class="block text-gray-700 text-sm font-bold mb-2"
+            >Telephone</label
+          >
+          <input
+            type="text"
+            name="phone"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="md:px-3">
+          <label
+            for="message"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="h-40 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          ></textarea>
+        </div>
+        <div class="md:px-3">
+          <button
+            class="text-white bg-black rounded-full px-8 py-2 mt-4 w-full"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
- 

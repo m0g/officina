@@ -3,6 +3,8 @@
 // import 'leaflet/dist/leaflet.css';
 import './htmx.js';
 import { Icon, map as lMap, tileLayer, marker, Browser } from './leaflet.js';
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/dialog/dialog.js';
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/button/button.js';
 
 // stupid hack so that leaflet's images work after going through webpack
 // import marker from 'leaflet/dist/images/marker-icon.png';
@@ -48,3 +50,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   burgerBtn.addEventListener('touchend', toggleSidebar);
 });
+
+const popup = document.getElementById('popup');
+
+if (!document.cookie.match(/shown_popup=1/) && popup) {
+  const closeButton = popup.querySelector('sl-button[slot="footer"]');
+
+  popup.show();
+  closeButton.addEventListener('click', () => popup.hide());
+
+  popup.addEventListener('sl-after-hide', () => {
+    document.cookie = 'shown_popup=1; SameSite=Strict';
+  });
+}

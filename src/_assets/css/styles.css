@@ -117,7 +117,7 @@ sl-button.pink::part(base):focus-visible {
 
 @media screen and (max-width: 420px) {
   sl-dialog::part(panel) {
-    max-height: 90vh;
+    max-height: 98vh;
     max-width: 100%;
   }
 }

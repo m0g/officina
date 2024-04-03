@@ -1,9 +1,9 @@
 ---
 name: Simon Ball
-position: 3
+position: 2
 job: Animator and film maker
-website: www.simon-ball.com
-image: ./src/_assets/images/uploads/simon.jpg
+website: simon-ball.com
+image: /src/_assets/images/uploads/2_simon_yellow.png
 tags: collective
 ---
-Simon is an award winning film-maker and animator based in London and Berlin and with over ten years experience working across Film, Television and Commercial animation. As an artist, Simon's work investigates film and animation as experiential mediums. Many of his projects are inspired by urban spaces and how we relate to environments both physically and psychologically. His work has shown internationally in galleries, festivals and exhibitions including Tate Modern, Barbican London, Saatchi Gallery, The Singapore Biannual, Manchester Animation Festival, InterFilm Berlin and the London International Animation Festival to name a few.
+Simon is an award-winning filmmaker and animator with over ten years' experience in film, television and animation production. As an artist and director, his work explores film and animation as experiential media. His work has screened internationally at festivals and exhibitions, including the Tate Modern, Singapore Biennale, The Barbican, The Saatchi Gallery, The London Short Film Festival, Aesthetica Film Festival, London International Animation Festival, InterFilm Berlin and Flatpack Festival. His most recent short film was awarded ‘Best Factual Animation’ at the British Animation Awards.

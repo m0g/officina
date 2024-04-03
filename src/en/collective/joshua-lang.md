@@ -1,9 +1,9 @@
 ---
-name: Joshua Lang
+name: Teresa Rygiel
 position: 9
-job: Translator
-website: https://www.langsolutions.eu/
-image: ./src/_assets/images/uploads/josh.jpg
+job: Copy writer
+website: x
+image: /src/_assets/images/uploads/9_teresa_purple.png
 tags: collective
 ---
-Joshua is a freelance translator from the US. A graduate of the translation and interpreting school ITIRI, located in Strasbourg, France, his regular projects span a variety of domains and include the translation of the annual Photobook published by the French photography magazine Fisheye.
+Teresa is a Polish copywriter. She is interested in innovative and inclusive approaches to communication. In addition to commercial projects, she creates campaign concepts for NGOs and local communities. At the same time, she is taking her first steps as a photographer.

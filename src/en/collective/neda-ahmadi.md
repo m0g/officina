@@ -1,9 +1,9 @@
 ---
 name: Neda Ahmadi
-position: 2
+position: 1
 job: Animation Maker
-website: https://nedaahmadi.com
+website: nedaahmadi.com
 image: ./src/_assets/images/uploads/neda.jpg
 tags: collective
 ---
-Neda is an Iranian animation director/artist living and working in Berlin. Born in 1984 in Tehran, she studied costume and stage design for theatre at Art University of Tehran and later finished a master degree in Character animation at University of Arts London (2016). Since then she lives and works in Berlin. Her work influenced by easter European animation, evolved around themes such as mythology and music and moved towards subjects connected to social justice. She has been awarded by a grant from the Senate of Berlin for her latest short animated film in production. She joined Officina Kreuzberg as the second resident artist and never left.
+Neda is an Iranian animator and visual artist. Her work revolves around folklore, mythology, social and environmental justice. She works with different material and uses visual storytelling to contribute towards creating a more equitable and aesthetically pleasing world. She found herself at home in Berlin after joining Officina in 2019.

@@ -1,9 +1,9 @@
 ---
-name: Christian Stoss
-position: 7
-job: graphic designer
-website: www.christian-stoss.com
-image: /src/_assets/images/uploads/christian.jpg
+name: Boris Jankowiak
+position: 5
+job: x
+website: x
+image: /src/_assets/images/uploads/5_boris_purple.png
 tags: collective
 ---
-Christian is a freelance art director, UX/UI designer and illustrator based in Berlin. He loves to design digital experiences, editorials and corporate designs. He loves typography, to illustrate and to create great visuals whatsoever.
+Boris is a policy coordinator with the Climate Action Network Europe - a federation of NGOs - working on the transformation of the steel sector, with a perspective linking climate, resource use, pollution and social justice, while challenging the overproduction and consumption of materials and goods. He is also part of the Berlin bike-polo community.

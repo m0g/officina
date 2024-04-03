@@ -2,42 +2,39 @@
 layout: layout.njk
 ---
 <div>
-<div class="h-full min-h-full relative mt-16 md:my-32">
-  <div class="h-full flex min-h-full z-10 relative">
-    <div class="h-full max-w-screen-xl md:mx-auto flex flex-col md:flex-row">
-      <div class="md:w-2/3 mb-10">
-        <h1 class="font-bold italic text-5xl md:text-6xl text-black leading-tight">
-          {{ title }}
-        </h1>
-        <p class="text-sm text-black mx-4 md:mx-0 my-4">
-          {{ content | safe }}
-        </p>
-        <h2 class="font-bold italic text-4xl text-black leading-tight my-4">
-          Collective shop
-        </h2>
-        <p>{{ shop }}</p>
-        <a 
-          href="https://www.etsy.com/fr/people/h2cjlj9aqv10uiut" 
-          target="blank"
-          rel="noopener"
-          class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 ml-4 md:ml-0">
-          Etsy
-        </a>
-      </div>
-      <div class="md:ml-16 md:w-1/3 relative">
-        {% image image, "Artist residency" %}
+  <div class="h-full min-h-full relative mt-16 md:my-32">
+    <div class="h-full flex min-h-full z-10 relative">
+      <div class="h-full max-w-screen-xl md:mx-auto flex flex-col md:flex-row">
+        <div class="md:w-2/3 mb-10">
+          <h1 class="font-bold italic text-5xl md:text-6xl text-black leading-tight">
+            {{ title }}
+          </h1>
+          <p class="text-sm text-black mx-4 md:mx-0 my-4">
+            {{ content | safe }}
+          </p>
+          <h2 class="font-bold italic text-4xl text-black leading-tight my-4">
+            Collective shop
+          </h2>
+          <p>{{ shop }}</p>
+          <a href="https://www.etsy.com/fr/people/h2cjlj9aqv10uiut" target="blank" rel="noopener"
+            class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 ml-4 md:ml-0">
+            Etsy
+          </a>
+        </div>
+        <div class="md:ml-16 md:w-1/3 relative">
+          {% image image, "Artist residency" %}
+        </div>
       </div>
     </div>
+    <div class="absolute -bottom-4 left-0 right-0 hidden md:block">
+      <div class="text-sm italic text-center">Scroll down</div>
+      <div class="text-center text-2xl">&#9660;</div>
+    </div>
   </div>
-  <div class="absolute -bottom-4 left-0 right-0 hidden md:block">
-    <div class="text-sm italic text-center">Scroll down</div>
-    <div class="text-center text-2xl">&#9660;</div>
-  </div>
-</div>
-<div class="bg-blue-custom py-24">
-  <div class="h-full max-w-screen-xl mx-4 md:mx-auto">
-    <div class="md:grid md:grid-cols-3 md:gap-10">
-      {%- for collective in collections.collective | sortByPosition -%}
+  <div class="bg-blue-custom py-24">
+    <div class="h-full max-w-screen-xl mx-4 md:mx-auto">
+      <div class="md:grid md:grid-cols-3 md:gap-10">
+        {%- for collective in collections.collective | sortByPosition -%}
         <div class="">
           <div class="w-full">
             {% image collective.data.image, collective.data.name, 394 %}
@@ -50,20 +47,17 @@ layout: layout.njk
             <div class="text-white my-8">
               {{ collective.templateContent | safe }}
             </div>
+            {% if collective.data.website %}
             <div>
-              <a
-                target="blank"
-                rel="noopener"
-                href="{{ collective.data.website }}"
-                class="text-salmon"
-              >
+              <a target="blank" rel="noopener" href="{{ collective.data.website }}" class="text-salmon">
                 {{ collective.data.website}}
               </a>
             </div>
+            {% endif %}
           </div>
         </div>
-      {%- endfor -%}
-      </ul>
+        {%- endfor -%}
+        </ul>
+      </div>
     </div>
   </div>
-</div>

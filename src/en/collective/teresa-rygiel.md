@@ -3,7 +3,7 @@ name: Teresa Rygiel
 position: 10
 job: Copy writer
 website: x
-image: /src/_assets/images/uploads/9_teresa_purple.png
+image: /src/_assets/images/uploads/10_teresa_purple.png
 tags: collective
 ---
 

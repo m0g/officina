@@ -1,6 +1,6 @@
 ---
 name: Judith Weber
-position: 11
+position: 12
 job: Graphic designer
 website: jdthwbr.fyi
 image: /src/_assets/images/uploads/11_judith_red.png

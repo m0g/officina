@@ -42,7 +42,9 @@ layout: layout.njk
           <h2 class="text-white font-plex text-salmon text-2xl font-bold">
             {{ collective.data.name }}
           </h2>
-          <div class="text-white italic">{{ collective.data.period }}</div>
+          {% if collective.data.period %}
+            <div class="text-white italic">{{ collective.data.period }}</div>
+          {% endif %}
           <div class="text-white">
             {{ collective.templateContent | safe }}
           </div>

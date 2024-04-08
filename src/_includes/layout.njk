@@ -66,12 +66,11 @@
     <link rel="stylesheet" href="/css/styles.css" type="text/css" />
     <title>Officina Kreuzberg</title>
   </head>
-  <body
-    class="text-gray-900 leading-normal font-plex overflow-x-hidden"
-    hx-boost="true"
-  >
+  <body class="text-gray-900 leading-normal font-plex overflow-x-hidden">
     {% include 'header.njk' %}
-    <div class="w-full mt-16 overflow-x-hidden">{{ content | safe }}</div>
+    <main class="w-full mt-16 overflow-x-hidden" hx-boost="true">
+      {{ content | safe }}
+    </main>
     {% include 'footer.njk' %}
     <sl-dialog label="🎉 Officina has moved to a new location 🎉" id="popup">
       <p>

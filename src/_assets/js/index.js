@@ -4,24 +4,26 @@ import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/compone
 import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/button/button.js';
 
 // MAP
-if (document.getElementById('map')) {
-  const position = [52.48839587601789, 13.419732288736586];
+document.body.addEventListener('htmx:load', function (evt) {
+  if (document.getElementById('map')) {
+    const position = [52.48839587601789, 13.419732288736586];
 
-  const options = {
-    scrollWheelZoom: false,
-    dragging: Browser.mobile,
-    tap: Browser.mobile,
-  };
+    const options = {
+      scrollWheelZoom: false,
+      dragging: Browser.mobile,
+      tap: Browser.mobile,
+    };
 
-  const map = lMap('map', options).setView(position, 17);
+    const map = lMap('map', options).setView(position, 17);
 
-  tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+    tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
 
-  marker(position).addTo(map).bindPopup('Officina').openPopup();
-}
+    marker(position).addTo(map).bindPopup('Officina').openPopup();
+  }
+});
 
 function toggleSidebar(e) {
   const sidebar = document.getElementById('sidebar');

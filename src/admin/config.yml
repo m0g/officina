@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "/src/_assets/images/uploads"
+media_folder: '/src/_assets/images/uploads'
 
 collections:
   - name: 'site'
@@ -11,44 +11,48 @@ collections:
     files:
       - label: 'Home Page'
         name: 'home'
-        file:  'src/en/index.md'
+        file: 'src/en/index.md'
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'What share skills', name: 'we_share_skills_description', widget: 'text' }
+          - {
+              label: 'What share skills',
+              name: 'we_share_skills_description',
+              widget: 'text',
+            }
           - { label: 'The Collective', name: 'the_collective', widget: 'text' }
           - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
           - { label: 'Events', name: 'events', widget: 'text' }
-          - { label: "Featured image", name: "image", widget: "image" }
+          - { label: 'Featured image', name: 'image', widget: 'image' }
       - label: 'Artists'
         name: 'Artists'
-        file:  'src/en/artists.md'
+        file: 'src/en/artists.md'
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Deadline', name: 'deadline', widget: 'string' }
-          - { label: "Featured image", name: "image", widget: "image" }
-          - { label: "PDF link", name: "pdflink", widget: "file" }
+          - { label: 'Featured image', name: 'image', widget: 'image' }
+          - { label: 'PDF link', name: 'pdflink', widget: 'file' }
       - label: 'The Collective'
         name: 'Collective'
-        file:  'src/en/collective.md'
+        file: 'src/en/collective.md'
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Our Shop', name: 'shop', widget: 'string' }
-          - { label: "Featured image", name: "image", widget: "image" }
+          - { label: 'Featured image', name: 'image', widget: 'image' }
       - label: 'Events'
         name: 'Events'
-        file:  'src/en/events.md'
+        file: 'src/en/events.md'
         extension: md
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
-          - { label: "Featured image", name: "image", widget: "image" }
- 
+          - { label: 'Featured image', name: 'image', widget: 'image' }
+
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
     label: 'Artists' # Used in the UI
     folder: 'src/en/artists' # The path to the folder where the documents are stored
@@ -56,12 +60,17 @@ collections:
     slug: '{{name}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Position / order', name: 'position', widget: 'number', default: 1 }
+      - {
+          label: 'Position / order',
+          name: 'position',
+          widget: 'number',
+          default: 1,
+        }
       - { label: 'Period', name: 'period', widget: 'string' }
       - { label: 'Website', name: 'website', widget: 'string' }
-      - { label: "Featured image", name: "image", widget: "image" }
+      - { label: 'Featured image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Tags", name: "tags", widget: "hidden", default: "artist"}
+      - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'artist' }
 
   - name: 'collective' # Used in routes, e.g., /admin/collections/blog
     label: 'Collective' # Used in the UI
@@ -70,12 +79,17 @@ collections:
     slug: '{{name}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Position / order', name: 'position', widget: 'number', default: 1 }
+      - {
+          label: 'Position / order',
+          name: 'position',
+          widget: 'number',
+          default: 1,
+        }
       - { label: 'Job', name: 'job', widget: 'string' }
       - { label: 'Website', name: 'website', widget: 'string' }
-      - { label: "Featured image", name: "image", widget: "image" }
+      - { label: 'Featured image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Tags", name: "tags", widget: "hidden", default: "collective"}
+      - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'collective' }
 
   - name: 'event' # Used in routes, e.g., /admin/collections/blog
     label: 'Events' # Used in the UI
@@ -85,6 +99,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'date' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Tags", name: "tags", widget: "hidden", default: "event"}
+      - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'event' }

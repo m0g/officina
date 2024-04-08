@@ -12,8 +12,8 @@ layout: layout.njk
         <p class="text-sm text-black mx-4 md:mx-0 my-4">
           {{ content | safe }}
         </p>
-        <a 
-          href="mailto:residency.officina@gmail.com?subject=Artist+Residency" 
+        <a
+          href="mailto:residency.officina@gmail.com?subject=Artist+Residency"
           class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 ml-4 md:ml-0">
           Contact
         </a>
@@ -31,7 +31,7 @@ layout: layout.njk
 <div class="bg-yellow-custom md:pt-24">
   <div class="h-full max-w-screen-xl mx-4 md:mx-auto flex flex-col">
     <div class="flex flex-col my-12">
-      {%- for event in collections.event | reverse -%}
+      {%- for event in collections.event | sortByDateDesc -%}
         <div class="mb-4 max-w-screen-xl flex flex-col md:flex-row">
           <div class="md:w-1/2">
             <a

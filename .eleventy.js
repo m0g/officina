@@ -66,6 +66,10 @@ module.exports = function (eleventyConfig) {
     items.sort((a, b) => a.data.position - b.data.position)
   );
 
+  eleventyConfig.addFilter('sortByDateDesc', (items) =>
+    items.sort((a, b) => b.data.date - a.data.date)
+  );
+
   return {
     dir: {
       input: 'src/',

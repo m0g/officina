@@ -2,7 +2,7 @@
 layout: layout.njk
 ---
 
-<div>
+<div class="">
   <div class="h-full relative mt-16 md:my-32">
     <div class="h-full flex min-h-full z-10 relative">
       <div class="h-full max-w-screen-xl md:mx-auto flex flex-col md:flex-row">
@@ -20,16 +20,18 @@ layout: layout.njk
       </div>
     </div>
   </div>
-  <div class="bg-yellow-custom py-24">
-    <div class="max-w-screen-xl mx-auto flex gap-6">
+  <div class="bg-yellow-custom md:py-24">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row gap-6"
+    >
       {% image fix_desk_image, "Fix Desk" %}
-      <div class="relative">
+      <div class="relative pb-36 pt-16 px-4 md:p-0">
         <h2 class="font-plex font-bold text-4xl">{{ fix_desk_title }}</h2>
         <div>{{ fix_desk_content }}</div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
           target="_blank"
-          class="absolute -bottom-4 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20"
+          class="absolute -bottom-4 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg"
         >
           <div class="font-plex text-blue-custom font-bold w-24 text-sm">
             {{ fix_desk_price }}
@@ -39,23 +41,25 @@ layout: layout.njk
       </div>
     </div>
   </div>
-  <div class="py-24">
-    <div class="max-w-screen-xl mx-auto flex gap-6">
-      <div class="relative">
+  <div class="md:py-24">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row-reverse gap-6"
+    >
+      {% image flex_desk_image, "Fix Desk" %}
+      <div class="relative px-4 pb-36 pt-16 md:p-0">
         <h2 class="font-plex font-bold text-4xl">{{ flex_desk_title }}</h2>
         <div>{{ flex_desk_content }}</div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
           target="_blank"
-          class="absolute -bottom-4 left-0 bg-yellow-custom rounded-full px-12 py-12 text-center transform -rotate-20"
+          class="absolute -bottom-4 left-0 bg-yellow-custom rounded-full px-12 py-12 text-center transform -rotate-20 shadow-lg"
         >
           <div class="font-plex text-blue-custom font-bold w-24 text-sm">
-            {{ fix_desk_price }}
+            {{ flex_desk_price }}
           </div>
           <div class="font-plex font-bold text-xl w-24">Apply here!</div>
         </a>
       </div>
-      {% image flex_desk_image, "Fix Desk" %}
     </div>
   </div>
 </div>

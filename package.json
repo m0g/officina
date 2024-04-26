@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/_assets/css/styles.css -o ./_site/css/styles.css --watch",
-    "start": "eleventy --serve --watch",
+    "start": "concurrently \"yarn tailwind\" \"yarn dev\"",
+    "dev": "eleventy --serve --watch",
     "prebuild": "npx tailwindcss -i ./src/_assets/css/styles.css -o ./_site/css/styles.css --minify",
     "build": "ELEVENTY_ENV=production eleventy --output=./_site",
     "format": "prettier --write \"src/**/*.+(js|json|css|md|rb)\""
@@ -40,6 +41,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "htmx.org": "^1.9.10"
   }
 }

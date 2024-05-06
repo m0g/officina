@@ -85,7 +85,7 @@ collections:
           widget: 'number',
           default: 1,
         }
-      - { label: 'Job', name: 'job', widget: 'string' }
+      - { label: 'Job', name: 'job', widget: 'string', required: false }
       - {
           label: 'Pronouns',
           name: 'pronouns',

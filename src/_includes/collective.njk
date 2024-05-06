@@ -39,9 +39,14 @@ layout: layout.njk
           <div class="w-full">
             {% image collective.data.image, collective.data.name, 394 %}
           </div>
+          <div class="flex gap-2 items-center">
           <h2 class="text-white font-plex text-salmon text-2xl font-bold">
             {{ collective.data.name }}
           </h2>
+          {% if collective.data.pronouns %}
+            <em class="text-sm text-salmon pt-1">({{ collective.data.pronouns }})</em>
+          {% endif %}
+          </div>
           {% if collective.data.period %}
             <div class="text-white italic">{{ collective.data.period }}</div>
           {% endif %}

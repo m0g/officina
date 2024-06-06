@@ -27,7 +27,7 @@ layout: layout.njk
       {% image fix_desk_image, "Fix Desk" %}
       <div class="relative pb-36 pt-16 px-4 md:p-0">
         <h2 class="font-plex font-bold text-4xl">{{ fix_desk_title }}</h2>
-        <div>{{ fix_desk_content }}</div>
+        <div>{{ fix_desk_content | safe }}</div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
           target="_blank"
@@ -48,7 +48,7 @@ layout: layout.njk
       {% image flex_desk_image, "Fix Desk" %}
       <div class="relative px-4 pb-36 pt-16 md:p-0">
         <h2 class="font-plex font-bold text-4xl">{{ flex_desk_title }}</h2>
-        <div>{{ flex_desk_content }}</div>
+        <div>{{ flex_desk_content | safe }}</div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
           target="_blank"
@@ -64,7 +64,7 @@ layout: layout.njk
   </div>
   <div class="md:py-16 bg-blue-custom">
     <div class="text-white font-bold text-center">
-      Trial day information, come visit us!
+      {{ trial_day_info }}
     </div>
   </div>
 </div>

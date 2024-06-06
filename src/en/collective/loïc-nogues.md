@@ -2,6 +2,7 @@
 name: Loïc Nogues
 position: 7
 job: Developer
+pronouns: he/him
 website: loicnogu.es
 image: /src/_assets/images/uploads/7_loic_red.png
 tags: collective

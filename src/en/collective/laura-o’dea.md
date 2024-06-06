@@ -2,6 +2,7 @@
 name: Laura O’Dea
 position: 8
 job: x
+pronouns: she/her
 image: /src/_assets/images/uploads/8_laura_blue.png
 tags: collective
 ---

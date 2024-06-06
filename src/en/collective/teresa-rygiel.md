@@ -3,6 +3,7 @@ name: Teresa Rygiel
 position: 10
 job: Copy writer
 image: /src/_assets/images/uploads/10_teresa_purple.png
+pronouns: she/her
 tags: collective
 ---
 

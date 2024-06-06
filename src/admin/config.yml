@@ -85,8 +85,14 @@ collections:
           widget: 'number',
           default: 1,
         }
-      - { label: 'Job', name: 'job', widget: 'string' }
-      - { label: 'Website', name: 'website', widget: 'string' }
+      - { label: 'Job', name: 'job', widget: 'string', required: false }
+      - {
+          label: 'Pronouns',
+          name: 'pronouns',
+          widget: 'string',
+          required: false,
+        }
+      - { label: 'Website', name: 'website', widget: 'string', required: false }
       - { label: 'Featured image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'collective' }

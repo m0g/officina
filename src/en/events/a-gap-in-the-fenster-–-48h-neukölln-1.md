@@ -1,7 +1,7 @@
 ---
 name: A Gap in the Fenster – 48h Neukölln
 link: https://48-stunden-neukoelln.de/en/programm/a-gap-in-the-fenster
-date: 2024-06-29T00:00:00.000Z
+date: 2024-06-30T12:00:00.000Z
 tags: event
 ---
 Officina pulls up their shutters and opens the windows to a space where two parallel lines come together: Inside and Outside, Stillness and Motion. We want to embrace the in-between and invite you to join us to a process of reflecting and cultivating.

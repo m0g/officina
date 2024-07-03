@@ -25,6 +25,55 @@ collections:
           - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
           - { label: 'Events', name: 'events', widget: 'text' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
+      - label: 'Desks'
+        name: 'Desks'
+        file: 'src/en/desks.md'
+        extension: md
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
+          - { label: 'Featured image', name: 'image', widget: 'image' }
+          - {
+              label: 'Fix desk title',
+              name: 'fix_desk_title',
+              widget: 'string',
+            }
+          - {
+              label: 'Fix desk content',
+              name: 'fix_desk_content',
+              widget: 'markdown',
+            }
+          - { label: 'Fix desk image', name: 'fix_desk_image', widget: 'image' }
+          - {
+              label: 'Fix desk price',
+              name: 'fix_desk_price',
+              widget: 'string',
+            }
+          - {
+              label: 'Flex desk title',
+              name: 'flex_desk_title',
+              widget: 'string',
+            }
+          - {
+              label: 'Flex desk content',
+              name: 'flex_desk_content',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Flex desk image',
+              name: 'flex_desk_image',
+              widget: 'image',
+            }
+          - {
+              label: 'Flex desk price',
+              name: 'flex_desk_price',
+              widget: 'string',
+            }
+          - {
+              label: 'Trial day info',
+              name: 'trial_day_info',
+              widget: 'string',
+            }
       - label: 'Artists'
         name: 'Artists'
         file: 'src/en/artists.md'

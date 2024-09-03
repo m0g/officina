@@ -15,13 +15,13 @@ concerts_events: Our public events are an opportunity to nurture the local
   concerts or workshops, we explore various artistic expressions and give a
   stage to those we want to support.
 title: A cross-disciplinary project space
-description: 'Officina Kreuzberg is a contemporary workspace run as a collective
+description: "Officina Kreuzberg is a contemporary workspace run as a collective
   whose aim is to develop new ways of working and nurture the local community
   with an inclusive and social approach. At the intersection of the atelier, the
   home, the event space and the co-working, it’s a cross-disciplinary project
   space for experimentation, production, exchange, performance and exhibition
   that fosters multiple forms of creative practices and long-term artistic
-  collaborations. '
+  collaborations. "
 we_share_skills_description: |-
   Since its inception, Officina Kreuzberg stands for shared influences and
   artistic solidarity.
@@ -38,7 +38,7 @@ events: Our public events are an opportunity to nurture the local community and
   create a network. Through exhibitions, screenings, performances, concerts or
   workshops, we explore various artistic expressions and give a stage to those
   we want to support.
-image: /src/_assets/images/uploads/home.png
+image: /src/_assets/images/uploads/officina_space_web_7.jpg
 what_we_do_description: >
   Since its inception, Officina Kreuzberg stands for shared influences and
   artistic solidarity.

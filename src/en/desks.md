@@ -1,9 +1,6 @@
 ---
-flex_desk_price: 171,00€ (incl. VAT)
-layout: desks.njk
-permalink: /en/desks/index.html
 title: Come join our community
-image: /src/_assets/img/desks-4.jpeg
+image: /src/_assets/images/uploads/officina_space_web_2.jpg
 fix_desk_title: Fix desk
 fix_desk_content: >
   Want to have your own desk, store some things, leave your books and other
@@ -11,8 +8,7 @@ fix_desk_content: >
   come to OFFICINA 24/7?<br/>
 
   Then you can rent a Fixdesk! It gives you the opportunity to build up your own working area with everything you need!
-fix_desk_image: /src/_assets/img/desks-1.jpeg
-fix_desk_price: 285,00€ (incl. VAT)
+fix_desk_image: /src/_assets/images/uploads/officina_space_web_8.jpg
 flex_desk_title: Flex desk
 flex_desk_content: >
   So you are the more flexible type and just need your laptop to work? Rent a
@@ -20,7 +16,11 @@ flex_desk_content: >
   Members.<br/>
 
   You can work in our space for 3 days per week (+ weekend) and still have the whole OFFICINA experience.
-flex_desk_image: /src/_assets/img/desks-3.jpeg
+flex_desk_image: /src/_assets/images/uploads/officina_space_web_1.jpg
+flex_desk_price: 171,00€ (incl. VAT)
+layout: desks.njk
+permalink: /en/desks/index.html
+fix_desk_price: 285,00€ (incl. VAT)
 trial_day_info: You want to work at Officina? Come for a trial day and see if
   this space is for you. Let’s get to know each other.
 ---

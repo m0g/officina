@@ -53,10 +53,14 @@ document.body.addEventListener('htmx:load', function () {
 
 // Posthog config
 function initPosthog() {
-  console.log('init posthog');
-  posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
-    api_host: 'https://eu.i.posthog.com',
-  });
+  if (window.location.hostname === 'localhost') {
+    console.log('dev version, posthog is deactivated');
+  } else {
+    console.log('posthog init');
+    posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
+      api_host: 'https://eu.i.posthog.com',
+    });
+  }
 }
 
 // Cookie consent

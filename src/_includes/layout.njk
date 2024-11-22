@@ -68,23 +68,6 @@
       {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
-    <sl-dialog label="🎉 Officina has moved to a new location 🎉" id="popup">
-      <p>
-        It took us a while to find out a new space but Officina lives on and has
-        moved to a new location.
-      </p>
-      <p>If you are interested in renting a desk, please fill out this form</p>
-      <div class="mt-6 text-center">
-        <sl-button
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
-          target="_blank"
-          class="pink"
-          size="large"
-          >CLICK HERE FOR THE FORM</sl-button
-        >
-      </div>
-      <sl-button slot="footer">Close</sl-button>
-    </sl-dialog>
     <script type="module" src="/js/index.js"></script>
   </body>
 </html>

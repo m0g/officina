@@ -32,6 +32,7 @@ module.exports = {
       lineHeight: {
         65: '1.7rem',
       },
+      minHeight: { 180: '720px' },
     },
   },
 };

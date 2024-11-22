@@ -45,6 +45,7 @@ module.exports = function (eleventyConfig) {
     'node_modules/leaflet/dist/images': 'css/images',
     'node_modules/htmx.org/dist/htmx.min.js': 'js/htmx.js',
     'node_modules/posthog-js/dist/module.no-external.js': 'js/posthog.js',
+    'node_modules/universal-cookie/esm/index.mjs': 'js/universal-cookie.js',
   });
   eleventyConfig.addFilter('htmlDateString', (dateObj) =>
     DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd/LL/yyyy')

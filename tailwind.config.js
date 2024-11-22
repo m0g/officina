@@ -33,6 +33,8 @@ module.exports = {
         65: '1.7rem',
       },
       minHeight: { 180: '720px' },
+      zIndex: { 401: '401' },
+      colors: { kobi: '#efb0ca' },
     },
   },
 };

@@ -1,7 +1,9 @@
 import './htmx.js';
 import { map as lMap, tileLayer, marker, Browser } from './leaflet.js';
 import posthog from './posthog.js';
+import Cookies from './universal-cookie.js';
 
+const cookies = new Cookies();
 // MAP
 document.body.addEventListener('htmx:load', function () {
   if (document.getElementById('map')) {
@@ -25,7 +27,7 @@ document.body.addEventListener('htmx:load', function () {
 });
 
 // Sidebar
-document.addEventListener('DOMContentLoaded', () => {
+document.body.addEventListener('htmx:load', function () {
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     console.log('toggle sidebar', sidebar);
@@ -50,7 +52,55 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Posthog config
-posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
-  api_host: 'https://eu.i.posthog.com',
-  persistence: 'memory',
+function initPosthog() {
+  console.log('init posthog');
+  posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
+    api_host: 'https://eu.i.posthog.com',
+  });
+}
+
+// Cookie consent
+document.body.addEventListener('htmx:load', function () {
+  const trackingCookieName = 'officina-tracking';
+
+  const handleCookieChange = (cookie) => {
+    if (cookie.name === trackingCookieName && cookie.value == 'accepted') {
+      initPosthog();
+    }
+  };
+
+  cookies.addChangeListener(handleCookieChange);
+
+  if (cookies.get(trackingCookieName) === 'accepted') {
+    initPosthog();
+  }
+
+  if (!cookies.get(trackingCookieName)) {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('accept-cookie');
+    const declineCookie = document.getElementById('decline-cookie');
+
+    cookieBanner.classList.add('fixed');
+    cookieBanner.classList.remove('hidden');
+
+    cookieAccept.onclick = (e) => {
+      cookies.set(trackingCookieName, 'accepted', {
+        path: '/',
+        expires: new Date(2099, 1, 1),
+      });
+
+      cookieBanner.classList.remove('fixed');
+      cookieBanner.classList.add('hidden');
+    };
+
+    declineCookie.onclick = (e) => {
+      cookies.set(trackingCookieName, 'rejected', {
+        path: '/',
+        expires: new Date(2099, 1, 1),
+      });
+
+      cookieBanner.classList.remove('fixed');
+      cookieBanner.classList.add('hidden');
+    };
+  }
 });

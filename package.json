@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "concurrently": "^8.2.2",
-    "htmx.org": "^1.9.10"
+    "htmx.org": "^1.9.10",
+    "posthog-js": "^1.187.2"
   }
 }

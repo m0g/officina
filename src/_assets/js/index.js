@@ -1,5 +1,6 @@
 import './htmx.js';
 import { map as lMap, tileLayer, marker, Browser } from './leaflet.js';
+import posthog from './posthog.js';
 
 // MAP
 document.body.addEventListener('htmx:load', function () {
@@ -46,4 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
       sidebar.classList.add('hidden');
     });
   }
+});
+
+// Posthog config
+posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
+  api_host: 'https://eu.i.posthog.com',
+  persistence: 'memory',
 });

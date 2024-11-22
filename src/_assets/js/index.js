@@ -62,11 +62,46 @@ function initPosthog() {
 // Cookie consent
 document.body.addEventListener('htmx:load', function () {
   const trackingCookieName = 'officina-tracking';
+  const showCookieBanner = document.getElementById('show-cookie-banner');
+  const cookieBanner = document.getElementById('cookie-banner');
+  const cookieAccept = document.getElementById('accept-cookie');
+  const declineCookie = document.getElementById('decline-cookie');
 
   const handleCookieChange = (cookie) => {
     if (cookie.name === trackingCookieName && cookie.value == 'accepted') {
       initPosthog();
     }
+  };
+
+  const showBanner = () => {
+    cookieBanner.classList.add('fixed');
+    cookieBanner.classList.remove('hidden');
+  };
+
+  const hideBanner = () => {
+    cookieBanner.classList.remove('fixed');
+    cookieBanner.classList.add('hidden');
+  };
+
+  showCookieBanner.onclick = showBanner;
+
+  cookieAccept.onclick = () => {
+    cookies.set(trackingCookieName, 'accepted', {
+      path: '/',
+      expires: new Date(2099, 1, 1),
+    });
+
+    hideBanner();
+  };
+
+  declineCookie.onclick = () => {
+    cookies.set(trackingCookieName, 'rejected', {
+      path: '/',
+      expires: new Date(2099, 1, 1),
+    });
+
+    posthog.opt_out_capturing();
+    hideBanner();
   };
 
   cookies.addChangeListener(handleCookieChange);
@@ -76,31 +111,6 @@ document.body.addEventListener('htmx:load', function () {
   }
 
   if (!cookies.get(trackingCookieName)) {
-    const cookieBanner = document.getElementById('cookie-banner');
-    const cookieAccept = document.getElementById('accept-cookie');
-    const declineCookie = document.getElementById('decline-cookie');
-
-    cookieBanner.classList.add('fixed');
-    cookieBanner.classList.remove('hidden');
-
-    cookieAccept.onclick = (e) => {
-      cookies.set(trackingCookieName, 'accepted', {
-        path: '/',
-        expires: new Date(2099, 1, 1),
-      });
-
-      cookieBanner.classList.remove('fixed');
-      cookieBanner.classList.add('hidden');
-    };
-
-    declineCookie.onclick = (e) => {
-      cookies.set(trackingCookieName, 'rejected', {
-        path: '/',
-        expires: new Date(2099, 1, 1),
-      });
-
-      cookieBanner.classList.remove('fixed');
-      cookieBanner.classList.add('hidden');
-    };
+    showBanner();
   }
 });

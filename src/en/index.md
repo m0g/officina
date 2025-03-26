@@ -18,9 +18,9 @@ flex_desk_content: >
 
   You can work in our space for 3 days per week (+ weekend) and still have the whole OFFICINA experience.
 flex_desk_image: /src/_assets/images/uploads/officina_space_web_1.jpg
-flex_desk_price: 171,00€ (incl. VAT)
+flex_desk_price: 155,00€<br/>(incl. VAT)
 layout: desks.njk
-fix_desk_price: 285,00€ (incl. VAT)
+fix_desk_price: 255,00€<br/>(incl. VAT)
 trial_day_info: You want to work at Officina? Come for a trial day and see if
   this space is for you. Let’s get to know each other.
 ---

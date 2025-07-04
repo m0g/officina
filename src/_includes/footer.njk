@@ -38,6 +38,12 @@
       >
       <span> | </span>
       <button id="show-cookie-banner">Cookie settings</button>
+      <span> | </span>
+      {%- if page.lang == "en" %}
+        <a href="/de/" class="underline">Wechseln zu Deutsch</a>
+      {%- else %}
+        <a href="/en/" class="underline">Switch to English</a>
+      {%- endif %}
     </div>
   </div>
 </footer>

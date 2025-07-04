@@ -53,7 +53,7 @@
         hx-swap="outerHTML show:top"
         hx-push-url="true"
       >
-        About
+        {{ menu.about }}
       </a>
       <a
         href="/en/collective"
@@ -64,9 +64,9 @@
         hx-swap="outerHTML show:top"
         hx-push-url="true"
       >
-        Our Collective
+        {{ menu.collective }}
       </a>
-      <a
+      <!-- <a
         href="/en/artists"
         class="py-2 px-4 my-3 mr-5"
         hx-get="/en/artists"
@@ -75,8 +75,8 @@
         hx-swap="outerHTML show:top"
         hx-push-url="true"
       >
-        Art Residencies
-      </a>
+        {{ menu.artists }}
+      </a> -->
       <a
         href="/en/events"
         class="py-2 px-4 my-3 mr-5"
@@ -86,7 +86,7 @@
         hx-swap="outerHTML show:top"
         hx-push-url="true"
       >
-        Events
+        {{ menu.events }}
       </a>
       <a
         href="https://www.instagram.com/officinakreuzberg/"

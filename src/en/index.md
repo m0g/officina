@@ -23,6 +23,7 @@ layout: desks.njk
 fix_desk_price: 255,00€<br/>(incl. VAT)
 trial_day_info: You want to work at Officina? Come for a trial day and see if
   this space is for you. Let’s get to know each other.
+apply_here: Apply here!
 ---
 
 Since we moved to our new space in Kreuzberg, we still have some free desks available which you can rent.

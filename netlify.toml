@@ -2,15 +2,15 @@
   publish = "_site/"
   command = "npm run build"
 
-# [[redirects]]
-#   from = "/"
-#   to = "/de"
-#   conditions = {Language = ["de"]}
-
-[[redirects]]
-  from = "/de"
-  to = "/en"
-
+# Content negotiation for home page
 [[redirects]]
   from = "/"
-  to = "/en"
+  to = "/de/"
+  status = 200
+  conditions = {Language = ["de"]}
+
+# Content negotiation for home page
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 200

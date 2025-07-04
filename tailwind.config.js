@@ -37,7 +37,9 @@ module.exports = {
       colors: { kobi: '#efb0ca' },
       height: {
         168: '42rem',
+        176: '44rem',
         252: '63rem',
+        260: '65rem',
       },
     },
   },

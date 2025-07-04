@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon');
 const Image = require('@11ty/eleventy-img');
+const { EleventyI18nPlugin } = require('@11ty/eleventy');
 
 async function imageShortcode(src, alt, size = 600, classes = '') {
   if (alt === undefined) {
@@ -71,6 +72,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('sortByDateDesc', (items) =>
     items.sort((a, b) => b.data.date - a.data.date)
   );
+
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: 'en', // Required
+  });
 
   return {
     dir: {

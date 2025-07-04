@@ -19,7 +19,7 @@
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
         </svg>
       </button>
-      <a href="/en/" class="font-plex font-bold text-xl pt-1 md:pt-1">
+      <a href="/{{ page.lang }}/" class="font-plex font-bold text-xl pt-1 md:pt-1">
         <img
           src="/_assets/img/logo.gif"
           class="object-contain"
@@ -31,10 +31,10 @@
     </div>
     <div
       id="sidebar"
-      class="flex flex-col ml-6 md:flex-row md:flex-grow md:justify-end hidden md:flex text-smc font-bold"
+      class="flex-col ml-6 md:flex-row md:flex-grow md:justify-end hidden md:flex text-smc font-bold"
     >
       <a
-        href="/en/"
+        href="/{{ page.lang }}/"
         class="py-2 px-4 my-3 mr-5"
         hx-get="/en/"
         hx-select="main"
@@ -45,9 +45,9 @@
         Home
       </a>
       <a
-        href="/en/about"
+        href="/{{page.lang}}/about"
         class="py-2 px-4 my-3 mr-5"
-        hx-get="/en/about"
+        hx-get="/{{page.lang}}/about"
         hx-select="main"
         hx-target="main"
         hx-swap="outerHTML show:top"

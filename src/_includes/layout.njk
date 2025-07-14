@@ -64,7 +64,12 @@
   </head>
   <body class="text-gray-900 leading-normal font-plex overflow-x-hidden">
     {% include 'header.njk' %}
-    <main class="w-full mt-16 overflow-x-hidden" hx-boost="true">
+    <div class="bg-kobi fixed top-24 md:top-0 left-0 right-0 text-center z-20">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1s-8096WSmodLCtllqDdZGkk_Yx0Ld1CxSwqdH4xyPg9wtg/viewform" target="_blank">
+        🔔Our very first Open Day!🔔 Come work at Officina next Friday on 25th of July and get to know our space and our community.
+      </a>
+    </div>
+    <main class="w-full mt-36 md:mt-16 overflow-x-hidden" hx-boost="true">
       {{ content | safe }}
     </main>
     {% include 'footer.njk' %}

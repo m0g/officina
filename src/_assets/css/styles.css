@@ -1,6 +1,67 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Hany;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/_assets/fonts/Hany-m.otf') format('opentype');
+}
+
+@theme {
+  --color-kobi: #efb0ca;
+
+  --font-size-smc: 0.8rem;
+  --font-size-lgc: 1.2rem;
+  --font-size-7xl: 5rem;
+  --font-headline: Hany;
+
+  --line-height-65: 1.7rem;
+
+  --min-height-180: 720px;
+
+  --z-index-401: 401;
+
+  --height-168: 42rem;
+  --height-176: 44rem;
+  --height-252: 63rem;
+  --height-260: 65rem;
+
+  --inset-n2: -2em;
+  --inset-n4: -4em;
+  --inset-n6: -6em;
+
+  --rotate-n180: -180deg;
+  --rotate-n90: -90deg;
+  --rotate-n45: -45deg;
+  --rotate-0: 0;
+  --rotate-20: 20deg;
+  --rotate-45: 45deg;
+  --rotate-90: 90deg;
+  --rotate-180: 180deg;
+}
+
+@source "./src/**/*.njk";
+@source "./node_modules/leaflet/dist/*.js";
+@source "./node_modules/glightbox/dist/*.js";
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 html {
   font-size: 20px;

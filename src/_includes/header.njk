@@ -2,14 +2,14 @@
   class="z-900 flex bg-white fixed top-0 inset-x-0 z-100 md:h-16 items-center"
 >
   <div
-    class="w-full max-w-screen-xl relative md:mx-auto px-4 flex flex-col md:flex-row"
+    class="w-full max-w-(--breakpoint-xl) relative md:mx-auto px-4 flex flex-col md:flex-row"
   >
     <div class="flex py-4 md:py-0">
       <button
         type="button"
         id="sidebar-open"
         aria-label="Open the sidebar"
-        class="flex mr-2 px-2 items-center lg:hidden text-black focus:outline-none focus:text-gray-700"
+        class="flex mr-2 px-2 items-center lg:hidden text-black focus:outline-hidden focus:text-gray-700"
       >
         <svg
           class="fill-current w-4 h-4"
@@ -31,7 +31,7 @@
     </div>
     <div
       id="sidebar"
-      class="flex-col ml-6 md:flex-row md:flex-grow md:justify-end hidden md:flex text-smc font-bold"
+      class="flex-col ml-6 md:flex-row md:grow md:justify-end hidden md:flex text-smc font-bold font-headline"
     >
       <a
         href="/{{ page.lang }}/"

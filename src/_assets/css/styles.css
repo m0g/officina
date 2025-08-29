@@ -1,27 +1,36 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: Hany;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/_assets/fonts/Hany-m.otf') format('opentype');
+}
+
 @theme {
   --color-kobi: #efb0ca;
-  
+
   --font-size-smc: 0.8rem;
   --font-size-lgc: 1.2rem;
   --font-size-7xl: 5rem;
-  
+  --font-headline: Hany;
+
   --line-height-65: 1.7rem;
-  
+
   --min-height-180: 720px;
-  
+
   --z-index-401: 401;
-  
+
   --height-168: 42rem;
   --height-176: 44rem;
   --height-252: 63rem;
   --height-260: 65rem;
-  
+
   --inset-n2: -2em;
   --inset-n4: -4em;
   --inset-n6: -6em;
-  
+
   --rotate-n180: -180deg;
   --rotate-n90: -90deg;
   --rotate-n45: -45deg;

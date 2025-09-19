@@ -1,40 +1,88 @@
 ---
 layout: layout.njk
 ---
-<div class="h-full relative mt-16 md:mt-32 md:mb-16">
-  <div class="h-full flex min-h-full z-10 relative ">
-    <div class="h-full max-w-(--breakpoint-lg) md:mx-auto flex flex-col md:flex-row bg-[url('/_assets/img/desk.svg')] bg-bottom-right bg-no-repeat bg-contain">
-      <div class="md:w-2/3 mb-10 mx-4">
-        <h1
-          class="font-bold font-hany text-3xl md:text-6xl leading-[100%] text-black leading-tight"
-        >
-          {{ title | safe }}
-        </h1>
+<div class="flex flex-col gap-20 bg-[url('/_assets/img/smiley.svg')] bg-left bg-no-repeat bg-contain bg-size-[535px]">
+  <div class="h-full relative mt-16 md:mt-32">
+    <div class="h-full flex min-h-full z-10 relative ">
+      <div class="h-full max-w-(--breakpoint-lg) md:mx-auto flex flex-col md:flex-row bg-[url('/_assets/img/desk.svg')] bg-bottom-right bg-no-repeat bg-contain">
+        <div class="md:w-2/3 mb-10 mx-4">
+          <h1
+            class="font-bold font-hany text-3xl md:text-6xl leading-[100%] text-black leading-tight"
+          >
+            {{ title | safe }}
+          </h1>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="flex mx-8">
-  <div class="w-1/2 relative h-120">
-    <img src="/_assets/images/uploads/IMG_3153.jpg" class="border-2 border-black rounded-xl absolute h-80 -rotate-5 left-4 top-15" />
-    <img src="/_assets/images/uploads/IMG_3146.jpg" class="border-2 border-black rounded-xl rotate-10 absolute z-10 w-80 left-15" />
-  </div>
-  <div class="w-1/2 flex flex-col gap-2 justify-center">
-    <h2 class="font-bold font-hany text-3xl md:text-5xl leading-[100%] text-black leading-tight">
-      About us
-    </h2>
-    <div>Since we moved to our new space in Kreuzberg, we still have some free desks available which you can rent.</div>
-    <div>
-      <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">More about us</a>
+  <div class="flex mx-8 w-full max-w-screen-xl md:mx-auto">
+    <div class="w-1/2 relative h-120">
+      <img src="/_assets/images/uploads/IMG_3153.jpg" class="border-2 border-black rounded-xl absolute h-80 -rotate-5 left-4 top-15" />
+      <img src="/_assets/images/uploads/IMG_3146.jpg" class="border-2 border-black rounded-xl rotate-10 absolute z-10 w-80 left-15" />
+    </div>
+    <div class="w-1/2 flex flex-col gap-2 justify-center">
+      <h2 class="font-bold font-hany text-3xl md:text-5xl leading-[100%] text-black leading-tight">
+        About us
+      </h2>
+      <p>Since we moved to our new space in Kreuzberg, we still have some free desks available which you can rent.</p>
+      <div>
+        <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">More about us</a>
+      </div>
     </div>
   </div>
+  <div class="flex flex-col mx-8 gap-2 w-full max-w-screen-xl md:mx-auto px-4">
+    <h2 class="font-bold font-hany text-3xl md:text-5xl leading-[100%] text-black leading-tight">
+      Join us
+    </h2>
+    <p>Since we moved to our new space in Kreuzberg, we still have some free desks available which you can rent.</p>
+    <div>
+      <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">More about the space</a>
+    </div>
+  </div>
+  <div class="flex mx-8 gap-6 w-full max-w-screen-xl md:mx-auto px-4">
+    <div class="flex flex-col gap-2">
+      <img src="/_assets/images/uploads/IMG_3153.jpg" class="border-2 border-black rounded-xl w-80 -rotate-3 left-4 top-15" />
+      <h3 class="text-3xl font-hany">Fix Desk</h3>
+      <div>
+        <p>Want to have your own desk, store some things, leave your books and other stuff you need such as technical devices or artworks? You want to  be able to come to OFFICINA 24/7?</p>
+        <p>Then you can rent a Fixdesk! It gives you the opportunity to build up your own working area with everything you need!</p>
+      </div>
+      <div>
+        <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">Apply here</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <img src="/_assets/images/uploads/IMG_3153.jpg" class="border-2 border-black rounded-xl w-80 rotate-3 left-4 top-15" />
+      <h3 class="text-3xl font-hany">Flex Desk</h3>
+      <div>
+        <p>Want to have your own desk, store some things, leave your books and other stuff you need such as technical devices or artworks? You want to  be able to come to OFFICINA 24/7?</p>
+        <p>Then you can rent a Fixdesk! It gives you the opportunity to build up your own working area with everything you need!</p>
+      </div>
+      <div>
+        <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">Apply here</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <img src="/_assets/images/uploads/IMG_3153.jpg" class="border-2 border-black rounded-xl w-80 -rotate-3 left-4 top-15" />
+      <h3 class="text-3xl font-hany">Rent space</h3>
+      <div>
+        <p>Want to have your own desk, store some things, leave your books and other stuff you need such as technical devices or artworks? You want to  be able to come to OFFICINA 24/7?</p>
+        <p>Then you can rent a Fixdesk! It gives you the opportunity to build up your own working area with everything you need!</p>
+      </div>
+      <div>
+        <a href="/{{ page.lang }}/about" class="border border-black rounded rounded-xl px-2">Apply here</a>
+      </div>
+    </div>
+  </div>
+  <!-- Google Calendar Appointment Scheduling begin -->
+  <iframe
+    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0FoukPWZdqXbKnv_z-1zWdyWML1c9FK6N1wqoegSUCbQiTVbGy5GgwRDh_A7qtVNwqgg_FWPwb?gv=true"
+    style="border: 0"
+    width="100%"
+    frameborder="0"
+    class="h-260 md:h-176"
+  ></iframe>
+  <!-- end Google Calendar Appointment Scheduling -->
 </div>
-<!-- Google Calendar Appointment Scheduling begin -->
-<iframe
-  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0FoukPWZdqXbKnv_z-1zWdyWML1c9FK6N1wqoegSUCbQiTVbGy5GgwRDh_A7qtVNwqgg_FWPwb?gv=true"
-  style="border: 0"
-  width="100%"
-  frameborder="0"
-  class="h-260 md:h-176"
-></iframe>
-<!-- end Google Calendar Appointment Scheduling -->

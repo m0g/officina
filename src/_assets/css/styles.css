@@ -8,6 +8,23 @@
   src: url('/_assets/fonts/Hany-m.otf') format('opentype');
 }
 
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/_assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/_assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf')
+    format('truetype');
+}
+
 @theme {
   --color-kobi: #efb0ca;
 
@@ -72,9 +89,13 @@ html {
   z-index: 900;
 }
 
-.font-plex {
+/*.font-plex {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-display: swap;
+}*/
+
+.font-sans {
+  font-family: 'Inter';
 }
 
 .text-salmon {

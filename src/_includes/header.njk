@@ -2,14 +2,14 @@
   class="z-900 flex bg-white fixed top-0 inset-x-0 z-100 md:h-16 items-center"
 >
   <div
-    class="w-full max-w-screen-xl relative md:mx-auto px-4 flex flex-col md:flex-row"
+    class="w-full max-w-(--breakpoint-xl) relative md:mx-auto px-4 flex flex-col md:flex-row"
   >
     <div class="flex py-4 md:py-0">
       <button
         type="button"
         id="sidebar-open"
         aria-label="Open the sidebar"
-        class="flex mr-2 px-2 items-center lg:hidden text-black focus:outline-none focus:text-gray-700"
+        class="flex mr-2 px-2 items-center lg:hidden text-black focus:outline-hidden focus:text-gray-700"
       >
         <svg
           class="fill-current w-4 h-4"
@@ -31,7 +31,7 @@
     </div>
     <div
       id="sidebar"
-      class="flex-col ml-6 md:flex-row md:flex-grow md:justify-end hidden md:flex text-smc font-bold"
+      class="flex-col ml-6 md:flex-row md:grow md:justify-end hidden md:flex text-smc font-bold font-hany"
     >
       <a
         href="/{{ page.lang }}/"
@@ -66,17 +66,6 @@
       >
         {{ menu.collective }}
       </a>
-      <!-- <a
-        href="/en/artists"
-        class="py-2 px-4 my-3 mr-5"
-        hx-get="/en/artists"
-        hx-select="main"
-        hx-target="main"
-        hx-swap="outerHTML show:top"
-        hx-push-url="true"
-      >
-        {{ menu.artists }}
-      </a> -->
       <a
         href="/en/events"
         class="py-2 px-4 my-3 mr-5"
@@ -87,13 +76,6 @@
         hx-push-url="true"
       >
         {{ menu.events }}
-      </a>
-      <a
-        href="https://www.instagram.com/officinakreuzberg/"
-        target="_blank"
-        class="py-2 px-4 my-3 mr-5 bg-yellow-custom border-2 border-black"
-      >
-        Instagram
       </a>
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"

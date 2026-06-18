@@ -29,7 +29,7 @@
     "postcss": "^8.4.34",
     "postcss-cli": "11.0.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "^4.1.12"
+    "tailwindcss": "^4.3.1"
   },
   "husky": {
     "hooks": {

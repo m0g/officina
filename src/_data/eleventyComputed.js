@@ -35,6 +35,17 @@ const ui = {
     eventImageAlt: 'Event at Officina Kreuzberg',
     eventMailSubject: 'Event at Officina',
     trialDayCalendar: 'Book a trial day at Officina Kreuzberg',
+    cookieText:
+      'We use tracking cookies to understand how you use the website and ' +
+      'help us improve it. Please accept cookies to help us improve.',
+    cookieAccept: 'Accept cookies',
+    cookieDecline: 'Decline cookies',
+    cookieSettings: 'Cookie settings',
+    creditsMadeBy: 'Made by',
+    creditsMe: 'me',
+    creditsAnd: 'and',
+    creditsHim: 'him',
+    emailLabel: 'Email',
     englishOnly: '',
   },
   de: {
@@ -48,6 +59,18 @@ const ui = {
     eventImageAlt: 'Veranstaltung bei Officina Kreuzberg',
     eventMailSubject: 'Veranstaltung bei Officina',
     trialDayCalendar: 'Probetag bei Officina Kreuzberg buchen',
+    cookieText:
+      'Wir verwenden Tracking-Cookies, um zu verstehen, wie du die Website ' +
+      'nutzt, und um sie zu verbessern. Bitte akzeptiere Cookies und hilf ' +
+      'uns dabei.',
+    cookieAccept: 'Cookies akzeptieren',
+    cookieDecline: 'Cookies ablehnen',
+    cookieSettings: 'Cookie-Einstellungen',
+    creditsMadeBy: 'Gemacht von',
+    creditsMe: 'mir',
+    creditsAnd: 'und',
+    creditsHim: 'ihm',
+    emailLabel: 'E-Mail',
     englishOnly: 'Nur auf Englisch',
   },
 };

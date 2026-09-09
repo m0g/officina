@@ -26,18 +26,18 @@
       </a>
       <a href="mailto:hello@officina.berlin" class="ml-2">
         {% image "./src/_assets/img/mail.png", "Email logo", 20, "inline" %}
-        <span class="ml-2">Email</span>
+        <span class="ml-2">{{ ui.emailLabel }}</span>
       </a>
     </div>
     <div class="mt-4 text-xs">
-      <span>Made by </span>
-      <a href="https://loicnogu.es" class="underline" target="_blank">me</a>
-      <span> and </span>
+      <span>{{ ui.creditsMadeBy }} </span>
+      <a href="https://loicnogu.es" class="underline" target="_blank">{{ ui.creditsMe }}</a>
+      <span> {{ ui.creditsAnd }} </span>
       <a href="https://christian-stoss.com" class="underline" target="_blank"
-        >him</a
+        >{{ ui.creditsHim }}</a
       >
       <span> | </span>
-      <button id="show-cookie-banner">Cookie settings</button>
+      <button id="show-cookie-banner">{{ ui.cookieSettings }}</button>
       <span> | </span>
       {#- Stay on the same page when the other language has it, instead of
           throwing the visitor back to the home page. `locale_links` lists only

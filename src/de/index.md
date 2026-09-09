@@ -46,6 +46,21 @@ trial_day_info: >-
   Noch unsicher? Komm für einen kostenlosen Probetag vorbei, arbeite mit uns und
   bleib zum Mittagessen. Such dir unten einen Termin aus.
 faq_title: Fragen & Antworten
+key_facts: >-
+  Kurz gefasst: Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im
+  Monat, jeweils inkl. MwSt. Keine Kaution und keine Mindestlaufzeit – die
+  Kündigungsfrist beträgt einen Monat beim Flex Desk und drei Monate beim Fix
+  Desk. Wir sind in der Jahnstraße 13, 10967 Berlin, ein paar Minuten vom
+  Hermannplatz (U7, U8), und der Probetag ist kostenlos: Arbeite einen Tag mit
+  uns und bleib zum Mittagessen.
+key_facts_room: >-
+  Kurz gefasst: Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im Monat
+  und das eigene Zimmer 600 € im Monat für bis zu drei Personen, jeweils inkl.
+  MwSt. Keine Kaution und keine Mindestlaufzeit – die Kündigungsfrist beträgt
+  einen Monat beim Flex Desk und drei Monate beim Fix Desk. Wir sind in der
+  Jahnstraße 13, 10967 Berlin, ein paar Minuten vom Hermannplatz (U7, U8), und
+  der Probetag ist kostenlos: Arbeite einen Tag mit uns und bleib zum
+  Mittagessen.
 faq:
   - q: Wo genau ist die Officina?
     a: >-

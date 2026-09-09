@@ -116,6 +116,12 @@ layout: layout.njk
     <h2 class="font-bold italic text-4xl md:text-5xl text-black leading-tight mb-8">
       {{ faq_title or "Questions & answers" }}
     </h2>
+    {#- The answers live in <details>, and not every crawler opens those – keep
+        the price, address, notice period and trial day in plain text as well. #}
+    {%- set keyFacts = key_facts_room if features.room and key_facts_room else key_facts %}
+    {% if keyFacts %}
+    <p class="md:max-w-2xl mb-8">{{ keyFacts | safe }}</p>
+    {% endif %}
     <div class="md:max-w-2xl border-t border-b border-black divide-y divide-black">
       {%- for item in faqItems %}
       <details class="group py-4">

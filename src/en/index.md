@@ -52,11 +52,36 @@ faq:
       A fix desk is yours alone: leave your screen, books and gear, and come in
       whenever you want, 24/7. A flex desk is shared with other members – you
       bring your laptop and can use the space three days a week plus weekends.
+  - q: Is there a minimum term or a deposit?
+    a: >-
+      No minimum term and no deposit. The notice period is one month for a
+      flex desk and three months for a fix desk.
   - q: What's included?
     a: >-
-      Fast internet, a printer, a big kitchen and a terrace – and a place in
-      the collective: shared lunches, after-work drinks, and people to ask
-      when you're stuck on something.
+      Fast internet, a printer, coffee and tea, a big kitchen and a terrace –
+      and a place in the collective: shared lunches, after-work drinks, and
+      people to ask when you're stuck on something.
+  - q: Are chairs and monitors provided?
+    a: >-
+      Chairs, yes. Fix desk members bring their own monitor and leave it on
+      their desk. For flex desks there are a few shared monitors – first come,
+      first served.
+  - q: How do I get into the building?
+    a: >-
+      There's no physical key: the door opens with an app on your phone, so
+      nothing to pick up, hand over or lose.
+  - q: Is there a phone booth or a meeting room?
+    a: >-
+      Not at the moment. If you're on video calls all day, come for a trial
+      day first and see whether the space works for you.
+  - q: Which floor is it on?
+    a: >-
+      The ground floor. If you have specific accessibility needs, write to us
+      and we'll tell you exactly what to expect at the entrance.
+  - q: Can I bring my dog?
+    a: >-
+      Usually not. We make exceptions for dogs that are used to a shared
+      office and don't bark – ask us before you bring one.
   - q: How do I get a desk?
     a: >-
       Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform" target="_blank" class="underline">contact

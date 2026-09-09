@@ -96,6 +96,8 @@ collections:
           - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
+          - { label: 'Contact button label', name: 'contact_cta', widget: 'string', required: false }
+          - { label: 'Past events section title', name: 'past_events_title', widget: 'string', required: false }
       - label: 'Artist residency (archive)'
         name: 'Artists'
         file: 'src/en/artists.md'

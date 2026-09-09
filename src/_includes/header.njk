@@ -8,7 +8,7 @@
       <button
         type="button"
         id="sidebar-open"
-        aria-label="Open the sidebar"
+        aria-label="{{ ui.openSidebar }}"
         class="flex mr-2 px-2 items-center xl:hidden text-black focus:outline-none focus:text-gray-700"
       >
         <svg
@@ -56,9 +56,9 @@
         {{ menu.about }}
       </a>
       <a
-        href="/en/collective"
+        href="/{{ page.lang }}/collective"
         class="py-2 px-4 my-3 mr-5 transition-colors duration-150 hover:text-blue-custom"
-        hx-get="/en/collective"
+        hx-get="/{{ page.lang }}/collective"
         hx-select="main"
         hx-target="main"
         hx-swap="outerHTML show:top"
@@ -78,9 +78,9 @@
         {{ menu.artists }}
       </a> -->
       <a
-        href="/en/events"
+        href="/{{ page.lang }}/events"
         class="py-2 px-4 my-3 mr-5 transition-colors duration-150 hover:text-blue-custom"
-        hx-get="/en/events"
+        hx-get="/{{ page.lang }}/events"
         hx-select="main"
         hx-target="main"
         hx-swap="outerHTML show:top"

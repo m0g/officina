@@ -15,7 +15,7 @@
           {{ the_collective }}
         </p>
         <a
-          href="/en/collective"
+          href="/{{ page.lang }}/collective"
           class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-blue-custom"
         >{{ collective_cta or "Learn more" }}</a>
       </div>
@@ -25,7 +25,7 @@
           {{ events }}
         </p>
         <a
-          href="/en/events"
+          href="/{{ page.lang }}/events"
           class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-blue-custom"
         >{{ events_cta or "Learn more" }}</a>
       </div>
@@ -36,8 +36,12 @@
         </p>
         <a
           href="/en/artists"
+          hreflang="en"
           class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-blue-custom"
         >{{ residency_cta or "Learn more" }}</a>
+        {%- if ui.englishOnly %}
+        <p class="text-xs italic mt-2">{{ ui.englishOnly }}</p>
+        {%- endif %}
       </div>
     </div>
   </div>

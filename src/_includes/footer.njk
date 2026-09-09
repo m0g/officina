@@ -26,24 +26,30 @@
       </a>
       <a href="mailto:hello@officina.berlin" class="ml-2">
         {% image "./src/_assets/img/mail.png", "Email logo", 20, "inline" %}
-        <span class="ml-2">Email</span>
+        <span class="ml-2">{{ ui.emailLabel }}</span>
       </a>
     </div>
     <div class="mt-4 text-xs">
-      <span>Made by </span>
-      <a href="https://loicnogu.es" class="underline" target="_blank">me</a>
-      <span> and </span>
+      <span>{{ ui.creditsMadeBy }} </span>
+      <a href="https://loicnogu.es" class="underline" target="_blank">{{ ui.creditsMe }}</a>
+      <span> {{ ui.creditsAnd }} </span>
       <a href="https://christian-stoss.com" class="underline" target="_blank"
-        >him</a
+        >{{ ui.creditsHim }}</a
       >
       <span> | </span>
-      <button id="show-cookie-banner">Cookie settings</button>
+      <button id="show-cookie-banner">{{ ui.cookieSettings }}</button>
       <span> | </span>
-      {%- if page.lang == "en" %}
-        <a href="/de/" class="underline">Wechseln zu Deutsch</a>
-      {%- else %}
-        <a href="/en/" class="underline">Switch to English</a>
-      {%- endif %}
+      {#- Stay on the same page when the other language has it, instead of
+          throwing the visitor back to the home page. `locale_links` lists only
+          the *other* locales that actually have this URL, and the site has two
+          languages, so its first entry is the one we want – and it is empty for
+          /en/artists/, which has no German version, hence the home-page
+          fallback. Trim `.html` the way the canonical does. -#}
+      {%- set alternate = (page.url | locale_links)[0] -%}
+      {%- set otherUrl = (alternate.url | replace(".html", "")) if alternate else ("/de/" if page.lang == "en" else "/en/") %}
+      <a href="{{ otherUrl }}" class="underline">
+        {{- "Wechseln zu Deutsch" if page.lang == "en" else "Switch to English" -}}
+      </a>
     </div>
   </div>
 </footer>

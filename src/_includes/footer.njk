@@ -7,7 +7,7 @@
     </div>
     <div class="mt-4 font-bold text-xs">
       <a
-        href="https://www.facebook.com/OfficinaNeukoelln/"
+        href="https://www.facebook.com/OfficinaNeukoelln/" data-ph-location="footer"
         target="_blank"
         rel="noopener"
       >
@@ -15,7 +15,7 @@
         <span class="ml-2">Facebook</span>
       </a>
       <a
-        href="https://www.instagram.com/officinakreuzberg/"
+        href="https://www.instagram.com/officinakreuzberg/" data-ph-location="footer"
         class="ml-2"
         target="_blank"
         rel="noopener"
@@ -24,7 +24,7 @@
         %}
         <span class="ml-2">Instagram</span>
       </a>
-      <a href="mailto:hello@officina.berlin" class="ml-2">
+      <a href="mailto:hello@officina.berlin" data-ph-location="footer" class="ml-2">
         {% image "./src/_assets/img/mail.png", "Email logo", 20, "inline" %}
         <span class="ml-2">Email</span>
       </a>
@@ -37,7 +37,9 @@
         >him</a
       >
       <span> | </span>
-      <button id="show-cookie-banner">Cookie settings</button>
+      <button id="show-cookie-banner">
+        {%- if page.lang == "de" %}Cookie-Einstellungen{% else %}Cookie settings{% endif -%}
+      </button>
       <span> | </span>
       {%- if page.lang == "en" %}
         <a href="/de/" class="underline">Wechseln zu Deutsch</a>

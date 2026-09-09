@@ -39,6 +39,7 @@ layout: layout.njk
         <div>{{ fix_desk_content | safe }}</div>
         <a
           href="{{ formUrl }}"
+          data-ph-location="fix_desk"
           target="_blank"
           class="absolute -bottom-4 md:-bottom-6 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
         >
@@ -60,6 +61,7 @@ layout: layout.njk
         <div>{{ flex_desk_content | safe }}</div>
         <a
           href="{{ formUrl }}"
+          data-ph-location="flex_desk"
           target="_blank"
           class="absolute -bottom-4 md:-bottom-6 left-0 bg-yellow-custom rounded-full px-12 py-12 text-center transform -rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
         >
@@ -82,6 +84,7 @@ layout: layout.njk
         <div>{{ room_content | safe }}</div>
         <a
           href="{{ formUrl }}"
+          data-ph-location="room"
           target="_blank"
           class="absolute -bottom-4 md:-bottom-6 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
         >
@@ -101,6 +104,7 @@ layout: layout.njk
   </div>
   <!-- Google Calendar Appointment Scheduling begin -->
   <iframe
+    id="trial-calendar"
     src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0FoukPWZdqXbKnv_z-1zWdyWML1c9FK6N1wqoegSUCbQiTVbGy5GgwRDh_A7qtVNwqgg_FWPwb?gv=true"
     style="border: 0"
     width="100%"

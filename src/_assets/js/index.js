@@ -48,11 +48,19 @@ document.addEventListener('click', function (event) {
 // it to cookies, which is what buys us country data and returning visitors for
 // that slice. Nothing is counted at all if "Cookieless server hash mode" is off
 // in the project settings – PostHog drops cookieless events on the floor.
+//
+// `opt_out_capturing_by_default` is what makes the "whether or not they answer"
+// part true: `on_reject` only falls back to cookieless capture for visitors
+// PostHog considers *rejected*, and an unanswered banner counts as rejected only
+// when this is on. Without it a visitor who ignores the banner is neither
+// cookied nor counted – `is_capturing()` is false and not even the landing
+// pageview is sent.
 const isDev = window.location.hostname === 'localhost';
 
 posthog.init('phc_QWGNI9ad9Jo4kLsAmzp1fi2sPF6rP3riSUVYrm51EJP', {
   api_host: 'https://eu.i.posthog.com',
   cookieless_mode: 'on_reject',
+  opt_out_capturing_by_default: true,
   // <main> is hx-boost'ed, so most navigation is pushState and never reloads
   // the page. Without this the only pageview we would ever see is the one the
   // visitor landed on.
@@ -75,10 +83,20 @@ posthog.register({ site_language: document.documentElement.lang });
 // address, the social profiles. Matching on href rather than on a hand-placed
 // attribute means a new link in a FAQ answer or a translated page is counted
 // without anyone remembering to annotate it.
+//
+// Our own profiles only, not the whole of instagram.com/facebook.com: the events
+// archive is a wall of links to past facebook.com/events/… and instagram.com/p/…
+// posts, and counting those as "went to follow us" would drown out the real
+// thing.
+const socialProfiles = [
+  'instagram.com/officinakreuzberg',
+  'facebook.com/OfficinaNeukoelln',
+];
+
 function conversionEventFor(href) {
   if (href.includes('docs.google.com/forms')) return 'apply_click';
   if (href.startsWith('mailto:')) return 'email_click';
-  if (href.includes('instagram.com') || href.includes('facebook.com')) {
+  if (socialProfiles.some((profile) => href.includes(profile))) {
     return 'social_click';
   }
   return null;
@@ -104,21 +122,38 @@ document.addEventListener('click', function (event) {
 // The trial day is booked in a cross-origin Google Calendar iframe, so the
 // booking itself is invisible to us. Reaching the calendar at all is the
 // strongest signal we can get, and it is the step before the best offer we have.
-const calendar = document.getElementById('trial-calendar');
+//
+// The iframe lives inside <main>, which htmx replaces wholesale, so this has to
+// hook htmx:load like the map above: someone who lands on /en/about and then
+// clicks "Desks" only ever gets the calendar through a boosted swap, and a
+// module-scope lookup would have found nothing at startup. Captured once per
+// page load – the flag survives the swaps, the observer does not.
+let trialCalendarObserver = null;
+let trialCalendarCaptured = false;
 
-if (calendar && 'IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(
+document.body.addEventListener('htmx:load', function () {
+  if (trialCalendarCaptured || !('IntersectionObserver' in window)) return;
+
+  const calendar = document.getElementById('trial-calendar');
+  if (!calendar) return;
+
+  if (trialCalendarObserver) trialCalendarObserver.disconnect();
+
+  trialCalendarObserver = new IntersectionObserver(
     (entries) => {
       if (!entries.some((entry) => entry.isIntersecting)) return;
 
+      trialCalendarCaptured = true;
       posthog.capture('trial_calendar_view');
-      observer.disconnect();
+      trialCalendarObserver.disconnect();
     },
-    { threshold: 0.4 }
+    // The iframe is ~1000px tall on mobile; a high threshold would need more of
+    // it on screen at once than a phone viewport can show.
+    { threshold: 0.15 }
   );
 
-  observer.observe(calendar);
-}
+  trialCalendarObserver.observe(calendar);
+});
 
 // Cookie consent
 //

@@ -27,27 +27,17 @@ document.body.addEventListener('htmx:load', function () {
 });
 
 // Sidebar
-document.body.addEventListener('htmx:load', function () {
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    console.log('toggle sidebar', sidebar);
+// The header lives outside <main>, so htmx never re-renders it. Registering on
+// htmx:load would stack a second listener on the same button after every
+// boosted navigation, and the extra toggle would cancel the first one out — so
+// this one is delegated and bound once.
+document.addEventListener('click', function (event) {
+  if (!(event.target instanceof Element)) return;
 
-    sidebar.classList.toggle('hidden');
-  }
-
-  const burgerBtn = document.getElementById('sidebar-open');
-
-  burgerBtn.addEventListener('mouseup', toggleSidebar);
-
-  const sidebarLinks = document.querySelectorAll(
-    '#sidebar a[hx-push-url="true"]'
-  );
-
-  for (const sidebarLink of sidebarLinks) {
-    sidebarLink.addEventListener('click', () => {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.add('hidden');
-    });
+  if (event.target.closest('#sidebar-open')) {
+    document.getElementById('sidebar').classList.toggle('hidden');
+  } else if (event.target.closest('#sidebar a[hx-push-url="true"]')) {
+    document.getElementById('sidebar').classList.add('hidden');
   }
 });
 

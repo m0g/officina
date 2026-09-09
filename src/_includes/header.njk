@@ -1,15 +1,15 @@
 <header
-  class="z-900 flex bg-white fixed top-0 inset-x-0 z-100 md:h-16 items-center border-b border-black"
+  class="z-900 flex bg-white fixed top-0 inset-x-0 z-100 xl:h-16 items-center border-b border-black"
 >
   <div
-    class="w-full max-w-screen-xl relative mx-auto px-4 flex flex-col md:flex-row"
+    class="w-full max-w-screen-xl relative mx-auto px-4 flex flex-col xl:flex-row"
   >
-    <div class="flex py-4 md:py-0">
+    <div class="flex flex-shrink-0 py-4 xl:py-0">
       <button
         type="button"
         id="sidebar-open"
         aria-label="Open the sidebar"
-        class="flex mr-2 px-2 items-center lg:hidden text-black focus:outline-none focus:text-gray-700"
+        class="flex mr-2 px-2 items-center xl:hidden text-black focus:outline-none focus:text-gray-700"
       >
         <svg
           class="fill-current w-4 h-4"
@@ -31,7 +31,7 @@
     </div>
     <div
       id="sidebar"
-      class="flex-col ml-6 md:flex-row md:flex-grow md:justify-end hidden md:flex text-smc font-bold"
+      class="flex flex-col items-start pb-4 xl:pb-0 ml-6 xl:flex-row xl:items-stretch xl:flex-grow xl:justify-end hidden xl:flex text-smc font-bold"
     >
       <a
         href="/{{ page.lang }}/"
@@ -98,7 +98,7 @@
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
         target="_blank"
-        class="w-2/3 md:w-auto bg-black text-white py-2 px-4 my-3 transition-colors duration-150 hover:bg-blue-custom"
+        class="w-2/3 xl:w-auto bg-black text-white py-2 px-4 my-3 transition-colors duration-150 hover:bg-blue-custom"
       >
         {{ menu.contact }}
       </a>

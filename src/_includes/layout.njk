@@ -1,3 +1,9 @@
+{%- set siteName = "Officina Kreuzberg" -%}
+{%- set defaultDescription = "Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz. Fix desks, flex desks and a private room, with 24/7 access, a big kitchen and a terrace." -%}
+{%- set pageTitle = seo_title or siteName -%}
+{%- set pageDescription = meta_description or defaultDescription -%}
+{%- set pageUrl = page.url | absoluteUrl -%}
+{%- set ogImage = (image | replace('/src/', '/')) if image else '/_assets/images/uploads/officina_space_web_2.jpg' -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
   <head>
@@ -6,20 +12,25 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="Officina is a coworking space in Berlin Kreuzberg run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach."
-    />
-    <meta name="keywords" content="officina, berlin, kreuzberg, coworking, co-working, space, creative" />
-    <meta property="og:locale" content="en_US" />
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}" />
+    <meta name="keywords" content="officina, berlin, kreuzberg, neukölln, coworking, co-working, shared workspace, desk" />
+    <link rel="canonical" href="{{ pageUrl }}" />
+    {%- for link in page.url | locale_links %}
+    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ link.url | absoluteUrl }}" />
+    {%- endfor %}
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ pageUrl }}" />
+    {%- if page.lang == "en" %}
+    <link rel="alternate" hreflang="x-default" href="{{ pageUrl }}" />
+    {%- endif %}
+    <meta property="og:locale" content="{% if page.lang == 'de' %}de_DE{% else %}en_US{% endif %}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Officina Kreuzberg" />
-    <meta
-      property="og:description"
-      content="Officina is a coworking space in Berlin Kreuzberg run as a collective whose aim is to develop new ways of working and nurture the local community with an inclusive and social approach."
-    />
-    <meta property="og:url" content="https://officina.berlin" />
-    <meta property="og:site_name" content="Officina Kreuzberg" />
+    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:description" content="{{ pageDescription }}" />
+    <meta property="og:url" content="{{ pageUrl }}" />
+    <meta property="og:image" content="{{ ogImage | absoluteUrl }}" />
+    <meta property="og:site_name" content="{{ siteName }}" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="icon"
       type="image/png"
@@ -60,7 +71,34 @@
     <link rel="stylesheet" href="/css/leaflet.css" type="text/css" />
     <link rel="stylesheet" href="/css/ibm-plex.css" type="text/css" />
     <link rel="stylesheet" href="/css/styles.css" type="text/css" />
-    <title>Officina Kreuzberg</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "{{ siteName }}",
+      "description": "{{ defaultDescription }}",
+      "url": "{{ '/en/' | absoluteUrl }}",
+      "email": "hello@officina.berlin",
+      "image": "{{ '/_assets/images/uploads/officina_space_web_2.jpg' | absoluteUrl }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jahnstraße 13",
+        "postalCode": "10967",
+        "addressLocality": "Berlin",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.48840,
+        "longitude": 13.41973
+      },
+      "priceRange": "155 € – 600 € per month",
+      "sameAs": [
+        "https://www.instagram.com/officinakreuzberg/",
+        "https://www.facebook.com/OfficinaNeukoelln/"
+      ]
+    }
+    </script>
   </head>
   <body class="text-gray-900 leading-normal font-plex overflow-x-hidden">
     {% include 'header.njk' %}

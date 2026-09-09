@@ -12,3 +12,14 @@
 [[redirects]]
   from = "/"
   to = "/en/"
+
+# /en/desks was a duplicate of the home page
+[[redirects]]
+  from = "/en/desks"
+  to = "/en/"
+  status = 301
+
+[[redirects]]
+  from = "/en/desks/*"
+  to = "/en/"
+  status = 301

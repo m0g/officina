@@ -1,11 +1,17 @@
 ---
 layout: collective.njk
 permalink: /en/collective/index.html
-title: A creative community
-shop: Through our collective shop, we aim to promote and support the work of our
-  community.
+title: The collective
+seo_title: The collective – who works at Officina Kreuzberg
+meta_description: >-
+  Officina Kreuzberg is run by the people who work here: freelancers, remote
+  employees and researchers in software, design, architecture, communications
+  and policy. Meet the members.
 image: /src/_assets/images/uploads/officina_collective-people.jpg
 ---
-Officina Kreuzberg is run as a collective by a group of people working mainly in the visual arts with a focus on photography and filmmaking, as well as researchers, translators, writers, graphic designers or music producers. Sharing more than a space is essential to us. We want to get together for a good meal, to create synergies as well as moments! Each of us is involved in the organization of the space and public events. It’s a place for interaction and sharing, where the skills and personality of each contribute to make Officina Kreuzberg a unique and creative place.
 
-*If you are interested in renting a desk, please contact us via our contact form.*
+Officina Kreuzberg is run by the people who work here. We're freelancers, remote employees and researchers in software, design, architecture, communications and policy – a lot of us working with NGOs and social projects. Everyone has a desk, and everyone takes a share of running the space: the bills, the kitchen, the events, the website.
+
+Sharing more than a room matters to us. We eat together, we help each other out with a contract, a layout, a bug – and sometimes we end up working on things together.
+
+*Interested in joining? [Apply for a desk](https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform).*

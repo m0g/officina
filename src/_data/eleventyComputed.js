@@ -1,11 +1,13 @@
 const items = {
   en: {
+    desks: 'Desks',
     about: 'About',
-    collective: 'Our collective',
-    artists: 'Art Residencies',
+    collective: 'The collective',
+    artists: 'Artist residency',
     events: 'Events',
   },
   de: {
+    desks: 'Arbeitsplätze',
     about: 'Über uns',
     collective: 'Unser Kollektiv',
     artists: 'Künstlerresidenzen',

@@ -9,101 +9,89 @@ collections:
     label: 'Site'
     extension: md
     files:
-      - label: 'Home Page'
+      - label: 'Home (desks & room)'
         name: 'home'
         file: 'src/en/index.md'
         extension: md
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
-          - {
-              label: 'What share skills',
-              name: 'we_share_skills_description',
-              widget: 'text',
-            }
-          - { label: 'The Collective', name: 'the_collective', widget: 'text' }
-          - { label: 'Art Residency', name: 'art_residency', widget: 'text' }
-          - { label: 'Events', name: 'events', widget: 'text' }
+          - { label: 'Title (H1)', name: 'title', widget: 'string' }
+          - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+          - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
+          - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
+          - { label: 'Intro', name: 'body', widget: 'markdown' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
-      - label: 'Desks'
-        name: 'Desks'
-        file: 'src/en/desks.md'
-        extension: md
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'body', widget: 'markdown' }
-          - { label: 'Featured image', name: 'image', widget: 'image' }
-          - {
-              label: 'Fix desk title',
-              name: 'fix_desk_title',
-              widget: 'string',
-            }
-          - {
-              label: 'Fix desk content',
-              name: 'fix_desk_content',
-              widget: 'markdown',
-            }
+          - { label: 'Fix desk title', name: 'fix_desk_title', widget: 'string' }
+          - { label: 'Fix desk content', name: 'fix_desk_content', widget: 'markdown' }
           - { label: 'Fix desk image', name: 'fix_desk_image', widget: 'image' }
-          - {
-              label: 'Fix desk price',
-              name: 'fix_desk_price',
-              widget: 'string',
-            }
-          - {
-              label: 'Flex desk title',
-              name: 'flex_desk_title',
-              widget: 'string',
-            }
-          - {
-              label: 'Flex desk content',
-              name: 'flex_desk_content',
-              widget: 'markdown',
-            }
-          - {
-              label: 'Flex desk image',
-              name: 'flex_desk_image',
-              widget: 'image',
-            }
-          - {
-              label: 'Flex desk price',
-              name: 'flex_desk_price',
-              widget: 'string',
-            }
-          - {
-              label: 'Trial day info',
-              name: 'trial_day_info',
-              widget: 'string',
-            }
-      - label: 'Artists'
-        name: 'Artists'
-        file: 'src/en/artists.md'
+          - { label: 'Fix desk price', name: 'fix_desk_price', widget: 'string' }
+          - { label: 'Flex desk title', name: 'flex_desk_title', widget: 'string' }
+          - { label: 'Flex desk content', name: 'flex_desk_content', widget: 'markdown' }
+          - { label: 'Flex desk image', name: 'flex_desk_image', widget: 'image' }
+          - { label: 'Flex desk price', name: 'flex_desk_price', widget: 'string' }
+          - { label: 'Room title (leave empty to hide the room section)', name: 'room_title', widget: 'string', required: false }
+          - { label: 'Room content', name: 'room_content', widget: 'markdown', required: false }
+          - { label: 'Room image', name: 'room_image', widget: 'image', required: false }
+          - { label: 'Room price', name: 'room_price', widget: 'string', required: false }
+          - { label: 'Desk button label', name: 'apply_here', widget: 'string' }
+          - { label: 'Room button label', name: 'room_apply', widget: 'string', required: false }
+          - { label: 'Trial day info', name: 'trial_day_info', widget: 'string' }
+      - label: 'About'
+        name: 'about'
+        file: 'src/en/about.md'
         extension: md
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'body', widget: 'markdown' }
-          - { label: 'Deadline', name: 'deadline', widget: 'string' }
+          - { label: 'Title (H1)', name: 'title', widget: 'string' }
+          - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
+          - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
+          - { label: 'Description', name: 'description', widget: 'text' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
-          - { label: 'PDF link', name: 'pdflink', widget: 'file' }
+          - { label: 'Section title', name: 'how_it_works_title', widget: 'string' }
+          - { label: 'Section intro', name: 'how_it_works_description', widget: 'text' }
+          - { label: 'Collective title', name: 'collective_title', widget: 'string' }
+          - { label: 'Collective text', name: 'the_collective', widget: 'text' }
+          - { label: 'Collective button', name: 'collective_cta', widget: 'string' }
+          - { label: 'Events title', name: 'events_title', widget: 'string' }
+          - { label: 'Events text', name: 'events', widget: 'text' }
+          - { label: 'Events button', name: 'events_cta', widget: 'string' }
+          - { label: 'Residency title', name: 'residency_title', widget: 'string' }
+          - { label: 'Residency text', name: 'art_residency', widget: 'text' }
+          - { label: 'Residency button', name: 'residency_cta', widget: 'string' }
+          - { label: 'Contact title', name: 'contact_title', widget: 'string' }
+          - { label: 'Contact text', name: 'contact_text', widget: 'text' }
+          - { label: 'Contact button', name: 'contact_cta', widget: 'string' }
       - label: 'The Collective'
         name: 'Collective'
         file: 'src/en/collective.md'
         extension: md
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Title (H1)', name: 'title', widget: 'string' }
+          - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
+          - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
-          - { label: 'Our Shop', name: 'shop', widget: 'string' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
       - label: 'Events'
         name: 'Events'
         file: 'src/en/events.md'
         extension: md
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Title (H1)', name: 'title', widget: 'string' }
+          - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
+          - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
+          - { label: 'Description', name: 'body', widget: 'markdown' }
+          - { label: 'Featured image', name: 'image', widget: 'image' }
+      - label: 'Artist residency (archive)'
+        name: 'Artists'
+        file: 'src/en/artists.md'
+        extension: md
+        fields:
+          - { label: 'Title (H1)', name: 'title', widget: 'string' }
+          - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
+          - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
 
   - name: 'artist' # Used in routes, e.g., /admin/collections/blog
-    label: 'Artists' # Used in the UI
+    label: 'Residents (archive)' # Used in the UI
     folder: 'src/en/artists' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{name}}' # Filename template, e.g., YYYY-MM-DD-title.md

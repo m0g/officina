@@ -1,6 +1,6 @@
 ---
 name: Sára Král
-position: 6
+position: 4
 job: Illustrator & graphic designer
 pronouns: she/her
 website: https://sarakral.com/

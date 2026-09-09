@@ -2,7 +2,9 @@
 {%- set defaultDescription = "Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz. Fix desks, flex desks and a private room, with 24/7 access, a big kitchen and a terrace." if features.room else "Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz. Fix desks and flex desks, with 24/7 access, a big kitchen and a terrace." -%}
 {%- set pageTitle = seo_title or siteName -%}
 {%- set pageDescription = (meta_description_room if features.room and meta_description_room else meta_description) or defaultDescription -%}
-{%- set pageUrl = page.url | absoluteUrl -%}
+{# Netlify serves about.html at the extensionless /en/about, which is what every
+   internal link uses – keep the canonical and the alternates on that same URL. #}
+{%- set pageUrl = page.url | replace(".html", "") | absoluteUrl -%}
 {%- set ogImage = (image | replace('/src/', '/')) if image else '/_assets/images/uploads/officina_space_web_2.jpg' -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
@@ -17,7 +19,7 @@
     <meta name="keywords" content="officina, berlin, kreuzberg, neukölln, coworking, co-working, shared workspace, desk" />
     <link rel="canonical" href="{{ pageUrl }}" />
     {%- for link in page.url | locale_links %}
-    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ link.url | absoluteUrl }}" />
+    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ link.url | replace(".html", "") | absoluteUrl }}" />
     {%- endfor %}
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ pageUrl }}" />
     {%- if page.lang == "en" %}
@@ -77,8 +79,8 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "{{ siteName }}",
-      "description": "{{ defaultDescription }}",
+      "name": {{ siteName | dump | safe }},
+      "description": {{ defaultDescription | dump | safe }},
       "url": "{{ '/en/' | absoluteUrl }}",
       "email": "hello@officina.berlin",
       "image": "{{ '/_assets/images/uploads/officina_space_web_2.jpg' | absoluteUrl }}",

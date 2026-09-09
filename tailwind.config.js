@@ -1,12 +1,12 @@
 module.exports = {
-  purge: {
-    mode: 'all',
-    content: [
-      './src/**/*.njk',
-      './node_modules/leaflet/dist/*.js',
-      './node_modules/glightbox/dist/*.js',
-    ],
-  },
+  // `.md` is scanned too: page front matter (FAQ answers, desk copy) contains
+  // inline HTML with Tailwind classes.
+  content: [
+    './src/**/*.njk',
+    './src/**/*.md',
+    './node_modules/leaflet/dist/*.js',
+    './node_modules/glightbox/dist/*.js',
+  ],
   theme: {
     rotate: {
       '-180': '-180deg',

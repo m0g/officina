@@ -71,7 +71,7 @@ layout: layout.njk
       </div>
     </div>
   </div>
-  {% if features.room and room_title %}
+  {% if features.room and room_title and room_image %}
   <div class="bg-yellow-custom md:py-16">
     <div
       class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row gap-6"
@@ -110,8 +110,8 @@ layout: layout.njk
     class="h-260 md:h-176"
   ></iframe>
   <!-- end Google Calendar Appointment Scheduling -->
-  {%- set faqItems = faq if features.room else (faq | rejectattr("room")) %}
-  {% if faqItems %}
+  {%- set faqItems = (faq or []) if features.room else ((faq or []) | rejectattr("room")) %}
+  {% if faqItems | length %}
   <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24" id="faq">
     <h2 class="font-bold italic text-4xl md:text-5xl text-black leading-tight mb-8">
       {{ faq_title or "Questions & answers" }}

@@ -4,17 +4,17 @@ layout: layout.njk
 <div>
 <div class="h-full min-h-full relative mt-16 md:my-32">
   <div class="h-full flex min-h-full z-10 relative">
-    <div class="h-full max-w-screen-xl md:mx-auto flex flex-col md:flex-row">
+    <div class="h-full max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row">
       <div class="md:w-1/2 md:mt-20 mb-10">
         <h1 class="font-bold italic text-5xl md:text-6xl text-black leading-tight">
           {{ title }}
         </h1>
-        <div class="text-sm text-black mx-4 md:mx-0 my-4 space-y-3">
+        <div class="text-sm md:text-base text-black my-4 space-y-3">
           {{ content | safe }}
         </div>
         <a
           href="mailto:hello@officina.berlin?subject=Event%20at%20Officina"
-          class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 ml-4 md:ml-0">
+          class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 transition-colors duration-150 hover:bg-blue-custom">
           Get in touch
         </a>
       </div>
@@ -29,27 +29,26 @@ layout: layout.njk
   </div>
 </div>
 <div class="bg-yellow-custom pt-12 md:pt-24">
-  <div class="h-full max-w-screen-xl mx-4 md:mx-auto flex flex-col">
+  <div class="h-full max-w-screen-xl mx-auto px-4 flex flex-col">
     <h2 class="font-bold italic text-4xl md:text-5xl text-black leading-tight">
       What we've hosted
     </h2>
-    <div class="flex flex-col my-12">
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-x-10 my-12">
       {%- for event in collections.event | sortByDateDesc -%}
-        <div class="mb-4 max-w-screen-xl flex flex-col md:flex-row">
-          <div class="md:w-1/2">
-            <a
-              target="blank"
-              rel="noopener"
-              href="{{ event.data.link }}"
-            >
-              <div class="italic">{{ event.data.date | htmlDateString }}</div>
-              <h2 class="font-plex text-2xl font-bold">
-                {{ event.data.name }}
-              </h2>
-            </a>
-            <div class="mb-6">
-              {{ event.templateContent | safe }}
-            </div>
+        <div class="break-inside-avoid border-t-2 border-black pt-4 mb-12">
+          <a
+            target="blank"
+            rel="noopener"
+            href="{{ event.data.link }}"
+            class="block group"
+          >
+            <div class="italic text-smc">{{ event.data.date | htmlDateString }}</div>
+            <h2 class="font-plex text-2xl font-bold leading-tight transition-colors duration-150 group-hover:text-blue-custom">
+              {{ event.data.name }}
+            </h2>
+          </a>
+          <div class="text-smc leading-6 mt-2 space-y-3">
+            {{ event.templateContent | safe }}
           </div>
         </div>
       {%- endfor -%}

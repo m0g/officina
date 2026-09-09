@@ -1,8 +1,8 @@
 <div class="w-full md:mx-auto flex flex-col md:flex-row" id="contact">
   <div id="map" class="h-auto md:w-1/2"></div>
-  <div class="md:w-1/2 bg-white z-10 relative min-h-180">
-    <div class="px-4 py-16 flex flex-col gap-6">
-      <h2 class="font-plex font-semibold text-xl text-center">
+  <div class="md:w-1/2 bg-white z-10 relative min-h-180 flex">
+    <div class="px-4 py-16 flex flex-col justify-center gap-6 w-full max-w-xl mx-auto">
+      <h2 class="font-plex font-bold italic text-4xl text-center">
         {{ contact_title or "Get in touch" }}
       </h2>
       <p class="text-center">
@@ -12,7 +12,7 @@
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
           target="_blank"
-          class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 inline-block"
+          class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-blue-custom"
         >
           {{ contact_cta or "Click here for the form" }}
         </a>

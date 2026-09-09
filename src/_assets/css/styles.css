@@ -16,20 +16,14 @@ html {
   font-display: swap;
 }
 
-.text-salmon {
-  color: #f7c2aa;
-}
+/* salmon / blue-custom / yellow-custom now live in tailwind.config.js so the
+   colours get hover: and other variants like any other Tailwind colour. */
 
-.bg-blue-custom {
-  background-color: #4d4dc3;
-}
-
-.bg-yellow-custom {
-  background-color: #fdff00;
-}
-
-.text-blue-custom {
-  color: #4d4dc3;
+/* Keeps the black display type on about.njk readable where it overlaps the
+   duotone photo, without covering the photo with a panel. */
+.text-halo {
+  text-shadow: 0 0 0.6em rgba(255, 255, 255, 0.95),
+    0 0 1.4em rgba(255, 255, 255, 0.8);
 }
 
 .bg-yellow-circle::after {

@@ -34,7 +34,12 @@ module.exports = {
       },
       minHeight: { 180: '720px' },
       zIndex: { 401: '401' },
-      colors: { kobi: '#efb0ca' },
+      colors: {
+        kobi: '#efb0ca',
+        salmon: '#f7c2aa',
+        'blue-custom': '#4d4dc3',
+        'yellow-custom': '#fdff00',
+      },
       height: {
         168: '42rem',
         176: '44rem',

@@ -1,12 +1,12 @@
 module.exports = {
-  purge: {
-    mode: 'all',
-    content: [
-      './src/**/*.njk',
-      './node_modules/leaflet/dist/*.js',
-      './node_modules/glightbox/dist/*.js',
-    ],
-  },
+  // `.md` is scanned too: page front matter (FAQ answers, desk copy) contains
+  // inline HTML with Tailwind classes.
+  content: [
+    './src/**/*.njk',
+    './src/**/*.md',
+    './node_modules/leaflet/dist/*.js',
+    './node_modules/glightbox/dist/*.js',
+  ],
   theme: {
     rotate: {
       '-180': '-180deg',
@@ -34,7 +34,12 @@ module.exports = {
       },
       minHeight: { 180: '720px' },
       zIndex: { 401: '401' },
-      colors: { kobi: '#efb0ca' },
+      colors: {
+        kobi: '#efb0ca',
+        salmon: '#f7c2aa',
+        'blue-custom': '#4d4dc3',
+        'yellow-custom': '#fdff00',
+      },
       height: {
         168: '42rem',
         176: '44rem',

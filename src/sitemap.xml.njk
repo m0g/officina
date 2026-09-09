@@ -5,11 +5,11 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for page in collections.all %}
-  {%- if page.data.sitemapIgnore != true %}
-    {% set absoluteUrl %}{{ page.url | url | absoluteUrl }}{% endset %}
+  {%- if page.url and page.data.sitemapIgnore != true %}
+    {% set absoluteUrl %}{{ page.url | replace(".html", "") | url | absoluteUrl }}{% endset %}
     <url>
       <loc>{{ absoluteUrl }}</loc>
-      <lastmod>{{ page.date | htmlDateString }}</lastmod>
+      <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     </url>
   {% endif %}
 {%- endfor %}

@@ -1,21 +1,30 @@
 ---
 layout: layout.njk
 ---
-
+{%- set formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform" -%}
 <div class="">
   <div class="h-full relative mt-16 md:my-32">
     <div class="h-full flex min-h-full z-10 relative">
-      <div class="h-full max-w-screen-xl md:mx-auto flex flex-col md:flex-row">
-        <div class="md:w-2/3 mb-10 mx-4">
+      <div class="h-full max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row">
+        <div class="md:w-2/3 mb-10">
           <h1
             class="font-bold italic text-5xl md:text-6xl text-black leading-tight"
           >
             {{ title }}
           </h1>
-          <p class="text-sm text-black my-4">{{ content | safe }}</p>
+          {% if subtitle %}
+          <p class="font-bold text-2xl md:text-3xl text-black mt-2">{{ subtitle }}</p>
+          {% endif %}
+          <div class="text-sm md:text-base text-black my-4 space-y-3 md:max-w-2xl">
+            {{ content | safe }}
+            {%- set availabilityLine = availability_room if features.room and availability_room else availability %}
+            {% if availabilityLine %}
+            <p>{{ availabilityLine | safe }}</p>
+            {% endif %}
+          </div>
         </div>
         <div class="md:ml-16 md:w-1/3 relative">
-          {% image image, "Artist residency" %}
+          {% image image, "The Officina Kreuzberg workspace in Berlin" %}
         </div>
       </div>
     </div>
@@ -24,19 +33,19 @@ layout: layout.njk
     <div
       class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row gap-6"
     >
-      {% image fix_desk_image, "Fix Desk" %}
-      <div class="relative pb-36 pt-16 px-4 md:p-0">
-        <h2 class="font-plex font-bold text-4xl">{{ fix_desk_title }}</h2>
+      {% image fix_desk_image, "Fix desk at Officina Kreuzberg" %}
+      <div class="relative pb-36 pt-16 px-4 md:p-0 md:max-w-xl md:flex md:flex-col md:justify-center space-y-3">
+        <h2 class="font-plex font-bold text-4xl md:text-5xl">{{ fix_desk_title }}</h2>
         <div>{{ fix_desk_content | safe }}</div>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
+          href="{{ formUrl }}"
           target="_blank"
-          class="absolute -bottom-4 md:-bottom-6 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg"
+          class="absolute -bottom-4 md:-bottom-6 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
         >
           <div class="font-plex text-blue-custom font-bold w-24 text-sm">
             {{ fix_desk_price | safe }}
           </div>
-          <div class="font-plex font-bold text-xl w-24">{{ apply_here }}</div>
+          <div class="font-plex font-bold text-xl w-24">{{ apply_here or "Apply here!" }}</div>
         </a>
       </div>
     </div>
@@ -45,25 +54,48 @@ layout: layout.njk
     <div
       class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row-reverse gap-6"
     >
-      {% image flex_desk_image, "Fix Desk" %}
-      <div class="relative px-4 pb-36 pt-16 md:p-0">
-        <h2 class="font-plex font-bold text-4xl">{{ flex_desk_title }}</h2>
+      {% image flex_desk_image, "Flex desk at Officina Kreuzberg" %}
+      <div class="relative px-4 pb-36 pt-16 md:p-0 md:max-w-xl md:flex md:flex-col md:justify-center space-y-3">
+        <h2 class="font-plex font-bold text-4xl md:text-5xl">{{ flex_desk_title }}</h2>
         <div>{{ flex_desk_content | safe }}</div>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform"
+          href="{{ formUrl }}"
           target="_blank"
-          class="absolute -bottom-4 md:-bottom-6 left-0 bg-yellow-custom rounded-full px-12 py-12 text-center transform -rotate-20 shadow-lg"
+          class="absolute -bottom-4 md:-bottom-6 left-0 bg-yellow-custom rounded-full px-12 py-12 text-center transform -rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
         >
           <div class="font-plex text-blue-custom font-bold w-24 text-sm">
             {{ flex_desk_price | safe }}
           </div>
-          <div class="font-plex font-bold text-xl w-24">{{ apply_here }}</div>
+          <div class="font-plex font-bold text-xl w-24">{{ apply_here or "Apply here!" }}</div>
         </a>
       </div>
     </div>
   </div>
-  <div class="md:py-16 bg-blue-custom">
-    <div class="text-white font-bold text-center">
+  {% if features.room and room_title and room_image %}
+  <div class="bg-yellow-custom md:py-16">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row gap-6"
+    >
+      {% image room_image, "Private room at Officina Kreuzberg" %}
+      <div class="relative pb-36 pt-16 px-4 md:p-0 md:max-w-xl md:flex md:flex-col md:justify-center space-y-3">
+        <h2 class="font-plex font-bold text-4xl md:text-5xl">{{ room_title }}</h2>
+        <div>{{ room_content | safe }}</div>
+        <a
+          href="{{ formUrl }}"
+          target="_blank"
+          class="absolute -bottom-4 md:-bottom-6 right-0 bg-white rounded-full px-12 py-12 text-center transform rotate-20 shadow-lg transition duration-200 hover:scale-105 hover:shadow-xl"
+        >
+          <div class="font-plex text-blue-custom font-bold w-24 text-sm">
+            {{ room_price | safe }}
+          </div>
+          <div class="font-plex font-bold text-xl w-24">{{ room_apply or apply_here }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="py-8 px-4 md:py-16 bg-blue-custom">
+    <div class="text-white font-bold text-center text-lgc max-w-2xl mx-auto">
       {{ trial_day_info }}
     </div>
   </div>
@@ -73,7 +105,43 @@ layout: layout.njk
     style="border: 0"
     width="100%"
     frameborder="0"
+    loading="lazy"
+    title="Book a trial day at Officina Kreuzberg"
     class="h-260 md:h-176"
   ></iframe>
   <!-- end Google Calendar Appointment Scheduling -->
+  {%- set faqItems = (faq or []) if features.room else ((faq or []) | rejectattr("room")) %}
+  {% if faqItems | length %}
+  <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24" id="faq">
+    <h2 class="font-bold italic text-4xl md:text-5xl text-black leading-tight mb-8">
+      {{ faq_title or "Questions & answers" }}
+    </h2>
+    <div class="md:max-w-2xl border-t border-b border-black divide-y divide-black">
+      {%- for item in faqItems %}
+      <details class="group py-4">
+        <summary class="cursor-pointer font-bold text-lgc list-none flex justify-between items-center gap-4">
+          <span>{{ item.q }}</span>
+          <span class="text-2xl leading-none transition group-open:rotate-45" aria-hidden="true">+</span>
+        </summary>
+        <div class="text-sm md:text-base mt-3 md:max-w-xl">{{ (item.a_room if features.room and item.a_room else item.a) | safe }}</div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for item in faqItems %}
+      {
+        "@type": "Question",
+        "name": {{ item.q | dump | safe }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ (item.a_room if features.room and item.a_room else item.a) | striptags | dump | safe }} }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 </div>

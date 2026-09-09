@@ -106,4 +106,37 @@ layout: layout.njk
     class="h-260 md:h-176"
   ></iframe>
   <!-- end Google Calendar Appointment Scheduling -->
+  {% if faq %}
+  <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24" id="faq">
+    <h2 class="font-bold italic text-4xl md:text-5xl text-black leading-tight mb-8">
+      {{ faq_title or "Questions & answers" }}
+    </h2>
+    <div class="md:max-w-2xl border-t border-b border-black divide-y divide-black">
+      {%- for item in faq %}
+      <details class="group py-4">
+        <summary class="cursor-pointer font-bold text-lgc list-none flex justify-between items-center gap-4">
+          <span>{{ item.q }}</span>
+          <span class="text-2xl leading-none transition group-open:rotate-45" aria-hidden="true">+</span>
+        </summary>
+        <div class="text-sm md:text-base mt-3 md:max-w-xl">{{ item.a | safe }}</div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for item in faq %}
+      {
+        "@type": "Question",
+        "name": {{ item.q | dump | safe }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | striptags | dump | safe }} }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 </div>

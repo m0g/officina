@@ -35,6 +35,14 @@ collections:
           - { label: 'Desk button label', name: 'apply_here', widget: 'string' }
           - { label: 'Room button label', name: 'room_apply', widget: 'string', required: false }
           - { label: 'Trial day info', name: 'trial_day_info', widget: 'string' }
+          - { label: 'FAQ title', name: 'faq_title', widget: 'string', required: false }
+          - label: 'FAQ'
+            name: 'faq'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Question', name: 'q', widget: 'string' }
+              - { label: 'Answer (HTML links allowed)', name: 'a', widget: 'text' }
       - label: 'About'
         name: 'about'
         file: 'src/en/about.md'

@@ -36,6 +36,62 @@ room_apply: Apply for the room
 trial_day_info: >-
   Not sure yet? Come for a free trial day, work with us, stay for lunch. Pick a
   slot below.
+faq_title: Questions & answers
+faq:
+  - q: Where exactly is Officina?
+    a: >-
+      Jahnstraße 13, 10967 Berlin – between Hasenheide park and Hermannplatz,
+      on the Kreuzberg–Neukölln border. Hermannplatz (U7, U8) is a few
+      minutes' walk, and supermarkets and lunch places are around the corner.
+  - q: What does a desk cost?
+    a: >-
+      A fix desk is 255 € a month, a flex desk 155 € a month, and the private
+      room 600 € a month for up to three people. All prices include VAT.
+  - q: What's the difference between a fix desk and a flex desk?
+    a: >-
+      A fix desk is yours alone: leave your screen, books and gear, and come in
+      whenever you want, 24/7. A flex desk is shared with other members – you
+      bring your laptop and can use the space three days a week plus weekends.
+  - q: What's included?
+    a: >-
+      Fast internet, a printer, a big kitchen and a terrace – and a place in
+      the collective: shared lunches, after-work drinks, and people to ask
+      when you're stuck on something.
+  - q: How do I get a desk?
+    a: >-
+      Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform" target="_blank" class="underline">contact
+      form</a> and tell us a bit about what you do. We'll invite you for a
+      free trial day; if it works for both sides, you pick a desk.
+  - q: Can I try it out first?
+    a: >-
+      Yes – the trial day is free. Book a slot in the calendar above, work
+      with us for a day and stay for lunch.
+  - q: What does “run by its members” mean?
+    a: >-
+      There's no operator and no staff. The members rent the space together
+      and share the tasks of running it – bills, kitchen, website, events.
+      Joining means taking on a small share of that.
+  - q: Who works at Officina?
+    a: >-
+      Freelancers, remote employees and researchers: developers, designers,
+      illustrators, architects, a data scientist, a policy coordinator, a
+      copywriter, a filmmaker. Many of us work with NGOs and social projects.
+      <a href="/en/collective" class="underline">Meet the collective</a>.
+  - q: When is the private room available?
+    a: >-
+      From November 2026. It fits up to three people, and the price – 600 € a
+      month including VAT – is for the room, whether you're one person or
+      three. Apply via the form and mention the room.
+  - q: Can I host an event at Officina?
+    a: >-
+      Members and friends can use the space for workshops, fundraisers,
+      parties and the like. <a href="mailto:hello@officina.berlin"
+      class="underline">Write to us</a> with your idea.
+  - q: Do you still run the artist residency?
+    a: >-
+      It has been on pause since 2021, and we're planning to bring it back in
+      2027. The past residents are in the
+      <a href="/en/artists/" class="underline">archive</a>.
 ---
 
 Officina Kreuzberg is a shared workspace near Hermannplatz, on the Kreuzberg–Neukölln border. There's no operator and no front desk: the space is run by its members, a collective of freelancers and remote workers in software, design, research, architecture, policy and communications – many of us working with NGOs and social projects.

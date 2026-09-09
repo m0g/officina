@@ -68,3 +68,8 @@ html {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
+
+/* FAQ accordion: hide the default disclosure triangle (Safari) */
+summary::-webkit-details-marker {
+  display: none;
+}

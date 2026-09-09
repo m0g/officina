@@ -1,4 +1,9 @@
 {%- set siteName = "Officina Kreuzberg" -%}
+{#- Monthly prices, incl. VAT. Also shown on the home page as `fix_desk_price`,
+    `flex_desk_price` and `room_price`, which the CMS edits. -#}
+{%- set fixDeskPrice = 255 -%}
+{%- set flexDeskPrice = 155 -%}
+{%- set roomPrice = 600 -%}
 {%- set defaultDescription = "Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz. Fix desks, flex desks and a private room, with 24/7 access, a big kitchen and a terrace." if features.room else "Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz. Fix desks and flex desks, with 24/7 access, a big kitchen and a terrace." -%}
 {%- set pageTitle = seo_title or siteName -%}
 {%- set pageDescription = (meta_description_room if features.room and meta_description_room else meta_description) or defaultDescription -%}
@@ -6,6 +11,33 @@
    internal link uses – keep the canonical and the alternates on that same URL. #}
 {%- set pageUrl = page.url | replace(".html", "") | absoluteUrl -%}
 {%- set ogImage = (image | replace('/src/', '/')) if image else '/_assets/images/uploads/officina_space_web_2.jpg' -%}
+{#- One machine-readable monthly price, for the LocalBusiness `makesOffer` list. -#}
+{%- macro offer(name, description, price) -%}
+{
+          "@type": "Offer",
+          "name": {{ name | dump | safe }},
+          "description": {{ description | dump | safe }},
+          "url": "{{ '/en/' | absoluteUrl }}",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": {{ price }},
+            "priceCurrency": "EUR",
+            "valueAddedTaxIncluded": true,
+            "referenceQuantity": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": {{ name | dump | safe }},
+            "serviceType": "Coworking desk rental",
+            "provider": { "@type": "LocalBusiness", "name": {{ siteName | dump | safe }} }
+          }
+        }
+{%- endmacro -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
   <head>
@@ -96,7 +128,22 @@
         "latitude": 52.48840,
         "longitude": 13.41973
       },
-      "priceRange": {{ ("155 € – 600 € per month" if features.room else "155 € – 255 € per month") | dump | safe }},
+      {# Members have their own key to the building: the space is open around the clock. #}
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": {{ (flexDeskPrice ~ " € – " ~ (roomPrice if features.room else fixDeskPrice) ~ " € per month") | dump | safe }},
+      "currenciesAccepted": "EUR",
+      "makesOffer": [
+        {{ offer("Fix desk", "Your own desk in the shared workspace, kept between visits, with 24/7 access.", fixDeskPrice) }},
+        {{ offer("Flex desk", "A desk shared with other members, for three days a week plus weekends.", flexDeskPrice) }}{% if features.room %},
+        {{ offer("Private room", "A separate room with a door for up to three people, at one price for the room.", roomPrice) }}{% endif %}
+      ],
       "sameAs": [
         "https://www.instagram.com/officinakreuzberg/",
         "https://www.facebook.com/OfficinaNeukoelln/"

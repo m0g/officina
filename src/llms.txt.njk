@@ -1,0 +1,52 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{#- AI assistants send a small but engaged share of our traffic, and they arrive
+    already briefed on price and location. This file gives them those facts in
+    one plain-text place, built from the same home page front matter the site
+    renders, so it can't drift from the CMS. -#}
+{%- set home = collections.all | findByInputPath("./src/en/index.md") -%}
+{%- set d = home.data -%}
+{%- set faqItems = (d.faq or []) if features.room else ((d.faq or []) | rejectattr("room")) -%}
+{%- set formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform" -%}
+{%- macro price(value) %}{{ value | replace("<br/>", " ") | striptags | safe }}{% endmacro -%}
+# Officina Kreuzberg
+
+> Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz on the Kreuzberg–Neukölln border. There is no operator and no staff: the members rent the space together and share the work of running it, and joining means taking on a small share of that.
+
+- Address: Jahnstraße 13, 10967 Berlin, Germany — ground floor, a few minutes' walk from Hermannplatz (U7, U8).
+- Email: hello@officina.berlin
+- Access: 24/7, weekends included. The door opens with an app on your phone, so there is no physical key to collect.
+- Included with every desk: fast internet, a printer, coffee and tea, a big kitchen and a terrace — and a place in the collective: shared lunches, after-work drinks, and people to ask when you are stuck.
+- Who works here: freelancers, remote employees and researchers — developers, designers, illustrators, architects, a data scientist, a policy coordinator, a copywriter, a filmmaker. Many of us work with NGOs and social projects.
+- Languages: the site is in English at https://www.officina.berlin/en/ and in German at https://www.officina.berlin/de/.
+
+## Desks and prices
+
+- {{ d.fix_desk_title | safe }} — {{ price(d.fix_desk_price) }}. {{ d.fix_desk_content | striptags | safe }}
+- {{ d.flex_desk_title | safe }} — {{ price(d.flex_desk_price) }}. {{ d.flex_desk_content | striptags | safe }}
+{%- if features.room and d.room_title %}
+- {{ d.room_title | safe }} — {{ price(d.room_price) }}. {{ d.room_content | striptags | safe }}
+{%- endif %}
+
+{{ (d.availability_room if features.room and d.availability_room else d.availability) | striptags | safe }}
+
+## How to get a desk
+
+Fill out the contact form at {{ formUrl }} and tell us a bit about what you do. We will invite you for a free trial day — you can also book a trial day yourself in the calendar on https://www.officina.berlin/en/. If it works for both sides, you pick a desk.
+
+## Questions and answers
+{% for item in faqItems %}
+### {{ item.q | safe }}
+
+{{ (item.a_room if features.room and item.a_room else item.a) | striptags | safe }}
+{% endfor %}
+## Pages
+
+- https://www.officina.berlin/en/: desks, prices, trial-day booking and the full FAQ.
+- https://www.officina.berlin/en/about: how the space works, the collective, events and the residency archive.
+- https://www.officina.berlin/en/collective/: the members who run the space.
+- https://www.officina.berlin/en/events/: exhibitions, workshops, concerts and parties hosted at Officina.
+- https://www.officina.berlin/en/artists/: archive of the artist residency, on pause since 2021.
+- https://www.officina.berlin/de/: the German home page.

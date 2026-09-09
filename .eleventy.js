@@ -1,6 +1,44 @@
 const { DateTime } = require('luxon');
+const { execFileSync } = require('child_process');
 const Image = require('@11ty/eleventy-img');
 const { EleventyI18nPlugin } = require('@11ty/eleventy');
+
+// Repo-relative path -> date (YYYY-MM-DD) of the last commit touching it.
+// One `git log` walk for the whole tree, memoised for the build.
+let commitDates;
+function gitCommitDates() {
+  if (commitDates) return commitDates;
+
+  commitDates = {};
+  let log;
+  try {
+    // core.quotePath=false keeps non-ASCII filenames unescaped and unquoted.
+    log = execFileSync(
+      'git',
+      ['-c', 'core.quotePath=false', 'log', '--name-only', '--format=%cs'],
+      {
+        encoding: 'utf8',
+        maxBuffer: 64 * 1024 * 1024,
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }
+    );
+  } catch (error) {
+    console.warn(
+      `[11ty] no git history, sitemap will omit <lastmod>: ${error.message}`
+    );
+    return commitDates;
+  }
+
+  let date = '';
+  for (const line of log.split('\n')) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(line)) date = line;
+    // git lists the newest commits first, so the first date a path gets is the
+    // one we keep.
+    else if (line && date && !commitDates[line]) commitDates[line] = date;
+  }
+
+  return commitDates;
+}
 
 async function imageShortcode(src, alt, size = 600, classes = '') {
   if (alt === undefined) {
@@ -51,14 +89,31 @@ module.exports = function (eleventyConfig) {
     DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd/LL/yyyy')
   );
 
+  // Netlify serves the site on www and 301s the apex to it, so every absolute
+  // URL we emit (canonical, hreflang, og:url, sitemap) has to use www too.
   eleventyConfig.addNunjucksFilter('absoluteUrl', (href) => {
-    const base = 'https://officina.berlin';
+    const base = 'https://www.officina.berlin';
     let { URL } = require('url');
 
     return new URL(href, base).toString();
   });
 
+  // `page.date` is the file's mtime, and Netlify clones the repo fresh on every
+  // build, so it would date every page to the last deploy. Use the date of the
+  // last commit that touched the source file instead, and emit nothing when git
+  // can't tell us (no history in the build, file never committed).
+  eleventyConfig.addFilter('lastModified', (inputPath) => {
+    const dates = gitCommitDates();
+    return dates[inputPath.replace(/^\.\//, '')] || '';
+  });
+
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+
+  // Nunjucks' own `selectattr` ignores the test argument it is given, so pick a
+  // single page out of a collection by hand (used by llms.txt).
+  eleventyConfig.addFilter('findByInputPath', (pages, inputPath) =>
+    (pages || []).find((item) => item.inputPath === inputPath)
+  );
 
   eleventyConfig.addFilter('sortByName', (items) =>
     items.sort((a, b) => a.data.name - b.data.name)

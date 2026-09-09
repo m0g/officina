@@ -40,6 +40,9 @@ art_residency: >-
 residency_cta: See the residents
 contact_title: Get in touch
 contact_text: >-
+  Interested in a desk? Tell us a bit about yourself and what you do – we'll get
+  back to you and invite you for a trial day.
+contact_text_room: >-
   Interested in a desk or the room? Tell us a bit about yourself and what you do
   – we'll get back to you and invite you for a trial day.
 contact_cta: Fill out the form

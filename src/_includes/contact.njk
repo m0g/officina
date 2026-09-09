@@ -6,7 +6,7 @@
         {{ contact_title or "Get in touch" }}
       </h2>
       <p class="text-center">
-        {{ contact_text or "If you are interested in renting a desk, please fill out this form" }}
+        {{ (contact_text_room if features.room and contact_text_room else contact_text) or "If you are interested in renting a desk, please fill out this form" }}
       </p>
       <div class="text-center">
         <a

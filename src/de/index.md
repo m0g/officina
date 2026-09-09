@@ -5,10 +5,18 @@ title: Coworking in Berlin Kreuzberg
 subtitle: Getragen von den Menschen, die hier arbeiten.
 seo_title: Coworking in Berlin Kreuzberg ab 155 € | Officina Kreuzberg
 meta_description: >-
+  Selbstverwalteter Coworking Space am Hermannplatz in Berlin. Fix Desks und
+  Flex Desks, Zugang rund um die Uhr, große Küche, Terrasse. Komm zum
+  kostenlosen Probetag.
+meta_description_room: >-
   Selbstverwalteter Coworking Space am Hermannplatz in Berlin. Fix Desks, Flex
   Desks und ein eigenes Zimmer für bis zu drei Personen. Zugang rund um die Uhr,
   große Küche, Terrasse. Komm zum kostenlosen Probetag.
 image: /src/_assets/images/uploads/officina_space_web_2.jpg
+availability: 'Aktuell frei: Fix Desks und Flex Desks.'
+availability_room: >-
+  Aktuell frei: Fix Desks, Flex Desks und ab November ein eigenes Zimmer für bis
+  zu drei Personen.
 fix_desk_title: Fix Desk
 fix_desk_content: >-
   Dein eigener Schreibtisch, dauerhaft. Lass Bildschirm, Bücher und Technik
@@ -46,6 +54,9 @@ faq:
       ein paar Minuten zu Fuß, Supermärkte und Mittagessen gibt es um die Ecke.
   - q: Was kostet ein Schreibtisch?
     a: >-
+      Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im Monat. Alle
+      Preise inkl. MwSt.
+    a_room: >-
       Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im Monat und das
       eigene Zimmer 600 € im Monat für bis zu drei Personen. Alle Preise inkl.
       MwSt.
@@ -113,6 +124,7 @@ faq:
       sozialen Projekten.
       <a href="/en/collective" class="underline">Lern das Kollektiv kennen</a>.
   - q: Ab wann ist das eigene Zimmer frei?
+    room: true
     a: >-
       Ab November 2026. Es bietet Platz für bis zu drei Personen, und der Preis
       – 600 € im Monat inkl. MwSt. – gilt für das Zimmer, egal ob ihr zu dritt
@@ -132,5 +144,3 @@ faq:
 Officina Kreuzberg ist ein gemeinsamer Arbeitsraum in der Nähe vom Hermannplatz, an der Grenze zwischen Kreuzberg und Neukölln. Es gibt keinen Betreiber und keinen Empfang: Der Raum wird von seinen Mitgliedern getragen, einem Kollektiv aus Freelancer\*innen und Remote-Arbeitenden aus Software, Design, Forschung, Architektur, Politik und Kommunikation – viele von uns arbeiten mit NGOs und sozialen Projekten.
 
 Was du bekommst: einen Schreibtisch mit Zugang rund um die Uhr, schnelles Internet, einen Drucker, eine große Küche und eine Terrasse, auf der wir zusammen Mittag essen oder nach der Arbeit etwas trinken. Die Hasenheide liegt gegenüber, Supermärkte und Mittagessen gibt es um die Ecke. Was wir erwarten: dass du am Leben des Raums teilnimmst.
-
-Aktuell frei: Fix Desks, Flex Desks und ab November ein eigenes Zimmer für bis zu drei Personen.

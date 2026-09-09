@@ -44,6 +44,9 @@ art_residency: >-
 residency_cta: Resident*innen ansehen
 contact_title: Kontakt
 contact_text: >-
+  Interesse an einem Schreibtisch? Erzähl uns kurz, wer du bist und was du
+  machst – wir melden uns und laden dich zu einem Probetag ein.
+contact_text_room: >-
   Interesse an einem Schreibtisch oder dem Zimmer? Erzähl uns kurz, wer du bist
   und was du machst – wir melden uns und laden dich zu einem Probetag ein.
 contact_cta: Zum Formular

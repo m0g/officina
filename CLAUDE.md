@@ -26,6 +26,10 @@ CSS is **not** built by Eleventy. `npx tailwindcss` writes `src/_assets/css/styl
 
 Adding a section to a page usually means adding a front-matter field plus the matching field in `src/admin/config.yml`, not adding a template.
 
+### Feature flags
+
+`src/_data/features.js` exposes `features.*` to every template. Currently one flag: `features.room`, off by default, overridable per build with `SHOW_ROOM=true`. It hides the private room offer that has not been agreed with the collective yet — the room section in `desks.njk`, FAQ entries marked `room: true`, and every piece of copy that mentions the room. Room-dependent copy lives in the content files as a `_room` variant next to the normal field (`meta_description` / `meta_description_room`, `availability` / `availability_room`, `contact_text` / `contact_text_room`, and per FAQ item `a` / `a_room`); the template picks the `_room` one only when the flag is on. Two literals in `layout.njk` (the fallback description and the JSON-LD `priceRange`) are switched inline. To retire the flag: drop the `_room` fields into their base fields, remove the `room:` markers, and delete `features.js` with its template conditionals.
+
 ### Layouts
 
 `layout.njk` is the shell: `<head>` (SEO, hreflang, JSON-LD LocalBusiness with the real address and price range), header, `<main hx-boost="true">`, footer, cookie banner. Page layouts wrapping it: `desks.njk` (home), `collective.njk`, `artists.njk`, `events.njk`, and `landing.njk` (about — just includes `about.njk` + `what-we-do.njk` + `contact.njk`).

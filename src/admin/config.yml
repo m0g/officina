@@ -18,7 +18,10 @@ collections:
           - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
           - { label: 'SEO title (browser tab / Google)', name: 'seo_title', widget: 'string' }
           - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
+          - { label: 'SEO description – used instead while the room is on offer', name: 'meta_description_room', widget: 'text', required: false }
           - { label: 'Intro', name: 'body', widget: 'markdown' }
+          - { label: 'Availability line (under the intro)', name: 'availability', widget: 'text', required: false }
+          - { label: 'Availability line – used instead while the room is on offer', name: 'availability_room', widget: 'text', required: false }
           - { label: 'Featured image', name: 'image', widget: 'image' }
           - { label: 'Fix desk title', name: 'fix_desk_title', widget: 'string' }
           - { label: 'Fix desk content', name: 'fix_desk_content', widget: 'markdown' }
@@ -28,6 +31,7 @@ collections:
           - { label: 'Flex desk content', name: 'flex_desk_content', widget: 'markdown' }
           - { label: 'Flex desk image', name: 'flex_desk_image', widget: 'image' }
           - { label: 'Flex desk price', name: 'flex_desk_price', widget: 'string' }
+          # The whole room block is also hidden by the `room` feature flag in src/_data/features.js
           - { label: 'Room title (leave empty to hide the room section)', name: 'room_title', widget: 'string', required: false }
           - { label: 'Room content', name: 'room_content', widget: 'markdown', required: false }
           - { label: 'Room image', name: 'room_image', widget: 'image', required: false }
@@ -43,6 +47,8 @@ collections:
             fields:
               - { label: 'Question', name: 'q', widget: 'string' }
               - { label: 'Answer (HTML links allowed)', name: 'a', widget: 'text' }
+              - { label: 'Answer – used instead while the room is on offer', name: 'a_room', widget: 'text', required: false }
+              - { label: 'Only show while the room is on offer', name: 'room', widget: 'boolean', required: false, default: false }
       - label: 'About'
         name: 'about'
         file: 'src/en/about.md'
@@ -66,6 +72,7 @@ collections:
           - { label: 'Residency button', name: 'residency_cta', widget: 'string' }
           - { label: 'Contact title', name: 'contact_title', widget: 'string' }
           - { label: 'Contact text', name: 'contact_text', widget: 'text' }
+          - { label: 'Contact text – used instead while the room is on offer', name: 'contact_text_room', widget: 'text', required: false }
           - { label: 'Contact button', name: 'contact_cta', widget: 'string' }
       - label: 'The Collective'
         name: 'Collective'

@@ -72,8 +72,10 @@ faq:
       nothing to pick up, hand over or lose.
   - q: Is there a phone booth or a meeting room?
     a: >-
-      Not at the moment. If you're on video calls all day, come for a trial
-      day first and see whether the space works for you.
+      No phone booth. For calls and small meetings you can use the basement –
+      it does the job, but it's not a proper meeting room. If you're on video
+      calls all day, come for a trial day first and see whether the space
+      works for you.
   - q: Which floor is it on?
     a: >-
       The ground floor. If you have specific accessibility needs, write to us

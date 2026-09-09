@@ -10,7 +10,10 @@ eleventyExcludeFromCollections: true
 {%- set d = home.data -%}
 {%- set faqItems = (d.faq or []) if features.room else ((d.faq or []) | rejectattr("room")) -%}
 {%- set formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform" -%}
-{%- macro price(value) %}{{ value | replace("<br/>", " ") | striptags | safe }}{% endmacro -%}
+{#- The price fields are free-text in the CMS and use a <br> to split the amount
+    from the VAT note – any spelling of it has to become a space, or striptags
+    glues the two halves together. -#}
+{%- macro price(value) %}{{ value | replace(r/<[^>]+>/g, " ") | striptags | safe }}{% endmacro -%}
 # Officina Kreuzberg
 
 > Officina Kreuzberg is a member-run coworking space in Berlin Kreuzberg, near Hermannplatz on the Kreuzberg–Neukölln border. There is no operator and no staff: the members rent the space together and share the work of running it, and joining means taking on a small share of that.

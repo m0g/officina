@@ -66,6 +66,12 @@ async function imageShortcode(src, alt, size = 600, classes = '') {
 }
 
 module.exports = function (eleventyConfig) {
+  // One `git log` per build, not one per template – but drop it between builds
+  // so a commit made during `yarn start` shows up in the next sitemap.
+  eleventyConfig.on('eleventy.before', () => {
+    commitDates = undefined;
+  });
+
   eleventyConfig.addPassthroughCopy('src/admin');
   eleventyConfig.addPassthroughCopy('src/_assets');
   eleventyConfig.addPassthroughCopy('src/robots.txt');

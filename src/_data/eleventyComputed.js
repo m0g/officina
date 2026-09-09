@@ -5,6 +5,7 @@ const items = {
     collective: 'The collective',
     artists: 'Artist residency',
     events: 'Events',
+    contact: 'Get in touch',
   },
   de: {
     desks: 'Arbeitsplätze',
@@ -12,6 +13,7 @@ const items = {
     collective: 'Unser Kollektiv',
     artists: 'Künstlerresidenzen',
     events: 'Veranstaltungen',
+    contact: 'Kontakt',
   },
 };
 

@@ -34,13 +34,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     'src/_assets/js/index.js': 'js/index.js',
+    'src/_assets/css/plex.css': 'css/plex.css',
   });
 
   // Node modules
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@ibm/plex/css/ibm-plex.css': 'css/ibm-plex.css',
-    'node_modules/@ibm/plex/IBM-Plex-Mono': 'IBM-Plex-Mono',
-    'node_modules/@ibm/plex/IBM-Plex-Sans': 'IBM-Plex-Sans',
+    'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/woff2': 'IBM-Plex-Sans/fonts/complete/woff2',
     'node_modules/leaflet/dist/leaflet.css': 'css/leaflet.css',
     'node_modules/leaflet/dist/leaflet-src.esm.js': 'js/leaflet.js',
     'node_modules/leaflet/dist/images': 'css/images',

@@ -2,7 +2,7 @@
 layout: landing.njk
 permalink: /en/about.html
 title: A workspace run by its members
-seo_title: About Officina Kreuzberg – a member-run coworking space in Berlin
+seo_title: About – a member-run coworking space | Officina Kreuzberg
 meta_description: >-
   Officina Kreuzberg opened in 2016 and is run as a collective by the
   freelancers and remote workers who use it. How the space works, who is behind

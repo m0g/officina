@@ -13,7 +13,6 @@ html {
 
 .font-plex {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-display: swap;
 }
 
 /* salmon / blue-custom / yellow-custom now live in tailwind.config.js so the

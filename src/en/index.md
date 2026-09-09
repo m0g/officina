@@ -3,7 +3,7 @@ layout: desks.njk
 permalink: /en/index.html
 title: Coworking in Berlin Kreuzberg
 subtitle: Run by the people who work here.
-seo_title: Coworking in Berlin Kreuzberg – desks from 155 € | Officina Kreuzberg
+seo_title: Coworking in Berlin Kreuzberg from 155 € | Officina Kreuzberg
 meta_description: >-
   Member-run coworking space near Hermannplatz, Berlin. Fix desks, flex desks
   and a private room for up to three people. 24/7 access, big kitchen, terrace.

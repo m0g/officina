@@ -23,3 +23,19 @@
   from = "/en/desks/*"
   to = "/en/"
   status = 301
+
+# Member, event and resident entries are no longer standalone pages
+[[redirects]]
+  from = "/en/collective/*"
+  to = "/en/collective/"
+  status = 301
+
+[[redirects]]
+  from = "/en/events/*"
+  to = "/en/events/"
+  status = 301
+
+[[redirects]]
+  from = "/en/artists/*"
+  to = "/en/artists/"
+  status = 301

@@ -26,14 +26,28 @@ const items = {
 const ui = {
   en: {
     scrollDown: 'Scroll down',
+    openSidebar: 'Open the sidebar',
+    workspaceImageAlt: 'The Officina Kreuzberg workspace in Berlin',
+    fixDeskImageAlt: 'Fix desk at Officina Kreuzberg',
+    flexDeskImageAlt: 'Flex desk at Officina Kreuzberg',
+    roomImageAlt: 'Private room at Officina Kreuzberg',
     collectiveImageAlt: 'The Officina Kreuzberg collective',
     eventImageAlt: 'Event at Officina Kreuzberg',
+    eventMailSubject: 'Event at Officina',
+    trialDayCalendar: 'Book a trial day at Officina Kreuzberg',
     englishOnly: '',
   },
   de: {
     scrollDown: 'Nach unten scrollen',
+    openSidebar: 'Menü öffnen',
+    workspaceImageAlt: 'Der Arbeitsraum von Officina Kreuzberg in Berlin',
+    fixDeskImageAlt: 'Fix Desk bei Officina Kreuzberg',
+    flexDeskImageAlt: 'Flex Desk bei Officina Kreuzberg',
+    roomImageAlt: 'Eigenes Zimmer bei Officina Kreuzberg',
     collectiveImageAlt: 'Das Kollektiv von Officina Kreuzberg',
     eventImageAlt: 'Veranstaltung bei Officina Kreuzberg',
+    eventMailSubject: 'Veranstaltung bei Officina',
+    trialDayCalendar: 'Probetag bei Officina Kreuzberg buchen',
     englishOnly: 'Nur auf Englisch',
   },
 };

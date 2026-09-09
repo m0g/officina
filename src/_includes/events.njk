@@ -13,7 +13,7 @@ layout: layout.njk
           {{ content | safe }}
         </div>
         <a
-          href="mailto:hello@officina.berlin?subject=Event%20at%20Officina"
+          href="mailto:hello@officina.berlin?subject={{ ui.eventMailSubject | urlencode }}"
           class="inline-block text-white font-bold text-smc bg-black px-8 py-2 mt-4 transition-colors duration-150 hover:bg-blue-custom">
           {{ contact_cta or "Get in touch" }}
         </a>

@@ -39,11 +39,17 @@
       <span> | </span>
       <button id="show-cookie-banner">Cookie settings</button>
       <span> | </span>
-      {%- if page.lang == "en" %}
-        <a href="/de/" class="underline">Wechseln zu Deutsch</a>
-      {%- else %}
-        <a href="/en/" class="underline">Switch to English</a>
-      {%- endif %}
+      {#- Stay on the same page when the other language has it, instead of
+          throwing the visitor back to the home page. `locale_links` lists only
+          the *other* locales that actually have this URL, and the site has two
+          languages, so its first entry is the one we want – and it is empty for
+          /en/artists/, which has no German version, hence the home-page
+          fallback. Trim `.html` the way the canonical does. -#}
+      {%- set alternate = (page.url | locale_links)[0] -%}
+      {%- set otherUrl = (alternate.url | replace(".html", "")) if alternate else ("/de/" if page.lang == "en" else "/en/") %}
+      <a href="{{ otherUrl }}" class="underline">
+        {{- "Wechseln zu Deutsch" if page.lang == "en" else "Switch to English" -}}
+      </a>
     </div>
   </div>
 </footer>

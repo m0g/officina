@@ -14,4 +14,4 @@ past_events_title: Was hier schon stattgefunden hat
 
 Ein paar Mal im Jahr öffnen wir die Türen für die Nachbarschaft: Tage der offenen Tür, Partys, Fundraiser, Workshops und Ausstellungen bei 48 Stunden Neukölln. Mitglieder und Freund\*innen können den Raum auch für ihre eigenen Veranstaltungen nutzen – wenn du eine Idee hast, melde dich.
 
-*Die Beschreibungen der einzelnen Veranstaltungen sind auf Englisch.*
+_Die Beschreibungen der einzelnen Veranstaltungen sind auf Englisch._

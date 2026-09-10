@@ -1,7 +1,7 @@
 ---
 name: Boris Jankowiak
 position: 5
-job: ""
+job: ''
 pronouns: he/him
 image: /src/_assets/images/uploads/5_boris_purple.png
 tags: collective

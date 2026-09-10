@@ -14,4 +14,4 @@ Officina Kreuzberg is run by the people who work here. We're freelancers, remote
 
 Sharing more than a room matters to us. We eat together, we help each other out with a contract, a layout, a bug – and sometimes we end up working on things together.
 
-*Interested in joining? [Apply for a desk](https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform).*
+_Interested in joining? [Apply for a desk](https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform)._

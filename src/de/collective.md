@@ -14,6 +14,6 @@ Officina Kreuzberg wird von den Menschen getragen, die hier arbeiten. Wir sind F
 
 Uns ist wichtig, mehr zu teilen als nur einen Raum. Wir essen zusammen, helfen uns gegenseitig bei einem Vertrag, einem Layout, einem Bug – und manchmal arbeiten wir am Ende gemeinsam an etwas.
 
-*Die Vorstellungen der Mitglieder sind auf Englisch.*
+_Die Vorstellungen der Mitglieder sind auf Englisch._
 
-*Interesse mitzumachen? [Bewirb dich um einen Schreibtisch](https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform).*
+_Interesse mitzumachen? [Bewirb dich um einen Schreibtisch](https://docs.google.com/forms/d/e/1FAIpQLSe_aJwPcxRE_1LtocSHlrjHqDOQhm763ElOiURhH6KCOzL96g/viewform)._

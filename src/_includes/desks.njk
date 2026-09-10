@@ -103,9 +103,11 @@ layout: layout.njk
     </div>
   </div>
   <!-- Google Calendar Appointment Scheduling begin -->
+  {# hl follows the page, not the calendar owner's Google account – without it
+     the widget renders in the owner's language (French) for every visitor. #}
   <iframe
     id="trial-calendar"
-    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0FoukPWZdqXbKnv_z-1zWdyWML1c9FK6N1wqoegSUCbQiTVbGy5GgwRDh_A7qtVNwqgg_FWPwb?gv=true"
+    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0FoukPWZdqXbKnv_z-1zWdyWML1c9FK6N1wqoegSUCbQiTVbGy5GgwRDh_A7qtVNwqgg_FWPwb?gv=true&hl={{ page.lang }}"
     style="border: 0"
     width="100%"
     frameborder="0"

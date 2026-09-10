@@ -141,6 +141,10 @@ document.body.addEventListener('htmx:load', function () {
 
   trialCalendarObserver = new IntersectionObserver(
     (entries) => {
+      // disconnect() does not cancel callbacks already queued for this frame,
+      // so the flag has to be re-checked here and not only where the observer
+      // is attached – otherwise one scroll past the iframe captures twice.
+      if (trialCalendarCaptured) return;
       if (!entries.some((entry) => entry.isIntersecting)) return;
 
       trialCalendarCaptured = true;
@@ -153,6 +157,26 @@ document.body.addEventListener('htmx:load', function () {
   );
 
   trialCalendarObserver.observe(calendar);
+});
+
+// Reaching the calendar is not the same as using it, and the booking itself is
+// unknowable: Google's scheduling iframe posts no message to the parent and
+// there is no success redirect, so nothing on this page can see a confirmed
+// booking. Focus is as close as we get – clicking into a cross-origin iframe
+// blurs the window and leaves it as document.activeElement.
+//
+// Bound once at window level and resolved at event time, so htmx swapping the
+// iframe out from under us does not matter. It can also fire if someone with
+// the calendar already focused switches app, which is a rarer way to reach the
+// same conclusion – they were engaging with it.
+let trialCalendarInteracted = false;
+
+window.addEventListener('blur', function () {
+  if (trialCalendarInteracted) return;
+  if (document.activeElement?.id !== 'trial-calendar') return;
+
+  trialCalendarInteracted = true;
+  posthog.capture('trial_calendar_interact');
 });
 
 // Cookie consent

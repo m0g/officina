@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://officina.berlin/sitemap.xml
+Sitemap: https://www.officina.berlin/sitemap.xml

@@ -44,6 +44,19 @@ trial_day_info: >-
   Not sure yet? Come for a free trial day, work with us, stay for lunch. Pick a
   slot below.
 faq_title: Questions & answers
+key_facts: >-
+  The short version: a fix desk is 255 € a month and a flex desk 155 € a month,
+  both including VAT. No deposit and no minimum term – the notice period is one
+  month for a flex desk and three months for a fix desk. We're at Jahnstraße 13,
+  10967 Berlin, a few minutes from Hermannplatz (U7, U8), and the trial day is
+  free: work with us for a day and stay for lunch.
+key_facts_room: >-
+  The short version: a fix desk is 255 € a month, a flex desk 155 € a month and
+  the private room 600 € a month for up to three people, all including VAT. No
+  deposit and no minimum term – the notice period is one month for a flex desk
+  and three months for a fix desk. We're at Jahnstraße 13, 10967 Berlin, a few
+  minutes from Hermannplatz (U7, U8), and the trial day is free: work with us
+  for a day and stay for lunch.
 faq:
   - q: Where exactly is Officina?
     a: >-

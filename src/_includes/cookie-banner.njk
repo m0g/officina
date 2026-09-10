@@ -3,36 +3,16 @@
     adds rather than asking for a favour. -#}
 <div id="cookie-banner" class="hidden bottom-0 left-0 right-0 bg-kobi z-401 border-t border-black">
   <div class="p-6 max-w-screen-xl mx-auto">
-    {%- if page.lang == "de" %}
     <p class="max-w-2xl">
-      Wir messen, wie die Seite genutzt wird, um sie zu verbessern. Du wirst
-      dabei schon anonym gezählt – ohne Cookies, ohne Daten auf deinem Gerät.
-      Mit deinem Einverständnis erkennen wir zusätzlich wiederkehrende Besuche.
-      Wir geben nichts an Dritte weiter.
+      {{ ui.cookieText }}
     </p>
     <button
       id="accept-cookie"
       class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 mr-2 inline-block transition-colors duration-150 hover:bg-blue-custom"
-    >Cookies akzeptieren</button>
+    >{{ ui.cookieAccept }}</button>
     <button
       id="decline-cookie"
       class="text-black text-smc font-bold border-2 border-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-black hover:text-white"
-    >Nein, danke</button>
-    {%- else %}
-    <p class="max-w-2xl">
-      We measure how the site gets used so we can improve it. You're already
-      counted anonymously – no cookies, nothing stored on your device.
-      Accepting lets us also recognise a returning visit. We don't share any of
-      it with anyone.
-    </p>
-    <button
-      id="accept-cookie"
-      class="text-white text-smc font-bold bg-black px-8 py-2 mt-4 mr-2 inline-block transition-colors duration-150 hover:bg-blue-custom"
-    >Accept cookies</button>
-    <button
-      id="decline-cookie"
-      class="text-black text-smc font-bold border-2 border-black px-8 py-2 mt-4 inline-block transition-colors duration-150 hover:bg-black hover:text-white"
-    >No thanks</button>
-    {%- endif %}
+    >{{ ui.cookieDecline }}</button>
   </div>
 </div>

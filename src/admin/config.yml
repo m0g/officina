@@ -40,6 +40,8 @@ collections:
           - { label: 'Room button label', name: 'room_apply', widget: 'string', required: false }
           - { label: 'Trial day info', name: 'trial_day_info', widget: 'string' }
           - { label: 'FAQ title', name: 'faq_title', widget: 'string', required: false }
+          - { label: 'Key facts (plain text under the FAQ title – price, address, notice period, trial day)', name: 'key_facts', widget: 'text', required: false }
+          - { label: 'Key facts – used instead while the room is on offer', name: 'key_facts_room', widget: 'text', required: false }
           - label: 'FAQ'
             name: 'faq'
             widget: 'list'
@@ -94,6 +96,8 @@ collections:
           - { label: 'SEO description (Google snippet)', name: 'meta_description', widget: 'text' }
           - { label: 'Description', name: 'body', widget: 'markdown' }
           - { label: 'Featured image', name: 'image', widget: 'image' }
+          - { label: 'Contact button label', name: 'contact_cta', widget: 'string', required: false }
+          - { label: 'Past events section title', name: 'past_events_title', widget: 'string', required: false }
       - label: 'Artist residency (archive)'
         name: 'Artists'
         file: 'src/en/artists.md'

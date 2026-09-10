@@ -46,6 +46,21 @@ trial_day_info: >-
   Noch unsicher? Komm für einen kostenlosen Probetag vorbei, arbeite mit uns und
   bleib zum Mittagessen. Such dir unten einen Termin aus.
 faq_title: Fragen & Antworten
+key_facts: >-
+  Kurz gefasst: Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im
+  Monat, jeweils inkl. MwSt. Keine Kaution und keine Mindestlaufzeit – die
+  Kündigungsfrist beträgt einen Monat beim Flex Desk und drei Monate beim Fix
+  Desk. Wir sind in der Jahnstraße 13, 10967 Berlin, ein paar Minuten vom
+  Hermannplatz (U7, U8), und der Probetag ist kostenlos: Arbeite einen Tag mit
+  uns und bleib zum Mittagessen.
+key_facts_room: >-
+  Kurz gefasst: Ein Fix Desk kostet 255 € im Monat, ein Flex Desk 155 € im Monat
+  und das eigene Zimmer 600 € im Monat für bis zu drei Personen, jeweils inkl.
+  MwSt. Keine Kaution und keine Mindestlaufzeit – die Kündigungsfrist beträgt
+  einen Monat beim Flex Desk und drei Monate beim Fix Desk. Wir sind in der
+  Jahnstraße 13, 10967 Berlin, ein paar Minuten vom Hermannplatz (U7, U8), und
+  der Probetag ist kostenlos: Arbeite einen Tag mit uns und bleib zum
+  Mittagessen.
 faq:
   - q: Wo genau ist die Officina?
     a: >-
@@ -122,7 +137,7 @@ faq:
       Design, Illustration und Architektur, dazu Data Science,
       Politikkoordination, Text und Film. Viele von uns arbeiten mit NGOs und
       sozialen Projekten.
-      <a href="/en/collective" class="underline">Lern das Kollektiv kennen</a>.
+      <a href="/de/collective" class="underline">Lern das Kollektiv kennen</a>.
   - q: Ab wann ist das eigene Zimmer frei?
     room: true
     a: >-
@@ -138,7 +153,8 @@ faq:
     a: >-
       Sie pausiert seit 2021, und wir planen, sie 2027 wieder aufzunehmen. Die
       bisherigen Resident*innen findest du im
-      <a href="/en/artists/" class="underline">Archiv</a>.
+      <a href="/en/artists/" hreflang="en" class="underline">Archiv</a> (nur auf
+      Englisch).
 ---
 
 Officina Kreuzberg ist ein gemeinsamer Arbeitsraum in der Nähe vom Hermannplatz, an der Grenze zwischen Kreuzberg und Neukölln. Es gibt keinen Betreiber und keinen Empfang: Der Raum wird von seinen Mitgliedern getragen, einem Kollektiv aus Freelancer\*innen und Remote-Arbeitenden aus Software, Design, Forschung, Architektur, Politik und Kommunikation – viele von uns arbeiten mit NGOs und sozialen Projekten.

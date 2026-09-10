@@ -7,9 +7,12 @@ eleventyExcludeFromCollections: true
 {%- for page in collections.all %}
   {%- if page.url and page.data.sitemapIgnore != true %}
     {% set absoluteUrl %}{{ page.url | replace(".html", "") | url | absoluteUrl }}{% endset %}
+    {%- set lastmod = page.inputPath | lastModified %}
     <url>
       <loc>{{ absoluteUrl }}</loc>
-      <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+      {%- if lastmod %}
+      <lastmod>{{ lastmod }}</lastmod>
+      {%- endif %}
     </url>
   {% endif %}
 {%- endfor %}

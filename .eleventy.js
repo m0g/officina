@@ -83,13 +83,15 @@ module.exports = function (eleventyConfig) {
 
   // Node modules
   eleventyConfig.addPassthroughCopy({
-    'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/woff2': 'IBM-Plex-Sans/fonts/complete/woff2',
+    'node_modules/@ibm/plex/IBM-Plex-Sans/fonts/complete/woff2':
+      'IBM-Plex-Sans/fonts/complete/woff2',
     'node_modules/leaflet/dist/leaflet.css': 'css/leaflet.css',
     'node_modules/leaflet/dist/leaflet-src.esm.js': 'js/leaflet.js',
     'node_modules/leaflet/dist/images': 'css/images',
     'node_modules/htmx.org/dist/htmx.min.js': 'js/htmx.js',
+    // Not the `slim` build: it ships no pushState patching, so it cannot capture
+    // a pageview when htmx boosts a navigation – which is most navigation here.
     'node_modules/posthog-js/dist/module.no-external.js': 'js/posthog.js',
-    'node_modules/universal-cookie/esm/index.mjs': 'js/universal-cookie.js',
   });
   eleventyConfig.addFilter('htmlDateString', (dateObj) =>
     DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd/LL/yyyy')

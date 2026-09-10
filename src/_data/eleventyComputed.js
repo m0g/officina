@@ -35,11 +35,15 @@ const ui = {
     eventImageAlt: 'Event at Officina Kreuzberg',
     eventMailSubject: 'Event at Officina',
     trialDayCalendar: 'Book a trial day at Officina Kreuzberg',
+    // PostHog already counts the visit cookielessly, so the banner says what
+    // accepting adds rather than asking for a favour.
     cookieText:
-      'We use tracking cookies to understand how you use the website and ' +
-      'help us improve it. Please accept cookies to help us improve.',
+      "We measure how the site gets used so we can improve it. You're " +
+      'already counted anonymously – no cookies, nothing stored on your ' +
+      'device. Accepting lets us also recognise a returning visit. We ' +
+      "don't share any of it with anyone.",
     cookieAccept: 'Accept cookies',
-    cookieDecline: 'Decline cookies',
+    cookieDecline: 'No thanks',
     cookieSettings: 'Cookie settings',
     creditsMadeBy: 'Made by',
     creditsMe: 'me',
@@ -60,11 +64,12 @@ const ui = {
     eventMailSubject: 'Veranstaltung bei Officina',
     trialDayCalendar: 'Probetag bei Officina Kreuzberg buchen',
     cookieText:
-      'Wir verwenden Tracking-Cookies, um zu verstehen, wie du die Website ' +
-      'nutzt, und um sie zu verbessern. Bitte akzeptiere Cookies und hilf ' +
-      'uns dabei.',
+      'Wir messen, wie die Seite genutzt wird, um sie zu verbessern. Du ' +
+      'wirst dabei schon anonym gezählt – ohne Cookies, ohne Daten auf ' +
+      'deinem Gerät. Mit deinem Einverständnis erkennen wir zusätzlich ' +
+      'wiederkehrende Besuche. Wir geben nichts an Dritte weiter.',
     cookieAccept: 'Cookies akzeptieren',
-    cookieDecline: 'Cookies ablehnen',
+    cookieDecline: 'Nein, danke',
     cookieSettings: 'Cookie-Einstellungen',
     creditsMadeBy: 'Gemacht von',
     creditsMe: 'mir',

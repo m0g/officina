@@ -119,6 +119,39 @@ document.addEventListener('click', function (event) {
   });
 });
 
+// Which questions someone opens is what they are unsure about before
+// committing – price, notice period, accessibility, who else is there. The FAQ
+// answers all of that, but only the ones people actually open tell us anything.
+//
+// `toggle` does not bubble, so this listens in the capture phase, which
+// non-bubbling events still pass through on the way down. That also means it
+// survives htmx swapping <main> without re-binding, unlike a listener on each
+// <details>. Counted once per question per page load: whether someone opened it
+// is the signal, not how many times they fiddled with it.
+const faqOpened = new Set();
+
+document.addEventListener(
+  'toggle',
+  function (event) {
+    const details = event.target;
+    if (!(details instanceof HTMLDetailsElement) || !details.open) return;
+    if (!details.closest('#faq')) return;
+
+    // The summary holds the question and a decorative "+", so take the question.
+    const question = details
+      .querySelector('summary span')
+      ?.innerText.trim()
+      .replace(/\s+/g, ' ')
+      .slice(0, 120);
+
+    if (!question || faqOpened.has(question)) return;
+
+    faqOpened.add(question);
+    posthog.capture('faq_open', { question });
+  },
+  true
+);
+
 // The trial day is booked in a cross-origin Google Calendar iframe, so the
 // booking itself is invisible to us. Reaching the calendar at all is the
 // strongest signal we can get, and it is the step before the best offer we have.
